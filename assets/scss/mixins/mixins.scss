@@ -1,0 +1,16 @@
+@mixin btn {
+  font-family: 'Open Sans', sans-serif;
+  color: $secondary-color;
+  display: inline-block !important;
+  border: 1px solid $secondary-color;
+  border-radius: 3px;
+  padding: 8px 12px;
+  letter-spacing: 5px;
+}
+
+@mixin btnHover {
+  color: #222222;
+  border-color: $secondary-color;
+  background-color: $secondary-color;
+  transition: $transition;
+}
