@@ -1,6 +1,10 @@
 {
   "name": "Portfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.14.0"
+    ,"npm": "6.13.4"
+  },
   "description": "Portfolio",
   "author": "tajeddine",
   "private": true,
