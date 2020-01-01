@@ -10,7 +10,14 @@
           <br />building small and medium web apps
           <br />with Vue & Nuxt and material design with Vuetify.
         </p>
-        <p>Visit my Linkedin profile for more info or contact me.</p>
+        <p>
+          Visit my
+          <a
+            href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
+            target="_blank"
+          >Linkedin</a> profile for more info or
+          <nuxt-link to="/contact">Contact</nuxt-link> me.
+        </p>
       </v-col>
       <v-col class="d-flex justify-center align-center flex-wrap" sm12 md6 offset-md="1">
         <img v-for="(image, index) in images" :key="index" :src="image.url" :alt="image.alt" />
@@ -55,5 +62,10 @@ img {
   width: 65px;
   height: 65px;
   margin: 6px;
+}
+
+a {
+  color: $secondary-color !important;
+  text-decoration: none;
 }
 </style>

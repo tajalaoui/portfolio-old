@@ -8,7 +8,7 @@
             Hi,
             <br />I'm
             <span class="brand-span">Taj</span>eddine,
-            <br />software developer.
+            <br />web developer.
           </h1>
           <div class="text-intro-skills font-weight-light" style="paddingTop: 27px">
             <p>Full Stack Javascript Developer</p>
