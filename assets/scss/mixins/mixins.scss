@@ -14,3 +14,23 @@
   background-color: $secondary-color;
   transition: $transition;
 }
+
+@mixin h1Before {
+  content: '<h1>';
+  font-family: 'La Belle Aurore', cursive;
+  color: $tag-color;
+  font-size: $tag-size;
+  position: absolute;
+  margin-top: -35px;
+  display: block;
+}
+
+@mixin h1After {
+  content: '<h1/>';
+  font-family: 'La Belle Aurore', cursive;
+  color: $tag-color;
+  font-size: $tag-size;
+  position: absolute;
+  display: block;
+  margin-top: -18px;
+}

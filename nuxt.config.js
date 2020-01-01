@@ -61,8 +61,14 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/svg'
   ],
+  webfontloader: {
+    google: {
+      families: ['Raleway:400,500,700,900']
+    }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -89,9 +95,6 @@ export default {
       }
     },
     defaultAssets: {
-      font: {
-        family: 'Roboto' || 'Raleway'
-      },
       icons: 'md' || 'mdi' || 'fa'
     }
   },

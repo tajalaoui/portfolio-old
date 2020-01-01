@@ -37,6 +37,9 @@
           <a href="https://github.com/Saiken9" target="_blank">
             <icon class="icon nav-social-icons github-icon" :icon="['fab', 'github']" />
           </a>
+          <a href="https://www.instagram.com/_tajeddine/" target="_blank">
+            <icon class="icon nav-social-icons instagram-icon" :icon="['fab', 'instagram']" />
+          </a>
         </div>
       </v-navigation-drawer>
 
@@ -112,16 +115,9 @@ nav {
     }
 
     .nav-social-icons {
+      color: $secondary-color;
       font-size: 1.5rem;
       margin: 0 11px;
-    }
-
-    .linkedin-icon {
-      color: #0077b5;
-    }
-
-    .github-icon {
-      color: black;
     }
   }
 

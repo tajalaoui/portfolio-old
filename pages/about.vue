@@ -1,9 +1,10 @@
 <template>
   <v-container fill-height>
+    <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row>
-      <v-col sm-12 md-6>
-        <h1 class="display-3 mb-4 font-weight-bold">About me</h1>
-        <p>
+      <v-col sm12 md6 offset-lg="1">
+        <h1 class="display-3 font-weight-bold">About me</h1>
+        <p style="paddingTop: 27px">
           Professionally connected with the information technology
           <br />for many years.
         </p>
@@ -17,7 +18,13 @@
           <br />and working on ambitious projects with positive people.
         </p>
       </v-col>
-      <v-col class="d-flex justify-center align-center" sm-12 md-6>
+      <!-- FLEX WRAP PROBLEMS -->
+      <v-col
+        sm12
+        md6
+        offset-lg="1"
+        class="d-flex justify-center align-center flex-wrap flex-lg-nowrap"
+      >
         <div class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
           <h3>Fast</h3>
@@ -38,6 +45,10 @@
         </div>
       </v-col>
     </v-row>
+    <span class="tags bottom-tags">
+      &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+      <br />&lt;/html&gt;
+    </span>
   </v-container>
 </template>
 
@@ -47,10 +58,9 @@ export default {}
 
 <style lang="scss" scoped>
 @import '@/assets/scss/style.scss';
-// I TRIED TO CHANGE THEIR H1
+
 h1 {
   color: $secondary-color;
-  font-family: 'Raleway', sans-serif !important;
 }
 
 .specialities {

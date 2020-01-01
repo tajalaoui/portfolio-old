@@ -38,28 +38,36 @@ p:hover {
   cursor: default;
 }
 
+// HTML TAGS.
+.top-tags {
+  top: 7px;
+}
+
+.tags {
+  color: $tag-color;
+  position: absolute;
+  bottom: 7px;
+  left: 25px;
+  font-size: $tag-size;
+  font-family: 'La Belle Aurore', cursive;
+}
+
+h1::before {
+  @include h1Before();
+}
+
+h1::after {
+  @include h1After();
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.5s ease;
 }
 
+// ROUTING ANIMATION.
 .page-enter,
 .page-leave-active {
   opacity: 0;
   transform: scale(0);
-}
-
-// HTML TAGS.
-.top-tags {
-  bottom: auto;
-  top: 7px;
-}
-
-.tags {
-  color: $tags;
-  position: absolute;
-  bottom: 7px;
-  left: 80px;
-  font-size: $tag-size;
-  font-family: 'La Belle Aurore', cursive;
 }

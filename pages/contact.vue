@@ -1,6 +1,7 @@
 <template>
   <v-container>
-    <v-row class="d-flex justify-center">
+    <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+    <v-row class="d-flex justify-center my-5">
       <h1 class="display-3 font-weight-bold">Contact me</h1>
     </v-row>
     <v-row>
@@ -9,13 +10,17 @@
 
         <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
         <!-- I MODIFIED THIS. -->
-        <v-text-field v-model="email" :rules="emailRules" label="Subject" required></v-text-field>
+        <v-text-field v-model="subject" :counter="15" :rules="subjectRules" label="Subject" required></v-text-field>
 
-        <v-textarea class="mb-5" v-model="email" :rules="emailRules" label="Message" required></v-textarea>
+        <v-textarea class="mb-5" v-model="message" label="Message" required></v-textarea>
 
         <button large :disabled="!valid" color="success" class="mr-4 button" @click="validate">Send</button>
       </v-form>
     </v-row>
+    <span class="tags bottom-tags">
+      &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+      <br />&lt;/html&gt;
+    </span>
   </v-container>
 </template>
 
@@ -25,6 +30,9 @@ export default {
   data: () => ({
     valid: true,
     name: '',
+    email: '',
+    subject: '',
+    message: '',
     nameRules: [
       v => !!v || 'Name is required',
       v => (v && v.length <= 10) || 'Name must be less than 10 characters'
@@ -33,6 +41,10 @@ export default {
     emailRules: [
       v => !!v || 'E-mail is required',
       v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+    ],
+    subjectRules: [
+      v => !!v || 'Subject is required',
+      v => (v && v.length <= 15) || 'Subject must be less than 15 characters'
     ]
   }),
 

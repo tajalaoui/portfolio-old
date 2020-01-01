@@ -2,7 +2,7 @@
   <v-container fill-height>
     <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row align-content="center">
-      <v-col sm-12 md-6 offset-md="1">
+      <v-col sm12 md6 offset-md="1">
         <div class="text-intro">
           <h1 class="font-weight-bold display-3">
             Hi,
@@ -10,13 +10,13 @@
             <span class="brand-span">Taj</span>eddine,
             <br />software developer.
           </h1>
-          <div class="text-intro-skills mt-2 font-weight-light">
+          <div class="text-intro-skills font-weight-light" style="paddingTop: 27px">
             <p>Full Stack Javascript Developer</p>
           </div>
-          <nuxt-link class="text-uppercase contact-btn mt-4" to="/contact">contact me</nuxt-link>
+          <nuxt-link class="text-uppercase contact-btn mt-2" to="/contact">contact me</nuxt-link>
         </div>
       </v-col>
-      <v-col sm-12 md-6>
+      <v-col sm12 md6>
         <div class="svg d-flex justify-center align-center">
           <svg
             id="svg"
@@ -95,24 +95,5 @@ export default {}
       fill: #08fdd8;
     }
   }
-}
-
-h1::before {
-  content: '<h1>';
-  font-family: 'La Belle Aurore', cursive;
-  color: $tags;
-  font-size: $tag-size;
-  position: absolute;
-  margin-top: -40px;
-}
-
-h1::after {
-  content: '<h1/>';
-  font-family: 'La Belle Aurore', cursive;
-  color: $tags;
-  font-size: $tag-size;
-  position: absolute;
-  margin-top: 18px;
-  margin-left: 20px;
 }
 </style>
