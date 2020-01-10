@@ -34,7 +34,7 @@
           <a href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/" target="_blank">
             <icon class="icon nav-social-icons linkedin-icon" :icon="['fab', 'linkedin']" />
           </a>
-          <a href="https://github.com/Saiken9" target="_blank">
+          <a href="https://github.com/SSaiken" target="_blank">
             <icon class="icon nav-social-icons github-icon" :icon="['fab', 'github']" />
           </a>
           <a href="https://www.instagram.com/_tajeddine/" target="_blank">
@@ -52,7 +52,11 @@
           </nuxt-link>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <nuxt-link class="contact-btn text-uppercase mr-2" to="/">Resume</nuxt-link>
+        <a
+          href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
+          class="contact-btn text-uppercase mr-2"
+          target="_blank"
+        >Resume</a>
       </v-app-bar>
     </nav>
     <v-content>
@@ -150,6 +154,14 @@ nav {
 
   .contact-btn:hover {
     @include btnHover();
+  }
+}
+
+@media (max-width: 600px) {
+  .v-navigation-drawer {
+    ul {
+      margin-top: 0px;
+    }
   }
 }
 </style>

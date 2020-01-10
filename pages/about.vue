@@ -22,8 +22,8 @@
       <v-col
         sm12
         md6
-        offset-lg="1"
-        class="d-flex justify-center align-center flex-wrap flex-lg-nowrap"
+        offset-sm="1"
+        class="d-flex justify-center align-center flex-wrap flex-md-nowrap"
       >
         <div class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>

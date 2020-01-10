@@ -1,6 +1,6 @@
-import colors from 'vuetify/es5/util/colors'
+const colors = require('vuetify/es5/util/colors').default
 
-export default {
+module.exports = {
   mode: 'universal',
   /*
    ** Headers of the page
@@ -15,8 +15,13 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
+        name: 'Tajeddine',
+        content: 'Full Stack Javascript Developer.'
+      },
+      {
+        name: 'keywords',
+        content:
+          'html, javascript, vue, nuxt, portfolio, full stack js, software developer'
       }
     ],
     link: [

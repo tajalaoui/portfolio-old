@@ -8,10 +8,10 @@
             Hi,
             <br />I'm
             <span class="brand-span">Taj</span>eddine,
-            <br />web developer.
+            <br />software developer.
           </h1>
-          <div class="text-intro-skills font-weight-light" style="paddingTop: 27px">
-            <p>Full Stack Javascript Developer</p>
+          <div class="text-intro-skills" style="paddingTop: 27px">
+            <p class="font-weight-light">Full Stack Javascript Developer</p>
           </div>
           <nuxt-link class="text-uppercase contact-btn mt-2" to="/contact">contact me</nuxt-link>
         </div>
@@ -54,7 +54,7 @@ export default {}
 
   .text-intro-skills {
     font-family: 'Open Sans', sans-serif;
-    color: #868686;
+    color: rgb(175, 175, 175);
     letter-spacing: 3px;
   }
 
