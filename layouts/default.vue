@@ -157,7 +157,7 @@ nav {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .v-navigation-drawer {
     ul {
       margin-top: 0px;
