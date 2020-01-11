@@ -1,3 +1,4 @@
+require('dotenv/config')
 const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
@@ -30,8 +31,8 @@ async function start() {
   // * SETING UP.
   const auth = {
     auth: {
-      api_key: '2529a13b340ea29e4a496405b491a20d-713d4f73-4da6d23f',
-      domain: 'sandbox4567862060aa46cf92b970c42b8c73c0.mailgun.org'
+      api_key: process.env.API_KEY,
+      domain: process.env.DOMAIN
     }
   }
 
@@ -52,7 +53,7 @@ async function start() {
 
     let mailOptions = {
       from: `portfolio ${req.body.email}`,
-      to: 'Tajeddine-dev@hotmail.com',
+      to: process.env.MAIL,
       subject: req.body.subject,
       html: output
     }

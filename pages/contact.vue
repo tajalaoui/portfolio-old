@@ -25,7 +25,7 @@
         <!-- I MODIFIED THIS. -->
         <v-text-field
           v-model="subject"
-          :counter="15"
+          :counter="25"
           :rules="subjectRules"
           label="Subject"
           required
@@ -73,7 +73,7 @@ export default {
     ],
     subjectRules: [
       v => !!v || 'Subject is required',
-      v => (v && v.length <= 15) || 'Subject must be less than 15 characters'
+      v => (v && v.length <= 25) || 'Subject must be less than 25 characters'
     ],
     messageRules: [
       v => !!v || 'Message is required',
@@ -122,7 +122,7 @@ h1 {
 }
 
 .alerts {
-  width: 65%;
+  width: 66%;
   transition: 3s ease;
 }
 

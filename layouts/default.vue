@@ -162,6 +162,17 @@ nav {
     ul {
       margin-top: 0px;
     }
+    .nav-social-icons {
+      margin-bottom: 25px !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .v-navigation-drawer {
+    .nav-social-icons {
+      margin-bottom: 55px !important;
+    }
   }
 }
 </style>

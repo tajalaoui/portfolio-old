@@ -2,7 +2,7 @@
   <v-container fill-height>
     <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row align-content="center">
-      <v-col sm12 md6 offset-md="1">
+      <v-col sm12 md6 offset-sm="1">
         <div class="text-intro">
           <h1 class="font-weight-bold display-3">
             Hi,
