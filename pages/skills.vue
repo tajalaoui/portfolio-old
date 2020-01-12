@@ -37,7 +37,7 @@ export default {
       images: [
         { url: '/1.svg', alt: 'nodejs' },
         { url: '/2.svg', alt: 'vuejs' },
-        { url: '/3.png', alt: 'nuxtjs' },
+        { url: '/3.svg', alt: 'nuxtjs' },
         { url: '/4.svg', alt: 'vuetify' },
         { url: '/5.svg', alt: 'mongodb' },
         { url: '/6.svg', alt: 'express' },

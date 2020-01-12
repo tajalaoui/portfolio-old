@@ -105,6 +105,17 @@ export default {
           console.log(error)
         })
     }
+  },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Contact Me'
+        }
+      ]
+    }
   }
 }
 </script>

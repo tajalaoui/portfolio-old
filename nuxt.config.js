@@ -6,7 +6,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'Taj - Full Stack Js',
+    title: 'TAJEDDINE - Full Stack Js',
     htmlAttrs: {
       lang: 'en'
     },
@@ -15,13 +15,8 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
-        name: 'Tajeddine',
+        name: 'description',
         content: 'Full Stack Javascript Developer.'
-      },
-      {
-        name: 'keywords',
-        content:
-          'html, javascript, vue, nuxt, portfolio, full stack js, software developer'
       }
     ],
     link: [
