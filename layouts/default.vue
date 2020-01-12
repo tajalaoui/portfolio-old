@@ -163,7 +163,7 @@ nav {
       margin-top: 0px !important;
     }
     .nav-social-icons {
-      margin-top: -45px !important;
+      margin-bottom: 89px !important;
     }
   }
 }
@@ -171,7 +171,7 @@ nav {
 @media (max-width: 600px) {
   .v-navigation-drawer {
     .nav-social-icons {
-      margin-top: -65px !important;
+      margin-bottom: 125px !important;
     }
   }
 }
