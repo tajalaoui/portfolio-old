@@ -2,7 +2,7 @@
   <v-container fill-height>
     <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row>
-      <v-col sm12 md6 offset-lg="1">
+      <v-col sm12 md6 offset-lg="1" class="left-side">
         <h1 class="display-3 font-weight-bold">About me</h1>
         <p style="paddingTop: 27px">
           Professionally connected with the information technology
@@ -18,12 +18,11 @@
           <br />and working on ambitious projects with positive people.
         </p>
       </v-col>
-      <!-- FLEX WRAP PROBLEMS -->
       <v-col
         sm12
         md6
         offset-sm="1"
-        class="d-flex justify-center align-center flex-wrap flex-md-nowrap"
+        class="d-flex justify-center align-center flex-wrap flex-md-nowrap right-side"
       >
         <div class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
@@ -79,6 +78,16 @@ h1 {
   .icon:hover {
     color: $secondary-color;
     transition: $transition;
+  }
+}
+
+@media (max-width: 900px) {
+  .left-side,
+  .right-side {
+    margin: 35px 0;
+  }
+  .right-side {
+    margin-top: 15%;
   }
 }
 </style>
