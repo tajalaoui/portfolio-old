@@ -160,10 +160,10 @@ nav {
 @media (max-width: 900px) {
   .v-navigation-drawer {
     ul {
-      margin-top: 0px;
+      margin-top: 0px !important;
     }
     .nav-social-icons {
-      // margin-bottom: 25px !important;
+      margin-top: -45px !important;
     }
   }
 }
@@ -171,7 +171,7 @@ nav {
 @media (max-width: 600px) {
   .v-navigation-drawer {
     .nav-social-icons {
-      // margin-bottom: 55px !important;
+      margin-top: -65px !important;
     }
   }
 }
