@@ -18,7 +18,7 @@
         @submit.prevent="validate"
         lazy-validation
         dark
-        netlify
+        data-netlify="true"
       >
         <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Name" required></v-text-field>
 
@@ -42,6 +42,9 @@
         ></v-textarea>
         <!-- I DID AT CLICK PREVENT ON SUBMIT. -->
         <button large :disabled="!valid" color="success" class="mr-4 button" type="submit">Send</button>
+        <div class="recaptcha">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
       </v-form>
     </v-row>
     <span class="tags bottom-tags">
