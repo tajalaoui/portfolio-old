@@ -16,7 +16,7 @@
             href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
             target="_blank"
           >Linkedin</a> profile for more info or
-          <nuxt-link to="/contact">Contact </nuxt-link>me.
+          <nuxt-link to="/contact">Contact</nuxt-link>me.
         </p>
       </v-col>
       <v-col class="d-flex justify-center align-center flex-wrap" sm12 md6 offset-md="1">
@@ -44,6 +44,17 @@ export default {
         { url: '/7.svg', alt: 'git' },
         { url: '/8.svg', alt: 'html' },
         { url: '/9.svg', alt: 'scss' }
+      ]
+    }
+  },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Skills Page'
+        }
       ]
     }
   }

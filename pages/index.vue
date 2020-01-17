@@ -43,7 +43,19 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Home Page'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

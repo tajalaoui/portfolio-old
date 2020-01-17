@@ -12,6 +12,18 @@
 
 <script>
 export default {
-  components: {}
+  components: {
+    head() {
+      return {
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'My Work'
+          }
+        ]
+      }
+    }
+  }
 }
 </script>

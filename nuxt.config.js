@@ -17,15 +17,15 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content: 'Full Stack Javascript Developer.'
+      },
+      {
+        name: 'keywords',
+        content:
+          'javascript, vue, nuxt, full stack javascript, software developer, portfolio'
       }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap'
-      },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'
