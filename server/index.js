@@ -52,7 +52,8 @@ async function start() {
     let transporter = nodemailer.createTransport(nodemailerMailGun(auth))
 
     let mailOptions = {
-      from: `portfolio ${req.body.email}`,
+      replyTo: req.body.email,
+      from: process.env.MAIL,
       to: process.env.MAIL,
       subject: req.body.subject,
       html: output
