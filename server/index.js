@@ -29,12 +29,16 @@ async function start() {
   app.use(bodyParser.urlencoded({ extended: false }))
 
   // * SETING UP.
-  const auth = {
+  const smtpAuth = {
+    host: "smtp.mailgun.org",
+    port: 587,
+    secure: false, // upgrade later with STARTTLS
     auth: {
-      api_key: process.env.API_KEY,
-      domain: process.env.DOMAIN
+      user: "tajeddine@mg.devtaj.com",
+      pass: "325d99c2be255190ef32526985c0d0e6-074fa10c-5a05494e"
     }
   }
+    
 
   // * SENDING MAIL.
   app.post('/server', (req, res) => {
@@ -49,7 +53,7 @@ async function start() {
     <h3>Message</h3>
     <p>${req.body.message}</p>
   `
-    let transporter = nodemailer.createTransport(nodemailerMailGun(auth))
+    let transporter = nodemailer.createTransport(smtpAuth)
 
     let mailOptions = {
       replyTo: req.body.email,

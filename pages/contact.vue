@@ -2,7 +2,7 @@
   <v-container>
     <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row class="d-flex justify-center">
-      <h1 class="display-3 font-weight-bold">Contact me</h1>
+      <h1 class="font-weight-bold">Contact me</h1>
     </v-row>
     <div class="alerts mx-auto">
       <transition name="show">
@@ -18,7 +18,6 @@
         @submit.prevent="validate"
         lazy-validation
         dark
-        data-netlify="true"
       >
         <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Name" required></v-text-field>
 

@@ -1,50 +1,9 @@
 <template>
   <v-app>
     <nav>
-      <v-navigation-drawer color="grey darken-3" v-model="drawer" app>
-        <ul>
-          <li>
-            <nuxt-link to="/">
-              <icon class="icon" icon="home" />Home
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/about">
-              <icon class="icon" icon="user" />About
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/skills">
-              <icon class="icon" icon="code" />Skills
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/portfolio">
-              <icon class="icon" icon="eye" />My Work
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/contact">
-              <icon class="icon" icon="envelope" />Contact
-            </nuxt-link>
-          </li>
-        </ul>
+      <v-navigation-drawer color="grey darken-3" v-model="drawer" app></v-navigation-drawer>
 
-        <div class="d-flex justify-center align-end" style="height: 70%">
-          <a href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/" target="_blank">
-            <icon class="icon nav-social-icons linkedin-icon" :icon="['fab', 'linkedin']" />
-          </a>
-          <a href="https://github.com/SSaiken" target="_blank">
-            <icon class="icon nav-social-icons github-icon" :icon="['fab', 'github']" />
-          </a>
-          <a href="https://www.instagram.com/_tajeddine/" target="_blank">
-            <icon class="icon nav-social-icons instagram-icon" :icon="['fab', 'instagram']" />
-          </a>
-        </div>
-      </v-navigation-drawer>
-
-      <v-app-bar color="black" flat dark app>
-        <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar color="transparent" flat dark app>
         <v-toolbar-title class="text-uppercase navbar-brand">
           <nuxt-link class="brand-name white--text" to="/">
             <span class="brand-span">Taj</span>
@@ -52,9 +11,16 @@
           </nuxt-link>
         </v-toolbar-title>
         <v-spacer></v-spacer>
+        <div class="app-bar-links">
+          <nuxt-link to="/">Home</nuxt-link>
+          <nuxt-link to="/about">About</nuxt-link>
+          <nuxt-link to="/skills">Skills</nuxt-link>
+          <nuxt-link to="/portfolio">My Work</nuxt-link>
+          <nuxt-link to="/contact">Contact</nuxt-link>
+        </div>
         <a
           href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
-          class="contact-btn text-uppercase mr-2"
+          class="contact-btn resume-btn text-uppercase mr-2"
           target="_blank"
         >Resume</a>
       </v-app-bar>
@@ -89,39 +55,20 @@ html {
 
 nav {
   text-decoration: none;
+  a {
+    color: $white;
+  }
 
-  .v-navigation-drawer {
-    a {
-      color: $white;
-    }
+  .app-bar-links > a {
+    margin: 0 23px;
+  }
 
-    ul {
-      padding: 0;
-      margin-top: 20px;
+  .app-bar-links {
+    margin-right: 4%;
 
-      .icon {
-        margin: 0 13px;
-      }
-
-      li {
-        font-size: 1.3rem;
-        list-style: none;
-        font-family: 'Raleway', sans-serif;
-        color: $white;
-        padding: 7px 23px;
-      }
-
-      a:hover,
-      li:hover {
-        color: $secondary-color;
-        transition: $transition;
-      }
-    }
-
-    .nav-social-icons {
+    a:hover {
       color: $secondary-color;
-      font-size: 1.5rem;
-      margin: 0 11px;
+      transition: $transition;
     }
   }
 
@@ -143,6 +90,8 @@ nav {
   }
 
   .brand-name {
+    font-family: 'Odibee Sans';
+    letter-spacing: 1.3px;
     .brand-span {
       color: $secondary-color;
     }
@@ -157,19 +106,14 @@ nav {
   }
 }
 
-@media (max-width: 900px) {
-  .v-navigation-drawer {
-    .nav-social-icons {
-      margin-bottom: 105px !important;
-    }
+@media (min-width: 900px) {
+  // TODO DO THE SAME FOR H1
+  .navbar-brand {
+    margin-left: 3.3%;
   }
-}
 
-@media (max-width: 600px) {
-  .v-navigation-drawer {
-    .nav-social-icons {
-      margin-bottom: 155px !important;
-    }
+  .resume-btn {
+    margin-right: 3.3% !important;
   }
 }
 </style>

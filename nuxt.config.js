@@ -28,12 +28,8 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'
-      },
-      {
-        rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=La+Belle+Aurore&display=swap'
+          'https://fonts.googleapis.com/css?family=La+Belle+Aurore|Odibee Sans|Montserrat|Montserrat:400,500,700,800|Open+Sans&display=swap" rel="stylesheet'
       }
     ]
   },

@@ -2,12 +2,12 @@
   <v-container fill-height>
     <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row>
-      <v-col sm12 md6 offset-md="1">
-        <h1 class="display-3 font-weight-bold">Skills & Experience</h1>
+      <v-col sm12 md6>
+        <h1 class="font-weight-bold">Skills & Experience</h1>
         <p style="paddingTop: 27px">I specialize in both client side & server side.</p>
         <p>
           HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, NOSQL
-          <br />building small and medium web apps
+          <br />building small to medium web apps
           <br />with Vue & Nuxt and material design with Vuetify.
         </p>
         <p>
@@ -16,7 +16,7 @@
             href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
             target="_blank"
           >Linkedin</a> profile for more info or
-          <nuxt-link to="/contact">Contact</nuxt-link>me.
+          <nuxt-link to="/contact">Contact</nuxt-link> me.
         </p>
       </v-col>
       <v-col class="d-flex justify-center align-center flex-wrap" sm12 md6 offset-md="1">

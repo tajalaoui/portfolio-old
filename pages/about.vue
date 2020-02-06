@@ -2,8 +2,8 @@
   <v-container fill-height>
     <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row>
-      <v-col sm12 md6 offset-lg="1" class="left-side">
-        <h1 class="display-3 font-weight-bold">About me</h1>
+      <v-col sm12 md6  class="left-side">
+        <h1 class="font-weight-bold">About me</h1>
         <p style="paddingTop: 27px">
           Professionally connected with the information technology
           <br />for many years.

@@ -1,10 +1,10 @@
 @mixin btn {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: $secondary-color;
   display: inline-block !important;
   border: 1px solid $secondary-color;
   border-radius: 3px;
-  padding: 8px 12px;
+  padding: 11px 15px;
   letter-spacing: 5px;
 }
 
@@ -21,7 +21,7 @@
   color: $tag-color;
   font-size: $tag-size;
   position: absolute;
-  margin-top: -35px;
+  margin-top: -11px;
   display: block;
 }
 
@@ -32,5 +32,5 @@
   font-size: $tag-size;
   position: absolute;
   display: block;
-  margin-top: -18px;
+  margin-top: -11px;
 }
