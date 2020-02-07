@@ -29,7 +29,7 @@ module.exports = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=La+Belle+Aurore|Odibee Sans|Montserrat|Montserrat:400,500,700,800|Open+Sans&display=swap" rel="stylesheet'
+          'https://fonts.googleapis.com/css?family=Odibee Sans|Montserrat|Montserrat:400,500,600,700,800|Open+Sans&display=swap" rel="stylesheet'
       }
     ]
   },

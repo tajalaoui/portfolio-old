@@ -1,10 +1,9 @@
 <template>
   <v-container fill-height>
-    <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row>
       <v-col sm12 md6>
         <h1 class="font-weight-bold">Skills & Experience</h1>
-        <p style="paddingTop: 27px">I specialize in both client side & server side.</p>
+        <p style="paddingTop: 25px">I specialize in both client side & server side.</p>
         <p>
           HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, NOSQL
           <br />building small to medium web apps
@@ -16,17 +15,30 @@
             href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
             target="_blank"
           >Linkedin</a> profile for more info or
-          <nuxt-link to="/contact">Contact</nuxt-link> me.
+          <nuxt-link to="/contact">Contact</nuxt-link>me.
         </p>
       </v-col>
       <v-col class="d-flex justify-center align-center flex-wrap" sm12 md6 offset-md="1">
-        <img v-for="(image, index) in images" :key="index" :src="image.url" :alt="image.alt" />
+        <v-card color="#141414">
+          <v-card-text class="card-text text-center">Front End</v-card-text>
+          <img
+            v-for="(image, index) in frontEndImages"
+            :key="index"
+            :src="image.url"
+            :alt="image.alt"
+          />
+        </v-card>
+        <v-card color="#141414">
+          <v-card-text class="card-text text-center">Back End</v-card-text>
+          <img
+            v-for="(image, index) in backEndImages"
+            :key="index"
+            :src="image.url"
+            :alt="image.alt"
+          />
+        </v-card>
       </v-col>
     </v-row>
-    <span class="tags bottom-tags">
-      &nbsp;&nbsp;&nbsp;&lt;/body&gt;
-      <br />&lt;/html&gt;
-    </span>
   </v-container>
 </template>
 
@@ -34,16 +46,17 @@
 export default {
   data() {
     return {
-      images: [
-        { url: '/1.svg', alt: 'nodejs' },
+      frontEndImages: [
         { url: '/2.svg', alt: 'vuejs' },
         { url: '/3.svg', alt: 'nuxtjs' },
         { url: '/4.svg', alt: 'vuetify' },
-        { url: '/5.svg', alt: 'mongodb' },
+        { url: '/7.svg', alt: 'html' },
+        { url: '/8.svg', alt: 'scss' }
+      ],
+      backEndImages: [
+        { url: '/1.svg', alt: 'nodejs' },
         { url: '/6.svg', alt: 'express' },
-        { url: '/7.svg', alt: 'git' },
-        { url: '/8.svg', alt: 'html' },
-        { url: '/9.svg', alt: 'scss' }
+        { url: '/5.svg', alt: 'mongodb' }
       ]
     }
   },
@@ -78,5 +91,15 @@ img {
 a {
   color: $secondary-color !important;
   text-decoration: none;
+}
+
+.v-card {
+  border: 2px solid $secondary-color !important;
+  border-radius: 50px;
+  padding: 7px;
+  margin: 11px;
+  .card-text {
+    color: rgb(41, 247, 9);
+  }
 }
 </style>

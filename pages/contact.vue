@@ -1,6 +1,5 @@
 <template>
   <v-container>
-    <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row class="d-flex justify-center">
       <h1 class="font-weight-bold">Contact me</h1>
     </v-row>
@@ -19,11 +18,25 @@
         lazy-validation
         dark
       >
-        <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Name" required></v-text-field>
+        <v-text-field
+          color="rgb(41, 247, 9)"
+          v-model="name"
+          :counter="10"
+          :rules="nameRules"
+          label="Name"
+          required
+        ></v-text-field>
 
-        <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
+        <v-text-field
+          color="rgb(41, 247, 9)"
+          v-model="email"
+          :rules="emailRules"
+          label="E-mail"
+          required
+        ></v-text-field>
         <!-- I MODIFIED THIS. -->
         <v-text-field
+          color="rgb(41, 247, 9)"
           v-model="subject"
           :counter="25"
           :rules="subjectRules"
@@ -32,6 +45,7 @@
         ></v-text-field>
 
         <v-textarea
+          color="rgb(41, 247, 9)"
           class="mb-5"
           v-model="message"
           label="Message"
@@ -40,13 +54,9 @@
           required
         ></v-textarea>
         <!-- I DID AT CLICK PREVENT ON SUBMIT. -->
-        <button large :disabled="!valid" color="success" class="mr-4 button" type="submit">Send</button>
+        <button class="mr-4 button" :disabled="!valid" color="success" type="submit">Send</button>
       </v-form>
     </v-row>
-    <span class="tags bottom-tags">
-      &nbsp;&nbsp;&nbsp;&lt;/body&gt;
-      <br />&lt;/html&gt;
-    </span>
   </v-container>
 </template>
 

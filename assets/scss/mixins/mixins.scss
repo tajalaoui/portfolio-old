@@ -1,5 +1,4 @@
 @mixin btn {
-  font-family: 'Montserrat', sans-serif;
   color: $secondary-color;
   display: inline-block !important;
   border: 1px solid $secondary-color;
@@ -9,28 +8,25 @@
 }
 
 @mixin btnHover {
-  color: #222222;
+  color: #141414;
   border-color: $secondary-color;
   background-color: $secondary-color;
   transition: $transition;
 }
 
-@mixin h1Before {
-  content: '<h1>';
-  font-family: 'La Belle Aurore', cursive;
-  color: $tag-color;
-  font-size: $tag-size;
-  position: absolute;
-  margin-top: -11px;
-  display: block;
+@mixin contactBtn {
+  color: #141414;
+  display: inline-block !important;
+  border: 1px solid $secondary-color;
+  background-color: $secondary-color;
+  border-radius: 3px;
+  padding: 11px 15px;
+  letter-spacing: 5px;
 }
 
-@mixin h1After {
-  content: '<h1/>';
-  font-family: 'La Belle Aurore', cursive;
-  color: $tag-color;
-  font-size: $tag-size;
-  position: absolute;
-  display: block;
-  margin-top: -11px;
+@mixin contactBtnHover {
+  color: $secondary-color;
+  border-color: $secondary-color;
+  background-color: #141414;
+  transition: $transition;
 }

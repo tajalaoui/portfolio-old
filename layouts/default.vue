@@ -1,30 +1,22 @@
 <template>
   <v-app>
-    <nav>
-      <v-navigation-drawer color="grey darken-3" v-model="drawer" app></v-navigation-drawer>
-
-      <v-app-bar color="transparent" flat dark app>
-        <v-toolbar-title class="text-uppercase navbar-brand">
-          <nuxt-link class="brand-name white--text" to="/">
-            <span class="brand-span">Taj</span>
-            <span>Eddine</span>
-          </nuxt-link>
-        </v-toolbar-title>
-        <v-spacer></v-spacer>
-        <div class="app-bar-links">
-          <nuxt-link to="/">Home</nuxt-link>
-          <nuxt-link to="/about">About</nuxt-link>
-          <nuxt-link to="/skills">Skills</nuxt-link>
-          <nuxt-link to="/portfolio">My Work</nuxt-link>
-          <nuxt-link to="/contact">Contact</nuxt-link>
-        </div>
-        <a
-          href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
-          class="contact-btn resume-btn text-uppercase mr-2"
-          target="_blank"
-        >Resume</a>
-      </v-app-bar>
-    </nav>
+    <v-app-bar color="transparent" flat dark app>
+      <v-toolbar-title class="text-uppercase navbar-brand">
+        <nuxt-link class="brand-name white--text" to="/">
+          <span class="brand-span">Taj</span>
+          <span>Eddine</span>
+        </nuxt-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <div class="app-bar-links hidden-sm-and-down">
+        <nuxt-link v-for="item in menu" :key="item.to" :to="item.to" flat>{{item.title}}</nuxt-link>
+      </div>
+      <a
+        href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
+        class="contact-btn resume-btn text-uppercase mr-2"
+        target="_blank"
+      >Resume</a>
+    </v-app-bar>
     <v-content>
       <nuxt />
     </v-content>
@@ -36,7 +28,14 @@ export default {
   name: 'nav-bar',
   data() {
     return {
-      drawer: false
+      sideNav: false,
+      menu: [
+        { to: '/', title: 'Home' },
+        { to: '/about', title: 'About' },
+        { to: '/skills', title: 'Skills' },
+        { to: '/portfolio', title: 'My Work' },
+        { to: '/contact', title: 'Contact' }
+      ]
     }
   }
 }
@@ -53,18 +52,20 @@ html {
   box-sizing: border-box;
 }
 
-nav {
-  text-decoration: none;
+.v-app-bar {
   a {
     color: $white;
   }
 
   .app-bar-links > a {
-    margin: 0 23px;
+    font-size: 1.5rem;
+    margin: 0 9px;
   }
 
   .app-bar-links {
+    font-family: 'montserrat';
     margin-right: 4%;
+    letter-spacing: 2px;
 
     a:hover {
       color: $secondary-color;
@@ -72,24 +73,8 @@ nav {
     }
   }
 
-  .v-app-bar {
-    .icon {
-      color: $white;
-      font-size: 1.2rem;
-      margin: 0 0.5rem;
-    }
-
-    .icon:hover {
-      color: $secondary-color;
-      transition: $transition;
-    }
-
-    .nav-icon:hover {
-      color: $secondary-color;
-    }
-  }
-
   .brand-name {
+    font-size: 1.5rem;
     font-family: 'Odibee Sans';
     letter-spacing: 1.3px;
     .brand-span {

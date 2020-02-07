@@ -1,10 +1,9 @@
 <template>
   <v-container fill-height>
-    <span class="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
     <v-row>
-      <v-col sm12 md6  class="left-side">
+      <v-col sm12 md6>
         <h1 class="font-weight-bold">About me</h1>
-        <p style="paddingTop: 27px">
+        <p style="paddingTop: 25px">
           Professionally connected with the information technology
           <br />for many years.
         </p>
@@ -22,7 +21,7 @@
         sm12
         md6
         offset-sm="1"
-        class="d-flex justify-center align-center flex-wrap flex-md-nowrap right-side"
+        class="d-flex justify-center align-center flex-wrap flex-md-nowrap"
       >
         <div class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
@@ -33,21 +32,17 @@
           </p>
         </div>
         <div class="specialities">
-          <icon class="icon" icon="mobile-alt"></icon>
-          <h3>Responsive</h3>
-          <p>My layouts will work on any device, big or small.</p>
-        </div>
-        <div class="specialities">
           <icon class="icon" icon="lightbulb"></icon>
           <h3>Intuitive</h3>
           <p>Strong preference for easy to use, intuitive UX/UI.</p>
         </div>
+        <div class="specialities">
+          <icon class="icon" icon="mobile-alt"></icon>
+          <h3>Responsive</h3>
+          <p>My layouts will work on any device, big or small.</p>
+        </div>
       </v-col>
     </v-row>
-    <span class="tags bottom-tags">
-      &nbsp;&nbsp;&nbsp;&lt;/body&gt;
-      <br />&lt;/html&gt;
-    </span>
   </v-container>
 </template>
 
@@ -90,16 +85,6 @@ h1 {
   .icon:hover {
     color: $secondary-color;
     transition: $transition;
-  }
-}
-
-@media (max-width: 900px) {
-  .left-side,
-  .right-side {
-    margin: 35px 0;
-  }
-  .right-side {
-    margin-top: 15%;
   }
 }
 </style>

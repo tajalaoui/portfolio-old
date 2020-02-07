@@ -19,18 +19,11 @@ body {
 
 .v-content {
   font-family: 'Montserrat', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  background-color: #181818;
+  background-color: #141414;
 }
 
 a {
   text-decoration: none;
-}
-
-ul {
-  li {
-    list-style: none;
-    cursor: pointer;
-  }
 }
 
 h1 {
@@ -40,22 +33,6 @@ h1 {
 h1,
 p:hover {
   cursor: default;
-}
-
-// HTML TAGS.
-.top-tags {
-  top: 7px;
-}
-
-.tags {
-  color: $tag-color;
-  position: absolute;
-  bottom: 7px;
-  left: 11px;
-  font-size: $tag-size;
-  font-family: 'La Belle Aurore', cursive;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 
 .page-enter-active,
