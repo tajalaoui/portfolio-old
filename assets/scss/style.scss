@@ -9,8 +9,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100vh !important;
+  width: 100vw !important;
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +27,8 @@ a {
 }
 
 h1 {
-  font-size: 3.1rem;
+  font-size: 3.3rem;
+  letter-spacing: 2px;
 }
 
 h1,
@@ -47,8 +48,9 @@ p:hover {
   transform: scale(0);
 }
 
-@media (max-width: 900px) {
-  .tags {
-    display: none;
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
   }
 }

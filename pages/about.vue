@@ -21,7 +21,7 @@
         sm12
         md6
         offset-sm="1"
-        class="d-flex justify-center align-center flex-wrap flex-md-nowrap"
+        class="d-flex justify-center align-center flex-wrap flex-lg-nowrap"
       >
         <div class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
@@ -70,12 +70,12 @@ h1 {
 }
 
 .specialities {
-  margin: 0 11px;
+  margin: 0 9px;
   text-align: center;
 
   h3 {
     color: $secondary-color;
-    margin: 11px 0;
+    margin: 9px 0;
   }
 
   .icon {

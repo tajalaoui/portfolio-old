@@ -1,11 +1,11 @@
 <template>
   <v-container fill-height>
     <v-row class="align-center">
-      <v-col sm12 md6>
+      <v-col sm12 md6 offset="1" offset-lg="0">
         <div class="text-intro">
           <h3>Hi There</h3>
           <h1>
-            <div class="font-weight-bold">
+            <div class="font-weight-bold text-uppercase">
               I'm
               <span class="brand-span">Taj</span>eddine
             </div>
@@ -26,13 +26,13 @@
           </div>
           <div class="buttons mt-3">
             <nuxt-link class="text-uppercase check-work-btn" to="/portfolio">check my work</nuxt-link>
-            <nuxt-link class="text-uppercase contact-btn ml-5" to="/contact">contact me</nuxt-link>
+            <nuxt-link class="text-uppercase contact-btn" to="/contact">contact me</nuxt-link>
           </div>
         </div>
       </v-col>
-      <v-col sm12 md6 offset="1">
-        <div class="svg d-flex justify-center align-center">
-          <img src="/home/home-illustration.svg" alt="programmer" />
+      <v-col sm12 md6 offset-md="1">
+        <div class="svg d-md-flex justify-center align-center hidden-sm-and-down">
+          <img src="/home/home-illustration.svg" alt="programmer image" />
         </div>
       </v-col>
     </v-row>
@@ -103,14 +103,32 @@ export default {
 }
 
 img {
-  height: 650px;
-  width: 650px;
+  height: 610px;
+  width: 610px;
 }
 
-@media (max-width: 900) {
-  img {
-    height: 400px !important;
-    width: 400px !important;
+@media (max-width: 900px) {
+  .text-intro {
+    .contact-btn {
+      margin-top: 11px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .text-intro {
+    .contact-btn {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 1265px) {
+  .text-intro {
+    .contact-btn {
+      margin-left: 0px;
+      margin-top: 11px;
+    }
   }
 }
 </style>

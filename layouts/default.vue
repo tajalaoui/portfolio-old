@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar color="transparent" flat dark app>
+    <v-app-bar color="#141414" flat app>
+      <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase navbar-brand">
         <nuxt-link class="brand-name white--text" to="/">
           <span class="brand-span">Taj</span>
@@ -9,7 +10,7 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <div class="app-bar-links hidden-sm-and-down">
-        <nuxt-link v-for="item in menu" :key="item.to" :to="item.to" flat>{{item.title}}</nuxt-link>
+        <nuxt-link v-for="item in menu" :key="item.title" :to="item.to" flat>{{item.title}}</nuxt-link>
       </div>
       <a
         href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
@@ -17,6 +18,11 @@
         target="_blank"
       >Resume</a>
     </v-app-bar>
+    <v-navigation-drawer v-model="drawer" temporary dark app>
+      <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 35px;">
+        <nuxt-link v-for="item in menu" :key="item.title" :to="item.to" flat>{{item.title}}</nuxt-link>
+      </div>
+    </v-navigation-drawer>
     <v-content>
       <nuxt />
     </v-content>
@@ -28,7 +34,7 @@ export default {
   name: 'nav-bar',
   data() {
     return {
-      sideNav: false,
+      drawer: false,
       menu: [
         { to: '/', title: 'Home' },
         { to: '/about', title: 'About' },
@@ -52,19 +58,18 @@ html {
   box-sizing: border-box;
 }
 
-.v-app-bar {
+.v-toolbar,
+.v-navigation-drawer {
   a {
     color: $white;
   }
 
   .app-bar-links > a {
     font-size: 1.5rem;
-    margin: 0 9px;
   }
 
   .app-bar-links {
     font-family: 'montserrat';
-    margin-right: 4%;
     letter-spacing: 2px;
 
     a:hover {
@@ -91,14 +96,43 @@ html {
   }
 }
 
-@media (min-width: 900px) {
-  // TODO DO THE SAME FOR H1
-  .navbar-brand {
-    margin-left: 3.3%;
-  }
+@media (min-width: 600px) {
+  .v-toolbar {
+    .app-bar-links > a {
+      margin: 0 9px;
+    }
 
-  .resume-btn {
-    margin-right: 3.3% !important;
+    .app-bar-links {
+      margin-right: 3%;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  // TODO DO THE SAME FOR H1
+  // .navbar-brand {
+  //   margin-left: 3%;
+  // }
+
+  // .resume-btn {
+  //   margin-right: 3% !important;
+  // }
+
+  .v-app-bar {
+    .nav-icon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .v-app-bar {
+    .app-bar-links {
+      display: none;
+    }
+    .brand-name {
+      font-size: 1.1rem;
+    }
   }
 }
 </style>
