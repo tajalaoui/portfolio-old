@@ -1,11 +1,11 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col sm12 md6>
-        <h1 class="font-weight-bold">Skills & Experience</h1>
+      <v-col md6>
+        <h1>Skills & Experience</h1>
         <p style="paddingTop: 25px">I specialize in both client side & server side.</p>
         <p>
-          HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, NOSQL
+          HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, MONGODB
           <br />building small to medium web apps
           <br />with Vue & Nuxt and material design with Vuetify.
         </p>
@@ -15,10 +15,11 @@
             href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
             target="_blank"
           >Linkedin</a> profile for more info or
-          <nuxt-link to="/contact">Contact</nuxt-link> me.
+          <nuxt-link to="/contact">Contact</nuxt-link>
+          <span>me.</span>
         </p>
       </v-col>
-      <v-col class="d-flex justify-center align-center flex-wrap" sm12 md6 offset-md="1">
+      <v-col class="d-flex justify-center align-center flex-wrap" md6 offset-md="1">
         <v-card color="#141414">
           <v-card-text class="card-text text-center">Front End</v-card-text>
           <img
@@ -95,7 +96,6 @@ a {
 
 .v-card {
   border: 2px solid $secondary-color !important;
-  border-radius: 50px;
   padding: 7px;
   margin: 11px;
   .card-text {

@@ -1,11 +1,11 @@
 <template>
   <v-container fill-height>
     <v-row class="align-center">
-      <v-col sm12 md6 offset="1" offset-lg="0">
+      <v-col sm12 md6 offset="1" offset-sm="3" offset-lg="0">
         <div class="text-intro">
-          <h3>Hi There</h3>
+          <h4>Hi There</h4>
           <h1>
-            <div class="font-weight-bold text-uppercase">
+            <div class="text-uppercase">
               I'm
               <span class="brand-span">Taj</span>eddine
             </div>
@@ -30,7 +30,7 @@
           </div>
         </div>
       </v-col>
-      <v-col sm12 md6 offset-md="1">
+      <v-col sm12 md6 offset="3" offset-lg="0">
         <div class="svg d-md-flex justify-center align-center hidden-sm-and-down">
           <img src="/home/home-illustration.svg" alt="programmer image" />
         </div>

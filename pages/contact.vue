@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row class="d-flex justify-center">
-      <h1 class="font-weight-bold">Contact me</h1>
+      <h1>Contact me</h1>
     </v-row>
     <div class="alerts mx-auto">
       <transition name="show">

@@ -96,7 +96,7 @@ html {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .v-toolbar {
     .app-bar-links > a {
       margin: 0 9px;
@@ -131,7 +131,7 @@ html {
       display: none;
     }
     .brand-name {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
   }
 }
