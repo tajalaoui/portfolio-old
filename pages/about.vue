@@ -17,25 +17,30 @@
           <br />and working on projects with positive people.
         </p>
       </v-col>
-      <v-col xs12 md6 offset-md="1" class="d-flex justify-center align-center flex-wrap flex-lg-nowrap">
-        <div class="specialities">
+      <v-col
+      xs12
+        md6
+        offset-md="1"
+        class="d-md-flex justify-center align-center flex-wrap flex-lg-nowrap"
+      >
+        <v-card class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
           <h3>Fast</h3>
           <p>
             Fast load times and lag free
             interaction, my highest priority.
           </p>
-        </div>
-        <div class="specialities">
+        </v-card>
+        <v-card class="specialities">
           <icon class="icon" icon="lightbulb"></icon>
           <h3>Intuitive</h3>
           <p>Strong preference for easy to use, intuitive UX/UI.</p>
-        </div>
-        <div class="specialities">
+        </v-card>
+        <v-card class="specialities">
           <icon class="icon" icon="mobile-alt"></icon>
           <h3>Responsive</h3>
           <p>My layouts will work on any device, big or small.</p>
-        </div>
+        </v-card>
       </v-col>
     </v-row>
   </v-container>

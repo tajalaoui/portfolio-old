@@ -1,9 +1,9 @@
 <template>
   <v-container fill-height>
     <v-row class="align-center">
-      <v-col sm12 md6 offset="1" offset-sm="3" offset-lg="0">
+      <v-col sm12 md6>
         <div class="text-intro">
-          <h4>Hi There</h4>
+          <h5>Hi There</h5>
           <h1>
             <div class="text-uppercase">
               I'm
@@ -31,7 +31,7 @@
         </div>
       </v-col>
       <v-col sm12 md6 offset="3" offset-lg="0">
-        <div class="svg d-md-flex justify-center align-center hidden-sm-and-down">
+        <div class="svg d-md-flex justify-center align-center">
           <img src="/home/home-illustration.svg" alt="programmer image" />
         </div>
       </v-col>
@@ -50,11 +50,6 @@ export default {
           content: 'Home Page'
         }
       ]
-    }
-  },
-  methods: {
-    menuItems() {
-      return this.menu
     }
   }
 }
@@ -103,8 +98,20 @@ export default {
 }
 
 img {
-  height: 610px;
-  width: 610px;
+  height: 650px;
+  width: 650px;
+}
+
+@media (max-width: 1263px) {
+  img {
+    display: none;
+  }
+  .text-intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 900px) {
@@ -119,15 +126,6 @@ img {
   .text-intro {
     .contact-btn {
       margin-left: 15px;
-    }
-  }
-}
-
-@media (min-width: 1265px) {
-  .text-intro {
-    .contact-btn {
-      margin-left: 0px;
-      margin-top: 11px;
     }
   }
 }

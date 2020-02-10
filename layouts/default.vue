@@ -20,12 +20,13 @@
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary dark app>
       <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 35px;">
-        <nuxt-link v-for="item in menu" :key="item.title" :to="item.to" flat>{{item.title}}</nuxt-link>
+        <nuxt-link class="my-3" v-for="item in menu" :key="item.title" :to="item.to">{{item.title}}</nuxt-link>
       </div>
     </v-navigation-drawer>
     <v-content>
       <nuxt />
     </v-content>
+    <div class="cursor"></div>
   </v-app>
 </template>
 
@@ -43,6 +44,24 @@ export default {
         { to: '/contact', title: 'Contact' }
       ]
     }
+  },
+  beforeMount() {
+    const cursor = document.querySelector('.cursor')
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute(
+        'style',
+        'top: ' + (e.pageY - 10) + 'px; left: ' + (e.pageX - 10) + 'px;'
+      )
+    })
+
+    document.addEventListener('click', () => {
+      cursor.classList.add('expand')
+
+      setTimeout(() => {
+        cursor.classList.remove('expand')
+      }, 500)
+    })
   }
 }
 </script>
@@ -79,9 +98,8 @@ html {
   }
 
   .brand-name {
-    font-size: 1.5rem;
     font-family: 'Odibee Sans';
-    letter-spacing: 1.3px;
+    letter-spacing: 1.2px;
     .brand-span {
       color: $secondary-color;
     }
@@ -98,6 +116,9 @@ html {
 
 @media (min-width: 900px) {
   .v-toolbar {
+    .navbar-brand {
+      font-size: 1.4rem;
+    }
     .app-bar-links > a {
       margin: 0 9px;
     }
@@ -109,15 +130,6 @@ html {
 }
 
 @media (min-width: 960px) {
-  // TODO DO THE SAME FOR H1
-  // .navbar-brand {
-  //   margin-left: 3%;
-  // }
-
-  // .resume-btn {
-  //   margin-right: 3% !important;
-  // }
-
   .v-app-bar {
     .nav-icon {
       display: none;

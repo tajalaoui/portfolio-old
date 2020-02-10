@@ -94,12 +94,5 @@ a {
   text-decoration: none;
 }
 
-.v-card {
-  border: 2px solid $secondary-color !important;
-  padding: 7px;
-  margin: 11px;
-  .card-text {
-    color: rgb(41, 247, 9);
-  }
-}
+
 </style>

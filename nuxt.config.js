@@ -6,7 +6,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'TAJEDDINE - Full Stack Js',
+    title: 'TAJDOE - Full Stack Js',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,15 +21,16 @@ module.exports = {
       {
         name: 'keywords',
         content:
-          'javascript, vue, nuxt, full stack javascript, software developer, portfolio'
+          'javascript, vue, nuxt, full stack javascript, software developer, portfolio, doe'
       }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
+        async: true,
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Odibee Sans|Montserrat|Montserrat:400,500,600,700,800|Open+Sans&display=swap" rel="stylesheet'
+          'https://fonts.googleapis.com/css?family=Odibee Sans:400,800|Montserrat:400,800&display=swap" rel="stylesheet'
       }
     ]
   },
@@ -47,7 +48,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/fontawesome.js'],
+  plugins: ['@/plugins/fontawesome.js', '@/plugins/customCursor.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -60,11 +61,6 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/svg'
   ],
-  webfontloader: {
-    google: {
-      families: ['Raleway:400,500,700,900']
-    }
-  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -91,7 +87,7 @@ module.exports = {
       }
     },
     defaultAssets: {
-      icons: 'md' || 'mdi' || 'fa'
+      icons: 'fa'
     }
   },
   /*
