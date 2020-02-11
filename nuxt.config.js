@@ -6,7 +6,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'TAJDOE - Full Stack Js',
+    title: 'TAJ - Full Stack Js',
     htmlAttrs: {
       lang: 'en'
     },
