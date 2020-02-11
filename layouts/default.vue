@@ -16,6 +16,7 @@
         href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
         class="contact-btn resume-btn text-uppercase mr-2"
         target="_blank"
+        rel="noopener"
       >Resume</a>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary dark app>

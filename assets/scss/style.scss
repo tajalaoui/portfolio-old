@@ -67,12 +67,13 @@ h1 {
   }
 
   .cursor {
-    width: 25px;
-    height: 25px;
-    border: 2px solid #fafafa;
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 3px solid #fafafa;
+    background-color: #757575a9;
     border-radius: 50%;
     position: absolute;
-    transition-duration: 200ms;
+    transition-duration: 110ms;
     transition-timing-function: ease-out;
     animation: cursorAnim 0.5s infinite alternate;
     pointer-events: none;
@@ -124,7 +125,7 @@ h1 {
 
   .expand {
     animation: cursorAnim3 0.5s forwards;
-    border: 2px solid $secondary-color;
+    border: 3px solid $secondary-color;
   }
 }
 

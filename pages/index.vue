@@ -14,13 +14,13 @@
             <p class="font-weight-light">software developer</p>
           </div>
           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/" target="_blank">
+            <a href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/" rel="noopener" target="_blank">
               <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
             </a>
-            <a href="https://github.com/SSaiken" target="_blank">
+            <a href="https://github.com/SSaiken" rel="noopener" target="_blank">
               <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
             </a>
-            <a href="https://www.instagram.com/_tajeddine/" target="_blank">
+            <a href="https://www.instagram.com/_tajeddine/" rel="noopener" target="_blank">
               <icon class="nav-social-icons" :icon="['fab', 'instagram']" />
             </a>
           </div>
