@@ -33,11 +33,6 @@ h1 {
   letter-spacing: 2px;
 }
 
-// h1,
-// p:hover {
-//   cursor: default;
-// }
-
 .v-card {
   border: 2px solid $secondary-color !important;
   background-color: #141414 !important;
@@ -50,7 +45,7 @@ h1 {
 
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 // ROUTING ANIMATION.
@@ -62,11 +57,14 @@ h1 {
 
 @media (min-width: 900px) {
   // * Cursor.
-  body {
+  body,
+  .buttons:hover,
+  a {
     cursor: none;
   }
 
   .cursor {
+    z-index: 99;
     width: 1.9rem;
     height: 1.9rem;
     border: 3px solid #fafafa;
@@ -102,21 +100,20 @@ h1 {
       transform: scale(1);
     }
     50% {
-      transform: scale(2);
+      transform: scale(1.9);
     }
     100% {
       transform: scale(1);
-      opacity: 0;
     }
   }
 
   .expand {
-    animation: cursorAnim3 0.5s forwards;
+    animation: cursorAnim3 0.3s forwards;
     border: 3px solid $secondary-color;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   h1 {
     font-size: 2.7rem;
     letter-spacing: 1px;
@@ -129,11 +126,12 @@ h1 {
     text-align: center;
   }
 
-  .buttons {
-    padding: 0;
-  }
-
   .v-card {
     margin: 9px 0 !important;
+  }
+
+  .col,
+  .col:nth-child(2) {
+    margin-top: 5%;
   }
 }

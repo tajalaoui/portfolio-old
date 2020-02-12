@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col xs12 md6>
+      <v-col class="ux" md6>
         <h1>About me</h1>
         <p style="paddingTop: 25px">
           Professionally connected with the information technology
@@ -18,10 +18,9 @@
         </p>
       </v-col>
       <v-col
-      xs12
+        class="d-md-flex justify-center align-center flex-wrap flex-lg-nowrap"
         md6
         offset-md="1"
-        class="d-md-flex justify-center align-center flex-wrap flex-lg-nowrap"
       >
         <v-card class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
@@ -85,6 +84,13 @@ h1 {
   .icon:hover {
     color: $secondary-color;
     transition: $transition;
+  }
+}
+
+@media (max-width: 900px) {
+  * {
+    flex-direction: column;
+    margin: 0 auto;
   }
 }
 </style>

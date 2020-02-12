@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row class="align-center">
-      <v-col sm12 md6>
+      <v-col class="ux" sm12 md6>
         <div class="text-intro">
           <h5>Hi There</h5>
           <h1>

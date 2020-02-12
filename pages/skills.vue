@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col md6>
+      <v-col class="ux" md6>
         <h1>Skills & Experience</h1>
         <p style="paddingTop: 25px">I specialize in both client side & server side.</p>
         <p>
@@ -19,7 +19,7 @@
           <span>me.</span>
         </p>
       </v-col>
-      <v-col class="d-flex justify-center align-center flex-wrap" md6 offset-md="1">
+      <v-col class="d-md-flex justify-center align-center flex-wrap text-center" md6 offset-md="1">
         <v-card color="#141414">
           <v-card-text class="card-text text-center">Front End</v-card-text>
           <img
@@ -92,5 +92,16 @@ img {
 a {
   color: $secondary-color !important;
   text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  * {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .col:nth-child(2) {
+    padding-bottom: 21%;
+  }
 }
 </style>

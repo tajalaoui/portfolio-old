@@ -61,7 +61,7 @@ export default {
 
       setTimeout(() => {
         cursor.classList.remove('expand')
-      }, 500)
+      }, 300)
     })
   }
 }
