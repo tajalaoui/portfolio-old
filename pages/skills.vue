@@ -2,8 +2,8 @@
   <v-container fill-height>
     <v-row>
       <v-col class="ux" md6>
-        <h1>Skills & Experience</h1>
-        <p style="paddingTop: 25px">I specialize in both client side & server side.</p>
+        <h1>Skills & Experiences</h1>
+        <p style="paddingTop: 21px">I specialize in both client side & server side.</p>
         <p>
           HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, MONGODB
           <br />building small to medium web apps

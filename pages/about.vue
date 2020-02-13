@@ -3,7 +3,7 @@
     <v-row>
       <v-col class="ux" md6>
         <h1>About me</h1>
-        <p style="paddingTop: 25px">
+        <p style="paddingTop: 21px">
           Professionally connected with the information technology
           <br />for many years.
         </p>
@@ -13,8 +13,8 @@
           <br />Staying fit and playing games.
         </p>
         <p>
-          Interested in working both backend / frontend projects
-          <br />and working on projects with positive people.
+          Looking forward to build amazing products <br>
+          To my clients.
         </p>
       </v-col>
       <v-col
