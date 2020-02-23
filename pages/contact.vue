@@ -134,7 +134,7 @@ export default {
 @import '@/assets/scss/style.scss';
 
 .v-form {
-  width: 65%;
+  width: 69%;
 }
 
 h1 {
@@ -143,7 +143,7 @@ h1 {
 }
 
 .alerts {
-  width: 66%;
+  width: 70%;
   transition: 3s ease;
 }
 

@@ -61,6 +61,12 @@ h1 {
     cursor: none !important;
   }
 
+  a:hover {
+    .cursor {
+      
+    }
+  }
+
   .cursor {
     z-index: 99;
     width: 1.9rem;
@@ -71,7 +77,7 @@ h1 {
     position: absolute;
     transition-duration: 50ms;
     transition-timing-function: ease-out;
-    animation: cursorAnim 0.5s infinite alternate;
+    animation: cursorAnim 0.5s ease-in-out infinite alternate;
     pointer-events: none;
   }
 

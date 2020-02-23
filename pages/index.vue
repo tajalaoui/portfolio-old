@@ -14,13 +14,17 @@
             <p class="font-weight-light">software developer</p>
           </div>
           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/" rel="noopener" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
+              rel="noopener"
+              target="_blank"
+            >
               <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
             </a>
             <a href="https://github.com/SSaiken" rel="noopener" target="_blank">
               <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
             </a>
-            <a href="https://www.instagram.com/_tajeddine/" rel="noopener" target="_blank">
+            <a href="https://www.instagram.com/_tajdoe/" rel="noopener" target="_blank">
               <icon class="nav-social-icons" :icon="['fab', 'instagram']" />
             </a>
           </div>
@@ -98,8 +102,15 @@ export default {
 }
 
 img {
-  height: 650px;
-  width: 650px;
+  height: 730px;
+  width: 730px;
+}
+
+@media (max-width: 1640px) {
+  img {
+    height: 530px;
+    width: 530px;
+  }
 }
 
 @media (max-width: 1263px) {
