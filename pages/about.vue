@@ -5,16 +5,22 @@
         <h1>About me</h1>
         <p style="paddingTop: 21px">
           Professionally connected with the information technology
-          <br />for many years.
+          <br />for many years
+          <span class="dot">.</span>
         </p>
-        <p>Self taught programmer, Passionate freelancer.</p>
+        <p>
+          Self taught programmer, Passionate freelancer
+          <span class="dot">.</span>
+        </p>
         <p>
           My hobbies are following up with tech news,
-          <br />Staying fit and playing games.
+          <br />Staying fit and playing games
+          <span class="dot">.</span>
         </p>
         <p>
-          Looking forward to build amazing products <br>
-          To my clients.
+          Looking forward to build amazing products
+          <br />For my clients
+          <span class="dot">.</span>
         </p>
       </v-col>
       <v-col
@@ -27,18 +33,27 @@
           <h3>Fast</h3>
           <p>
             Fast load times and lag free
-            interaction, my highest priority.
+            interaction, my highest priority
+            <span
+              class="dot"
+            >.</span>
           </p>
         </v-card>
         <v-card class="specialities">
           <icon class="icon" icon="lightbulb"></icon>
           <h3>Intuitive</h3>
-          <p>Strong preference for easy to use, intuitive UX/UI.</p>
+          <p>
+            Strong preference for easy to use, intuitive UX/UI
+            <span class="dot">.</span>
+          </p>
         </v-card>
         <v-card class="specialities">
           <icon class="icon" icon="mobile-alt"></icon>
           <h3>Responsive</h3>
-          <p>My layouts will work on any device, big or small.</p>
+          <p>
+            My layouts will work on any device, big or small
+            <span class="dot">.</span>
+          </p>
         </v-card>
       </v-col>
     </v-row>

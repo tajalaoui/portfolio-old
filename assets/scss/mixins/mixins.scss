@@ -1,6 +1,6 @@
 @mixin btn {
   color: $secondary-color;
-  display: inline-block !important;
+  display: inline-block;
   border: 1px solid $secondary-color;
   border-radius: 5px;
   padding: 9px 13px;

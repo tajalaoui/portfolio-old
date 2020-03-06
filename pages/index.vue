@@ -36,7 +36,7 @@
       </v-col>
       <v-col sm12 md6 offset="3" offset-lg="0">
         <div class="svg d-md-flex justify-center align-center">
-          <img src="/home/home-illustration.svg" alt="programmer image" />
+          <img class="programmer-image" src="/pages/home.svg" alt="programmer image" />
         </div>
       </v-col>
     </v-row>
@@ -102,8 +102,8 @@ export default {
 }
 
 img {
-  height: 730px;
-  width: 730px;
+  height: 740px;
+  width: 740px;
 }
 
 @media (max-width: 1640px) {

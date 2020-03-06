@@ -1,61 +1,56 @@
 <template>
-  <v-container>
-    <v-row class="d-flex justify-center">
-      <h1>Contact me</h1>
-    </v-row>
-    <div class="alerts mx-auto">
-      <transition name="show">
-        <v-alert v-if="isSent" type="success">Email sent.</v-alert>
-        <v-alert v-if="isError" type="error">Email not sent.</v-alert>
-      </transition>
-    </div>
+  <v-container fill-height>
     <v-row>
-      <v-form
-        class="mx-auto mt-5"
-        ref="form"
-        v-model="valid"
-        @submit.prevent="validate"
-        lazy-validation
-        dark
-      >
-        <v-text-field
-          color="rgb(41, 247, 9)"
-          v-model="name"
-          :counter="10"
-          :rules="nameRules"
-          label="Name"
-          required
-        ></v-text-field>
+      <v-col sm="12" lg="7">
+        <div class="alerts">
+          <transition name="show">
+            <v-alert v-if="isSent" type="success">Email sent.</v-alert>
+            <v-alert v-if="isError" type="error">Email not sent.</v-alert>
+          </transition>
+        </div>
+        <v-form ref="form" v-model="valid" @submit.prevent="validate" lazy-validation dark>
+          <v-text-field
+            color="rgb(41, 247, 9)"
+            v-model="name"
+            :counter="10"
+            :rules="nameRules"
+            label="Name"
+            required
+          ></v-text-field>
 
-        <v-text-field
-          color="rgb(41, 247, 9)"
-          v-model="email"
-          :rules="emailRules"
-          label="E-mail"
-          required
-        ></v-text-field>
-        <!-- I MODIFIED THIS. -->
-        <v-text-field
-          color="rgb(41, 247, 9)"
-          v-model="subject"
-          :counter="25"
-          :rules="subjectRules"
-          label="Subject"
-          required
-        ></v-text-field>
+          <v-text-field
+            color="rgb(41, 247, 9)"
+            v-model="email"
+            :rules="emailRules"
+            label="E-mail"
+            required
+          ></v-text-field>
+          <!-- I MODIFIED THIS. -->
+          <v-text-field
+            color="rgb(41, 247, 9)"
+            v-model="subject"
+            :counter="25"
+            :rules="subjectRules"
+            label="Subject"
+            required
+          ></v-text-field>
 
-        <v-textarea
-          color="rgb(41, 247, 9)"
-          class="mb-5"
-          v-model="message"
-          label="Message"
-          :counter="300"
-          :rules="messageRules"
-          required
-        ></v-textarea>
-        <!-- I DID AT CLICK PREVENT ON SUBMIT. -->
-        <button class="mr-4 button" :disabled="!valid" color="success" type="submit">Send</button>
-      </v-form>
+          <v-textarea
+            color="rgb(41, 247, 9)"
+            class="mb-3"
+            v-model="message"
+            label="Message"
+            :counter="300"
+            :rules="messageRules"
+            required
+          ></v-textarea>
+          <!-- I DID AT CLICK PREVENT ON SUBMIT. -->
+          <button class="button" :disabled="!valid" color="success" type="submit">Send</button>
+        </v-form>
+      </v-col>
+      <v-col sm="12" lg="5">
+        <img src="/pages/contact.svg" alt="contact-image" />
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -134,21 +129,22 @@ export default {
 @import '@/assets/scss/style.scss';
 
 .v-form {
-  width: 69%;
+  width: 81%;
 }
 
-h1 {
-  margin: 65px 0;
-  color: $secondary-color;
+img {
+  height: 450px;
+  width: 545px;
 }
 
 .alerts {
-  width: 70%;
-  transition: 3s ease;
+  width: 81%;
+  transition: 0.3s ease;
 }
 
 .button {
   @include btn();
+  width: 100%;
 }
 
 .button:hover {
@@ -157,11 +153,32 @@ h1 {
 
 .show-enter-active,
 .show-leave-active {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 .show-enter,
 .show-leave-to {
   opacity: 0;
   transform: scale(0);
+}
+
+@media (max-width: 1270px) {
+  .v-form,
+  .alerts,
+  img {
+    margin: 0 auto !important;
+  }
+
+  img {
+    display: block;
+    height: 490px;
+    width: 490px;
+  }
+}
+
+@media (max-width: 900px) {
+  img {
+    height: 300px;
+    width: 300px;
+  }
 }
 </style>

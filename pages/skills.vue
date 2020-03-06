@@ -3,11 +3,15 @@
     <v-row>
       <v-col class="ux" md6>
         <h1>Skills & Experiences</h1>
-        <p style="paddingTop: 21px">I specialize in both client side & server side.</p>
+        <p style="paddingTop: 21px">
+          I specialize in both client side & server side
+          <span class="dot">.</span>
+        </p>
         <p>
           HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, MONGODB
           <br />building small to medium web apps
-          <br />with Vue & Nuxt and material design with Vuetify.
+          <br />with Vue & Nuxt and material design with Vuetify
+          <span class="dot">.</span>
         </p>
         <p>
           Visit my
@@ -16,7 +20,10 @@
             target="_blank"
           >Linkedin</a> profile for more info or
           <nuxt-link to="/contact">Contact</nuxt-link>
-          <span>me.</span>
+          <span>
+            me
+            <span class="dot">.</span>
+          </span>
         </p>
       </v-col>
       <v-col class="d-md-flex justify-center align-center flex-wrap text-center" md6 offset-md="1">

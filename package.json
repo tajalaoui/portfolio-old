@@ -24,7 +24,8 @@
     "express": "^4.17.1",
     "nodemailer": "^4.1.0",
     "nodemailer-mailgun-transport": "^2.0.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-i18n": "^8.15.4"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.0",

@@ -18,6 +18,21 @@
         target="_blank"
         rel="noopener"
       >Resume</a>
+      <v-menu offset-y>
+        <template v-slot:activator="{ on }">
+          <v-btn class="language-btn mx-3 ml-2" icon v-on="on">
+            <icon :icon="['fas', 'language']" style="fontSize:1.7rem" />
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item v-for="(item, index) in languages" :key="index" @click>
+            <v-list-item-title>
+              <img class="my-1" :src="item.src" alt="language-image" />
+              {{ item.title }}
+            </v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary dark app>
       <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 35px;">
@@ -43,6 +58,11 @@ export default {
         { to: '/skills', title: 'Skills' },
         { to: '/portfolio', title: 'My Work' },
         { to: '/contact', title: 'Contact' }
+      ],
+      languages: [
+        { title: 'English', src: '/languages/en.svg' },
+        { title: 'Francais', src: '/languages/fr.svg' },
+        { title: 'عربى', src: '/languages/ar.svg' }
       ]
     }
   },
@@ -70,14 +90,6 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/scss/style';
 
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
 .v-toolbar,
 .v-navigation-drawer {
   a {
@@ -104,6 +116,14 @@ html {
     .brand-span {
       color: $secondary-color;
     }
+  }
+
+  .language-btn {
+    @include contactBtn();
+  }
+
+  .language-btn:hover {
+    @include contactBtnHover();
   }
 
   .contact-btn {
