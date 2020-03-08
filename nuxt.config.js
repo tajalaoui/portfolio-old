@@ -19,9 +19,18 @@ module.exports = {
         content: 'Full Stack Javascript Developer.'
       },
       {
+        name: 'author',
+        content: 'Tajeddine'
+      },
+      {
         name: 'keywords',
         content:
           'javascript, vue, nuxt, full stack javascript, software developer, portfolio, doe'
+      },
+      // FOR SOCIAL MEDIA.
+      {
+        property: 'og:image',
+        content: '/pages/home.svg'
       }
     ],
     link: [
@@ -37,7 +46,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#29f709' },
   /*
    ** Global CSS
    */

@@ -16,7 +16,7 @@
           :key="item.title"
           :to="item.to"
           flat
-        >{{item.title}}</nuxt-link>
+        >{{$t(item.title)}}</nuxt-link>
       </div>
       <a
         href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
@@ -36,6 +36,7 @@
             :key="index"
             @click="changeLanguage(item.lang)"
           >
+            <!-- ! to mod -->
             <v-list-item-title>
               <img class="my-1" :src="item.src" alt="language-image" />
               {{ item.title }}
@@ -46,7 +47,12 @@
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary dark app>
       <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 35px;">
-        <nuxt-link class="my-3" v-for="item in menu" :key="item.title" :to="item.to">{{item.title}}</nuxt-link>
+        <nuxt-link
+          class="my-3"
+          v-for="item in menu"
+          :key="item.title"
+          :to="item.to"
+        >{{$t(item.title)}}</nuxt-link>
         <a
           href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
           class="contact-btn resume-btn text-uppercase mt-3"
@@ -74,11 +80,11 @@ export default {
     return {
       drawer: false,
       menu: [
-        { to: '/', title: 'Home' },
-        { to: '/about', title: 'About' },
-        { to: '/skills', title: 'Skills' },
-        { to: '/portfolio', title: 'My Work' },
-        { to: '/contact', title: 'Contact' }
+        { to: '/', title: 'navbar.home' },
+        { to: '/about', title: 'navbar.about' },
+        { to: '/skills', title: 'navbar.skills' },
+        { to: '/portfolio', title: 'navbar.work' },
+        { to: '/contact', title: 'navbar.contact' }
       ],
       languages: [
         { title: 'English', src: '/languages/en.svg', lang: 'en' },
