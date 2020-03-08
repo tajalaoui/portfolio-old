@@ -1,0 +1,54 @@
+{
+    "navbar": {
+        "home": "accueil",
+        "about": "À propos de moi",
+        "skills": "compétences",
+        "work": "mon travail",
+        "contact": "contact",
+        "resume": "c v"
+    },
+    "home": {
+        "greeting": "Salut",
+        "intro-text": {
+            "im": "je suis",
+            "taj": "taj",
+            "eddine": "eddine"
+        },
+        "job-title": "développeur de logiciels",
+        "check-work": "vérifier mon travail",
+        "contact-me": "contactez moi"
+    },
+    "about": {
+        "heading": "À propos de moi",
+        "1st-p": "Connecté professionnellement aux technologies de l'information",
+        "2st-p": "pendant de nombreuses années.",
+        "3st-p": "Programmeur autodidacte, pigiste passionné.",
+        "4st-p": "Mes hobbies font le suivi des nouvelles technologiques,",
+        "5st-p": "Rester en forme et jouer à des jeux vidéo.",
+        "6st-p": "je suis impatient de construire des produits incroyables",
+        "7st-p": "Pour mes clients.",
+        "fast-title": "Agilité",
+        "fast-text": "Temps de chargement rapides et interaction sans décalage, ma priorité absolue",
+        "ease-title": "facilité d'utilisation",
+        "ease-text": "Forte préférence pour une UX / UI intuitive et facile à utiliser",
+        "res-title": "Responsive",
+        "res-text": "Mes mises en page fonctionneront sur n'importe quel appareil, petit ou grand"
+    },
+    "skills": {
+        "heading": "Compétences et expériences",
+        "1st-p": "Je me spécialise à la fois côté client et côté serveur.",
+        "2st-p": "création d'applications Web petites à moyennes",
+        "3st-p": "avec Vue & Nuxt et la conception des matériaux avec Vuetify.",
+        "4st-p": "Visitez mon",
+        "5st-p": "profil pour plus d'informations ou",
+        "6st-p": "Contactez",
+        "7st-p": "moi."
+    },
+    "contact": {
+        "name": "Nom",
+        "email": "E-mail",
+        "subject": "Suject",
+        "message": "Message",
+        "send": "Envoyer"
+    }
+}

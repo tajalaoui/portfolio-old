@@ -1,17 +1,16 @@
 <template>
   <v-container fill-height>
     <v-row class="align-center">
-      <v-col class="ux" sm12 md6>
+      <v-col md6>
         <div class="text-intro">
-          <h5>Hi There</h5>
-          <h1>
-            <div class="text-uppercase">
-              I'm
-              <span class="brand-span">Taj</span>eddine
-            </div>
+          <h5>{{$t("home.greeting")}}</h5>
+          <h1 class="text-uppercase">
+            {{$t("home.intro-text.im")}}
+            <span class="brand-span">{{$t("home.intro-text.taj")}}</span>
+            {{$t("home.intro-text.eddine")}}
           </h1>
           <div class="text-intro-skills">
-            <p class="font-weight-light">software developer</p>
+            <p class="font-weight-light">{{$t("home.job-title")}}</p>
           </div>
           <div class="social-icons">
             <a
@@ -29,8 +28,11 @@
             </a>
           </div>
           <div class="buttons mt-3">
-            <nuxt-link class="text-uppercase check-work-btn" to="/portfolio">check my work</nuxt-link>
-            <nuxt-link class="text-uppercase contact-btn" to="/contact">contact me</nuxt-link>
+            <nuxt-link
+              class="text-uppercase check-work-btn"
+              to="/portfolio"
+            >{{$t("home.check-work")}}</nuxt-link>
+            <nuxt-link class="text-uppercase contact-btn" to="/contact">{{$t("home.contact-me")}}</nuxt-link>
           </div>
         </div>
       </v-col>
@@ -67,7 +69,7 @@ export default {
 
   .text-intro-skills {
     color: rgb(179, 174, 174);
-    letter-spacing: 3.5px;
+    letter-spacing: 3.1px;
   }
 
   .brand-span {
@@ -138,6 +140,13 @@ img {
     .contact-btn {
       margin-left: 15px;
     }
+  }
+}
+
+@media(max-width: 600px) {
+  img {
+    height: 220px;
+    width: 220px;
   }
 }
 </style>

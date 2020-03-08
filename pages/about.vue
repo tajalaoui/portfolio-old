@@ -2,25 +2,25 @@
   <v-container fill-height>
     <v-row>
       <v-col class="ux" md6>
-        <h1>About me</h1>
+        <h1>{{$t("about.heading")}}</h1>
         <p style="paddingTop: 21px">
-          Professionally connected with the information technology
-          <br />for many years
-          <span class="dot">.</span>
+          {{$t("about.1st-p")}}
+          <br />
+
+          {{$t("about.2st-p")}}
+        </p>
+        <p>{{$t("about.3st-p")}}</p>
+        <p>
+          {{$t("about.4st-p")}}
+          <br />
+
+          {{$t("about.5st-p")}}
         </p>
         <p>
-          Self taught programmer, Passionate freelancer
-          <span class="dot">.</span>
-        </p>
-        <p>
-          My hobbies are following up with tech news,
-          <br />Staying fit and playing games
-          <span class="dot">.</span>
-        </p>
-        <p>
-          Looking forward to build amazing products
-          <br />For my clients
-          <span class="dot">.</span>
+          {{$t("about.6st-p")}}
+          <br />
+
+          {{$t("about.7st-p")}}
         </p>
       </v-col>
       <v-col
@@ -30,30 +30,18 @@
       >
         <v-card class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
-          <h3>Fast</h3>
-          <p>
-            Fast load times and lag free
-            interaction, my highest priority
-            <span
-              class="dot"
-            >.</span>
-          </p>
+          <h3>{{$t("about.fast-title")}}</h3>
+          <p>{{$t("about.fast-text")}}</p>
         </v-card>
         <v-card class="specialities">
           <icon class="icon" icon="lightbulb"></icon>
-          <h3>Intuitive</h3>
-          <p>
-            Strong preference for easy to use, intuitive UX/UI
-            <span class="dot">.</span>
-          </p>
+          <h3>{{$t("about.ease-title")}}</h3>
+          <p>{{$t("about.ease-text")}}</p>
         </v-card>
         <v-card class="specialities">
           <icon class="icon" icon="mobile-alt"></icon>
-          <h3>Responsive</h3>
-          <p>
-            My layouts will work on any device, big or small
-            <span class="dot">.</span>
-          </p>
+          <h3>{{$t("about.res-title")}}</h3>
+          <p>{{$t("about.res-text")}}</p>
         </v-card>
       </v-col>
     </v-row>

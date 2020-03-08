@@ -2,28 +2,25 @@
   <v-container fill-height>
     <v-row>
       <v-col class="ux" md6>
-        <h1>Skills & Experiences</h1>
-        <p style="paddingTop: 21px">
-          I specialize in both client side & server side
-          <span class="dot">.</span>
-        </p>
+        <h1>{{$t("skills.heading")}}</h1>
+        <p style="paddingTop: 21px">{{$t("skills.1st-p")}}</p>
         <p>
           HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, MONGODB
-          <br />building small to medium web apps
-          <br />with Vue & Nuxt and material design with Vuetify
-          <span class="dot">.</span>
+          <br />
+          {{$t("skills.2st-p")}}
+          <br />
+
+          {{$t("skills.3st-p")}}
         </p>
         <p>
-          Visit my
+          {{$t("skills.4st-p")}}
           <a
             href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
             target="_blank"
-          >Linkedin</a> profile for more info or
-          <nuxt-link to="/contact">Contact</nuxt-link>
-          <span>
-            me
-            <span class="dot">.</span>
-          </span>
+          >Linkedin</a>
+          {{$t("skills.5st-p")}}
+          <nuxt-link to="/contact">{{$t("skills.6st-p")}}</nuxt-link>
+          <span>{{$t("skills.7st-p")}}</span>
         </p>
       </v-col>
       <v-col class="d-md-flex justify-center align-center flex-wrap text-center" md6 offset-md="1">

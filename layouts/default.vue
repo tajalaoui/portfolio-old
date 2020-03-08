@@ -10,14 +10,20 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <div class="app-bar-links hidden-sm-and-down">
-        <nuxt-link v-for="item in menu" :key="item.title" :to="item.to" flat>{{item.title}}</nuxt-link>
+        <nuxt-link
+          class="mx-3"
+          v-for="item in menu"
+          :key="item.title"
+          :to="item.to"
+          flat
+        >{{item.title}}</nuxt-link>
       </div>
       <a
         href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
         class="contact-btn resume-btn text-uppercase mr-2"
         target="_blank"
         rel="noopener"
-      >Resume</a>
+      >{{$t("navbar.resume")}}</a>
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn class="language-btn mx-3 ml-2" icon v-on="on">
@@ -25,7 +31,11 @@
           </v-btn>
         </template>
         <v-list>
-          <v-list-item v-for="(item, index) in languages" :key="index" @click>
+          <v-list-item
+            v-for="(item, index) in languages"
+            :key="index"
+            @click="changeLanguage(item.lang)"
+          >
             <v-list-item-title>
               <img class="my-1" :src="item.src" alt="language-image" />
               {{ item.title }}
@@ -37,6 +47,12 @@
     <v-navigation-drawer v-model="drawer" temporary dark app>
       <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 35px;">
         <nuxt-link class="my-3" v-for="item in menu" :key="item.title" :to="item.to">{{item.title}}</nuxt-link>
+        <a
+          href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
+          class="contact-btn resume-btn text-uppercase mt-3"
+          target="_blank"
+          rel="noopener"
+        >{{$t("navbar.resume")}}</a>
       </div>
     </v-navigation-drawer>
     <v-content>
@@ -49,6 +65,11 @@
 <script>
 export default {
   name: 'nav-bar',
+  methods: {
+    changeLanguage(lang) {
+      this.$i18n.locale = lang
+    }
+  },
   data() {
     return {
       drawer: false,
@@ -60,9 +81,9 @@ export default {
         { to: '/contact', title: 'Contact' }
       ],
       languages: [
-        { title: 'English', src: '/languages/en.svg' },
-        { title: 'Francais', src: '/languages/fr.svg' },
-        { title: 'عربى', src: '/languages/ar.svg' }
+        { title: 'English', src: '/languages/en.svg', lang: 'en' },
+        { title: 'Francais', src: '/languages/fr.svg', lang: 'fr' },
+        { title: 'عربى', src: '/languages/ar.svg', lang: 'ar' }
       ]
     }
   },
@@ -160,7 +181,8 @@ export default {
 
 @media (max-width: 900px) {
   .v-app-bar {
-    .app-bar-links {
+    .app-bar-links,
+    .resume-btn {
       display: none;
     }
     .brand-name {

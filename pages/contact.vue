@@ -14,7 +14,7 @@
             v-model="name"
             :counter="10"
             :rules="nameRules"
-            label="Name"
+            :label="$t('contact.name')"
             required
           ></v-text-field>
 
@@ -22,7 +22,7 @@
             color="rgb(41, 247, 9)"
             v-model="email"
             :rules="emailRules"
-            label="E-mail"
+            :label="$t('contact.email')"
             required
           ></v-text-field>
           <!-- I MODIFIED THIS. -->
@@ -31,7 +31,7 @@
             v-model="subject"
             :counter="25"
             :rules="subjectRules"
-            label="Subject"
+            :label="$t('contact.subject')"
             required
           ></v-text-field>
 
@@ -39,13 +39,13 @@
             color="rgb(41, 247, 9)"
             class="mb-3"
             v-model="message"
-            label="Message"
+            :label="$t('contact.message')"
             :counter="300"
             :rules="messageRules"
             required
           ></v-textarea>
           <!-- I DID AT CLICK PREVENT ON SUBMIT. -->
-          <button class="button" :disabled="!valid" color="success" type="submit">Send</button>
+          <button class="button" :disabled="!valid" color="success" type="submit">{{$t('contact.send')}}</button>
         </v-form>
       </v-col>
       <v-col sm="12" lg="5">
@@ -175,10 +175,18 @@ img {
   }
 }
 
+
 @media (max-width: 900px) {
   img {
-    height: 300px;
-    width: 300px;
+    height: 370px;
+    width: 370px;
+  }
+}
+
+@media (max-width: 600px) {
+  img {
+    height: 290px;
+    width: 290px;
   }
 }
 </style>
