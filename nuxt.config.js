@@ -30,7 +30,7 @@ module.exports = {
       // FOR SOCIAL MEDIA.
       {
         property: 'og:image',
-        content: '/pages/home.svg'
+        content: 'https://devtaj.com/pages/home.svg'
       }
     ],
     link: [
