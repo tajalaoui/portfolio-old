@@ -26,11 +26,6 @@ module.exports = {
         name: 'keywords',
         content:
           'javascript, vue, nuxt, full stack javascript, software developer, portfolio, doe'
-      },
-      // FOR SOCIAL MEDIA.
-      {
-        property: 'og:image',
-        content: 'https://devtaj.com/pages/home.svg'
       }
     ],
     link: [

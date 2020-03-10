@@ -36,9 +36,8 @@
             :key="index"
             @click="changeLanguage(item.lang)"
           >
-            <!-- ! to mod -->
             <v-list-item-title>
-              <img class="my-1" :src="item.src" alt="language-image" />
+              <img class="my-1" :src="item.src" :alt="item.lang" />
               {{ item.title }}
             </v-list-item-title>
           </v-list-item>
