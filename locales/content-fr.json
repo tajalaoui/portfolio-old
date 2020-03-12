@@ -1,10 +1,10 @@
 {
     "navbar": {
-        "home": "accueil",
+        "home": "Accueil",
         "about": "À propos de moi",
-        "skills": "compétences",
-        "work": "mon travail",
-        "contact": "contact",
+        "skills": "Compétences",
+        "work": "Mon Travail",
+        "contact": "Contact",
         "resume": "c v"
     },
     "home": {

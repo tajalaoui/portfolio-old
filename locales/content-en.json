@@ -1,11 +1,11 @@
 {
     "navbar": {
-        "home": "home",
-        "about": "about",
-        "skills": "skills",
-        "work": "my work",
-        "contact": "contact",
-        "resume": "resume"
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "work": "My Work",
+        "contact": "Contact",
+        "resume": "Resume"
     },
     "home": {
         "greeting": "Hi There",
