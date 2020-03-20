@@ -1,66 +1,52 @@
 <template>
-  <div>
-    <v-container fill-height>
-      <v-row class="align-center">
-        <v-col md6>
-          <div class="text-intro">
-            <h5>{{$t("home.greeting")}}</h5>
-            <h1 class="text-uppercase">
-              {{$t("home.intro-text.im")}}
-              <span class="brand-span">{{$t("home.intro-text.taj")}}</span>
-              {{$t("home.intro-text.eddine")}}
-            </h1>
-            <div class="text-intro-skills">
-              <p class="font-weight-light">{{$t("home.job-title")}}</p>
-            </div>
-            <div class="social-icons">
-              <a
-                href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
-                rel="noopener"
-                target="_blank"
-              >
-                <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
-              </a>
-              <a href="https://github.com/SSaiken" rel="noopener" target="_blank">
-                <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
-              </a>
-              <a href="https://www.instagram.com/_tajdoe/" rel="noopener" target="_blank">
-                <icon class="nav-social-icons" :icon="['fab', 'instagram']" />
-              </a>
-            </div>
-            <div class="buttons mt-3">
-              <nuxt-link
-                class="text-uppercase check-work-btn"
-                to="/portfolio"
-              >{{$t("home.check-work")}}</nuxt-link>
-              <nuxt-link class="text-uppercase contact-btn" to="/contact">{{$t("home.contact-me")}}</nuxt-link>
-            </div>
+  <v-container fill-height>
+    <v-row class="align-center">
+      <v-col md6>
+        <div class="text-intro">
+          <h5>{{$t("home.greeting")}}</h5>
+          <h1 class="text-uppercase">
+            {{$t("home.intro-text.im")}}
+            <span class="brand-span">{{$t("home.intro-text.taj")}}</span>
+            {{$t("home.intro-text.eddine")}}
+          </h1>
+          <div class="text-intro-skills">
+            <p class="font-weight-light">{{$t("home.job-title")}}</p>
           </div>
-        </v-col>
-        <v-col sm12 md6 offset="3" offset-lg="0">
-          <div class="svg d-md-flex justify-center align-center">
-            <img class="programmer-image" src="/pages/home.svg" alt="programmer image" />
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
+              rel="noopener"
+              target="_blank"
+            >
+              <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
+            </a>
+            <a href="https://github.com/SSaiken" rel="noopener" target="_blank">
+              <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
+            </a>
+            <a href="https://www.instagram.com/_tajdoe/" rel="noopener" target="_blank">
+              <icon class="nav-social-icons" :icon="['fab', 'instagram']" />
+            </a>
           </div>
-        </v-col>
-      </v-row>
-    </v-container>
-    <div v-if="pageLoaded" class="spinner"></div>
-  </div>
+          <div class="buttons mt-3">
+            <nuxt-link
+              class="text-uppercase check-work-btn"
+              to="/portfolio"
+            >{{$t("home.check-work")}}</nuxt-link>
+            <nuxt-link class="text-uppercase contact-btn" to="/contact">{{$t("home.contact-me")}}</nuxt-link>
+          </div>
+        </div>
+      </v-col>
+      <v-col sm12 md6 offset="3" offset-lg="0">
+        <div class="svg d-md-flex justify-center align-center">
+          <img class="programmer-image" src="/pages/home.svg" alt="programmer image" />
+        </div>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 export default {
-  beforeCreate() {
-    this.pageLoaded = true
-  },
-  mounted() {
-    this.pageLoaded = false
-  },
-  data() {
-    return {
-      pageLoaded: false
-    }
-  },
   head() {
     return {
       meta: [
@@ -142,48 +128,6 @@ export default {
     .contact-btn {
       margin-left: 15px;
     }
-  }
-}
-
-.spinner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90px;
-  height: 90px;
-  background-color: white;
-  z-index: 5555;
-  transform: translate(-50%, -50%);
-
-  // margin: 100px auto;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-rotateplane {
-  0% {
-    -webkit-transform: perspective(120px);
-  }
-  50% {
-    -webkit-transform: perspective(120px) rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
-  }
-}
-
-@keyframes sk-rotateplane {
-  0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-  }
-  100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
 </style>
