@@ -24,7 +24,7 @@
         target="_blank"
         rel="noopener"
       >{{$t("navbar.resume")}}</a>
-      <v-menu offset-y>
+      <v-menu offset-y origin="center center" transition="scale-transition">
         <template v-slot:activator="{ on }">
           <v-btn class="language-btn mx-3 ml-2" icon v-on="on">
             <icon :icon="['fas', 'language']" style="fontSize:1.7rem" />
@@ -37,8 +37,8 @@
             @click="changeLanguage(item.lang)"
           >
             <v-list-item-title>
-              <img class="my-1" :src="item.src" :alt="item.lang" />
-              {{ item.title }}
+              <img class="my-1" :src="item.src" :alt="item.lang" style="height: 55px; width: 55px" />
+              <!-- {{ item.title }} -->
             </v-list-item-title>
           </v-list-item>
         </v-list>
@@ -120,6 +120,10 @@ export default {
 .v-navigation-drawer {
   a {
     color: $white;
+  }
+
+  .nuxt-link-exact-active {
+    color: $secondary-color;
   }
 
   .app-bar-links > a {

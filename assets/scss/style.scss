@@ -47,16 +47,28 @@ h1 {
   }
 }
 
+// ROUTING ANIMATION.
 .page-enter-active,
 .page-leave-active {
   transition: all 0.3s ease-in-out;
 }
 
-// ROUTING ANIMATION.
 .page-enter,
 .page-leave-active {
   opacity: 0;
   transform: scale(0);
+}
+
+img {
+  height: 740px;
+  width: 740px;
+}
+
+@media (max-width: 1640px) {
+  img {
+    height: 530px;
+    width: 530px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -138,31 +150,9 @@ h1 {
   }
 }
 
-
-[v-cloak] > * { display: none; }
-[v-cloak]::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid $secondary-color;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+@media (max-width: 600px) {
+  img {
+    height: 220px;
+    width: 220px;
+  }
 }

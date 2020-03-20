@@ -103,17 +103,7 @@ export default {
   transition: $transition;
 }
 
-img {
-  height: 740px;
-  width: 740px;
-}
 
-@media (max-width: 1640px) {
-  img {
-    height: 530px;
-    width: 530px;
-  }
-}
 
 @media (max-width: 1263px) {
   img {
@@ -140,13 +130,6 @@ img {
     .contact-btn {
       margin-left: 15px;
     }
-  }
-}
-
-@media(max-width: 600px) {
-  img {
-    height: 220px;
-    width: 220px;
   }
 }
 </style>

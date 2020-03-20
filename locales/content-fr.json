@@ -50,5 +50,8 @@
         "subject": "Suject",
         "message": "Message",
         "send": "Envoyer"
+    },
+    "404": {
+        "404-btn": "aller à la page d'accueil"
     }
 }
