@@ -122,10 +122,6 @@ export default {
     color: $white;
   }
 
-  .nuxt-link-exact-active {
-    color: $secondary-color;
-  }
-
   .app-bar-links > a {
     font-size: 1.5rem;
   }
@@ -134,7 +130,8 @@ export default {
     font-family: 'montserrat';
     letter-spacing: 2px;
 
-    a:hover {
+    a:hover,
+    .nuxt-link-exact-active {
       color: $secondary-color;
       transition: $transition;
     }

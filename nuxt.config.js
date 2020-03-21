@@ -30,14 +30,21 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        async: true,
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Odibee Sans:400,800|Montserrat:400,800&display=swap" rel="stylesheet'
-      }
+      // {
+      //   rel: 'stylesheet',
+      //   href:
+      //     'https://fonts.googleapis.com/css?family=Odibee Sans:400,800|Montserrat:400,800&display=swap" rel="stylesheet'
+      // }
     ]
   },
+
+  // Importing fonts
+  webfontloader: {
+    google: {
+      families: ['Odibee+Sans:400,800', 'Montserrat:400, 800']
+    }
+  },
+
   /*
    ** Customize the progress-bar color
    */
@@ -67,7 +74,8 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    'nuxt-webfontloader'
   ],
   /*
    ** Axios module configuration
