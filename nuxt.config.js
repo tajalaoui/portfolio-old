@@ -29,7 +29,7 @@ module.exports = {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       // {
       //   rel: 'stylesheet',
       //   href:
@@ -41,7 +41,7 @@ module.exports = {
   // Importing fonts
   webfontloader: {
     google: {
-      families: ['Odibee+Sans:400,800', 'Montserrat:400, 800']
+      families: ['Odibee+Sans:400,800', 'Montserrat:400, 800, 700']
     }
   },
 

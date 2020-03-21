@@ -20,7 +20,7 @@
             >
               <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
             </a>
-            <a href="https://github.com/SSaiken" rel="noopener" target="_blank">
+            <a href="https://github.com/TajDoe" rel="noopener" target="_blank">
               <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
             </a>
             <a href="https://www.instagram.com/_tajdoe/" rel="noopener" target="_blank">
