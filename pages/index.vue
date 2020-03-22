@@ -4,7 +4,7 @@
       <v-col md6>
         <div class="text-intro">
           <h5>{{$t("home.greeting")}}</h5>
-          <h1 class="text-uppercase">
+          <h1 class="text-uppercase font-weight-bold">
             {{$t("home.intro-text.im")}}
             <span class="brand-span">{{$t("home.intro-text.taj")}}</span>
             {{$t("home.intro-text.eddine")}}
@@ -70,6 +70,10 @@ export default {
   .text-intro-skills {
     color: rgb(179, 174, 174);
     letter-spacing: 3.1px;
+  }
+
+  h1 {
+    color: $white;
   }
 
   .brand-span {

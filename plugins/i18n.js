@@ -8,6 +8,10 @@ export default ({ app, store }) => {
   // This way we can use it globaly in our components
   app.i18n = new VueI18n({
     // Set the initial locale (here, based on our store's initial value)
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: true
+    },
     locale: 'en',
     silentTranslationWarn: true,
     silentFallbackWarn: true,

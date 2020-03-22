@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col class="ux" md6>
+      <v-col md6>
         <h1>{{$t("about.heading")}}</h1>
         <p style="paddingTop: 21px">
           {{$t("about.1st-p")}}

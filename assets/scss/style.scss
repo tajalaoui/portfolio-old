@@ -27,10 +27,13 @@ a {
   text-decoration: none;
 }
 
+
 h1 {
-  font-weight: bold;
-  font-size: 3.3rem;
-  letter-spacing: 2px;
+  color: $secondary-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 3.1rem;
+  letter-spacing: 1px;
 }
 
 .v-card {

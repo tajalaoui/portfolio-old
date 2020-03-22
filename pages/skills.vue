@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col class="ux" md6>
+      <v-col md6>
         <h1>{{$t("skills.heading")}}</h1>
         <p style="paddingTop: 21px">{{$t("skills.1st-p")}}</p>
         <p>
@@ -82,10 +82,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/scss/style.scss';
 
-h1 {
-  color: $secondary-color;
-  font-family: 'Raleway', sans-serif;
-}
+
 
 img {
   width: 65px;
