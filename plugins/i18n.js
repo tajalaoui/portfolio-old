@@ -10,7 +10,8 @@ export default ({ app, store }) => {
     // Set the initial locale (here, based on our store's initial value)
     detectBrowserLanguage: {
       useCookie: true,
-      alwaysRedirect: true
+      alwaysRedirect: true,
+      cookieKey: 'i18n'
     },
     locale: 'en',
     silentTranslationWarn: true,
