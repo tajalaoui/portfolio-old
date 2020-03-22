@@ -41,7 +41,7 @@ module.exports = {
   // Importing fonts
   webfontloader: {
     google: {
-      families: ['Odibee+Sans', 'Raleway: 700', 'Montserrat:400, 700']
+      families: ['Odibee+Sans', 'Montserrat:400, 700']
     }
   },
 
