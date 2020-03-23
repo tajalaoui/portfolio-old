@@ -138,8 +138,8 @@ export default {
   }
 
   .brand-name {
-    font-family: 'Odibee Sans';
-    letter-spacing: 1.2px;
+    font-family: 'Concert One';
+    letter-spacing: 1px;
     .brand-span {
       color: $secondary-color;
     }

@@ -19,7 +19,7 @@
         "contact-me": "contactez moi"
     },
     "about": {
-        "heading": "À propos de moi",
+        "heading": "À Propos De Moi",
         "1st-p": "Connecté professionnellement aux technologies de l'information",
         "2st-p": "pendant de nombreuses années.",
         "3st-p": "Programmeur autodidacte, Freelancer passionné.",
@@ -35,7 +35,7 @@
         "res-text": "Mes mises en page fonctionneront sur n'importe quel appareil, petit ou grand"
     },
     "skills": {
-        "heading": "Compétences et expériences",
+        "heading": "Compétences Et Expériences",
         "1st-p": "Je me spécialise à la fois côté client et côté serveur.",
         "2st-p": "création d'applications Web petites à moyennes",
         "3st-p": "avec Vue & Nuxt et la conception des matériaux avec Vuetify.",
