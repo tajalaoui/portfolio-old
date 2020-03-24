@@ -73,8 +73,6 @@ export default {
   }
 
   h1 {
-    font-family: 'Raleway', sans-serif !important;
-
     color: $white;
   }
 

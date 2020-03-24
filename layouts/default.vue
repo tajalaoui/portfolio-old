@@ -138,8 +138,8 @@ export default {
   }
 
   .brand-name {
-    font-family: 'Concert One';
     letter-spacing: 1px;
+    font-weight: 700;
     .brand-span {
       color: $secondary-color;
     }

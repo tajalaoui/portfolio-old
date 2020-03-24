@@ -28,20 +28,13 @@ module.exports = {
           'javascript, vue, nuxt, full stack javascript, software developer, portfolio, doe'
       }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-      // {
-      //   rel: 'stylesheet',
-      //   href:
-      //     'https://fonts.googleapis.com/css?family=Odibee Sans:400,800|Montserrat:400,800&display=swap" rel="stylesheet'
-      // }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Importing fonts
   webfontloader: {
     google: {
-      families: ['Montserrat:400, 700', 'Concert+One']
+      families: ['Montserrat:400, 700']
     }
   },
 
