@@ -9,7 +9,6 @@
           <br />
           {{$t("skills.2st-p")}}
           <br />
-
           {{$t("skills.3st-p")}}
         </p>
         <p>
@@ -26,21 +25,21 @@
       <v-col class="d-md-flex justify-center align-center flex-wrap text-center" md6 offset-md="1">
         <v-card color="#141414">
           <v-card-text class="card-text text-center">Front End</v-card-text>
-          <img
-            v-for="(image, index) in frontEndImages"
-            :key="index"
-            :src="image.url"
-            :alt="image.alt"
-          />
+          <v-tooltip v-for="(image, index) in frontEndImages" :key="index" v-model="show" top>
+            <template v-slot:activator="{ on }">
+              <img :src="image.url" :alt="image.alt" v-on="on" />
+            </template>
+            <span>{{image.alt}}</span>
+          </v-tooltip>
         </v-card>
         <v-card color="#141414">
           <v-card-text class="card-text text-center">Back End</v-card-text>
-          <img
-            v-for="(image, index) in backEndImages"
-            :key="index"
-            :src="image.url"
-            :alt="image.alt"
-          />
+          <v-tooltip v-for="(image, index) in backEndImages" :key="index" v-model="show" top>
+            <template v-slot:activator="{ on }">
+              <img :src="image.url" :alt="image.alt" v-on="on" />
+            </template>
+            <span>{{image.alt}}</span>
+          </v-tooltip>
         </v-card>
       </v-col>
     </v-row>
@@ -52,16 +51,16 @@ export default {
   data() {
     return {
       frontEndImages: [
-        { url: '/2.svg', alt: 'vuejs' },
-        { url: '/3.svg', alt: 'nuxtjs' },
-        { url: '/4.svg', alt: 'vuetify' },
-        { url: '/7.svg', alt: 'html' },
-        { url: '/8.svg', alt: 'scss' }
+        { url: '/2.svg', alt: 'Vue JS' },
+        { url: '/3.svg', alt: 'Nuxt JS' },
+        { url: '/4.svg', alt: 'Vuetify' },
+        { url: '/7.svg', alt: 'Html' },
+        { url: '/8.svg', alt: 'Scss' }
       ],
       backEndImages: [
-        { url: '/1.svg', alt: 'nodejs' },
-        { url: '/6.svg', alt: 'express' },
-        { url: '/5.svg', alt: 'mongodb' }
+        { url: '/1.svg', alt: 'Node JS' },
+        { url: '/6.svg', alt: 'Express' },
+        { url: '/5.svg', alt: 'Mongodb' }
       ]
     }
   },
@@ -81,8 +80,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/scss/style.scss';
-
-
 
 img {
   width: 65px;
