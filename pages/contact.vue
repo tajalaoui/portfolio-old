@@ -25,7 +25,7 @@
             :label="$t('contact.email')"
             required
           ></v-text-field>
-          <!-- I MODIFIED THIS. -->
+
           <v-text-field
             color="rgb(41, 247, 9)"
             v-model="subject"
@@ -45,7 +45,12 @@
             required
           ></v-textarea>
           <!-- I DID AT CLICK PREVENT ON SUBMIT. -->
-          <button class="button" :disabled="!valid" color="success" type="submit">{{$t('contact.send')}}</button>
+          <button
+            class="button"
+            :disabled="!valid"
+            color="success"
+            type="submit"
+          >{{$t('contact.send')}}</button>
         </v-form>
       </v-col>
       <v-col sm="12" lg="5">
@@ -54,7 +59,6 @@
     </v-row>
   </v-container>
 </template>
-
 
 <script>
 import axios from 'axios'
@@ -174,7 +178,6 @@ img {
     width: 490px;
   }
 }
-
 
 @media (max-width: 900px) {
   img {

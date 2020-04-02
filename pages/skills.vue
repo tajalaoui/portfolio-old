@@ -51,15 +51,15 @@ export default {
   data() {
     return {
       frontEndImages: [
-        { url: '/2.svg', alt: 'Vue JS' },
-        { url: '/3.svg', alt: 'Nuxt JS' },
+        { url: '/2.svg', alt: 'Vue Js' },
+        { url: '/3.svg', alt: 'Nuxt Js' },
         { url: '/4.svg', alt: 'Vuetify' },
         { url: '/7.svg', alt: 'Html' },
         { url: '/8.svg', alt: 'Scss' }
       ],
       backEndImages: [
-        { url: '/1.svg', alt: 'Node JS' },
-        { url: '/6.svg', alt: 'Express' },
+        { url: '/1.svg', alt: 'Node Js' },
+        { url: '/6.svg', alt: 'Express Js' },
         { url: '/5.svg', alt: 'Mongodb' }
       ]
     }

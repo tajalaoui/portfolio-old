@@ -14,8 +14,6 @@ export default ({ app, store }) => {
       cookieKey: 'i18n'
     },
     locale: 'en',
-    silentTranslationWarn: true,
-    silentFallbackWarn: true,
 
     // Set the fallback locale in case the current lovcale can't be found
     fallbackLocale: 'en',
