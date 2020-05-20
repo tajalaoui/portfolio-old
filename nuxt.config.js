@@ -66,10 +66,25 @@ module.exports = {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/pwa',
     '@nuxtjs/axios',
     '@nuxtjs/svg',
     'nuxt-webfontloader'
   ],
+
+  // Pwa
+  pwa: {
+    icon: {
+      iconSrc: './static/mobile-logo.png'
+    }
+  },
+  manifest: {
+    short_name: 'TAJ',
+    name: 'Tajeddine Doe',
+    start_url: '/',
+    theme_color: '#29f709'
+  },
+
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

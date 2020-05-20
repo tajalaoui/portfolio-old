@@ -4,7 +4,6 @@ const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
-const nodemailerMailGun = require('nodemailer-mailgun-transport')
 const app = express()
 
 // Import and Set Nuxt.js options
