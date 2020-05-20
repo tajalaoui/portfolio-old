@@ -72,7 +72,7 @@ module.exports = {
     'nuxt-webfontloader'
   ],
 
-  // Pwa
+  //  Pwa
   pwa: {
     icon: {
       iconSrc: './static/mobile-logo.png'
