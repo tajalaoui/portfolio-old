@@ -27,7 +27,6 @@ a {
   text-decoration: none;
 }
 
-
 h1 {
   color: $secondary-color;
   font-weight: 700;
@@ -54,7 +53,7 @@ h1 {
 .page-enter,
 .page-leave-active {
   opacity: 0;
-  transform: scale(0);
+  transform: translateX(3em);
 }
 
 img {

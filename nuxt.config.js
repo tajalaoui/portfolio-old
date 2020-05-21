@@ -1,4 +1,6 @@
 const colors = require('vuetify/es5/util/colors').default
+require('dotenv').config()
+
 
 module.exports = {
   mode: 'universal',
@@ -69,7 +71,8 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/axios',
     '@nuxtjs/svg',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    '@nuxtjs/dotenv'
   ],
 
   //  Pwa
