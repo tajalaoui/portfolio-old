@@ -16,23 +16,34 @@
             <a
               href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
               rel="noopener"
+              role="button"
               target="_blank"
             >
               <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
             </a>
-            <a href="https://github.com/TajDoe" rel="noopener" target="_blank">
+            <a href="https://github.com/TajDoe" rel="noopener" target="_blank" role="button">
               <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
             </a>
-            <a href="https://www.instagram.com/_tajdoe/" rel="noopener" target="_blank">
+            <a
+              href="https://www.instagram.com/_tajdoe/"
+              rel="noopener"
+              target="_blank"
+              role="button"
+            >
               <icon class="nav-social-icons" :icon="['fab', 'instagram']" />
             </a>
           </div>
           <div class="buttons mt-3">
             <nuxt-link
               class="text-uppercase check-work-btn"
+              role="button"
               to="/portfolio"
             >{{$t("home.check-work")}}</nuxt-link>
-            <nuxt-link class="text-uppercase contact-btn" to="/contact">{{$t("home.contact-me")}}</nuxt-link>
+            <nuxt-link
+              class="text-uppercase contact-btn"
+              to="/contact"
+              role="button"
+            >{{$t("home.contact-me")}}</nuxt-link>
           </div>
         </div>
       </v-col>

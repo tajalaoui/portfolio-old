@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="#141414" flat app>
+    <v-app-bar color="#141414" flat app role="toolbar">
       <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase navbar-brand">
         <nuxt-link class="brand-name white--text" to="/">
@@ -23,10 +23,11 @@
         class="contact-btn resume-btn text-uppercase mr-2"
         target="_blank"
         rel="noopener"
+        role="button"
       >{{$t("navbar.resume")}}</a>
       <v-menu offset-y origin="center center" transition="scale-transition">
         <template v-slot:activator="{ on }">
-          <v-btn class="language-btn mx-3 ml-2" icon v-on="on">
+          <v-btn class="language-btn mx-3 ml-2" role="button" icon v-on="on">
             <icon :icon="['fas', 'language']" style="fontSize:1.7rem" />
           </v-btn>
         </template>
@@ -51,12 +52,14 @@
           v-for="item in menu"
           :key="item.title"
           :to="item.to"
+          role="button"
         >{{$t(item.title)}}</nuxt-link>
         <a
           href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
           class="contact-btn resume-btn text-uppercase mt-3"
           target="_blank"
           rel="noopener"
+          role="button"
         >{{$t("navbar.resume")}}</a>
       </div>
     </v-navigation-drawer>

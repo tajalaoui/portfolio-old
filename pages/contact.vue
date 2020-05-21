@@ -11,6 +11,7 @@
         <v-form ref="form" v-model="valid" @submit.prevent="validate" lazy-validation dark>
           <v-text-field
             color="rgb(41, 247, 9)"
+            type="text"
             v-model="name"
             :counter="10"
             :rules="nameRules"
@@ -50,6 +51,7 @@
             :disabled="!valid"
             color="success"
             type="submit"
+            role="button"
           >{{$t('contact.send')}}</button>
         </v-form>
       </v-col>
