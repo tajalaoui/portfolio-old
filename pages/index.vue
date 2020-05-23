@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row class="align-center">
-      <v-col md6>
+      <v-col cols="12" md="6">
         <div class="text-intro">
           <h5>{{$t("home.greeting")}}</h5>
           <h1 class="text-uppercase font-weight-bold">
@@ -47,10 +47,8 @@
           </div>
         </div>
       </v-col>
-      <v-col sm12 md6 offset="3" offset-lg="0">
-        <div class="svg d-md-flex justify-center align-center">
-          <img class="programmer-image" src="/pages/home.svg" alt="programmer image" />
-        </div>
+      <v-col cols="12" md="6">
+        <img class="programmer-image" src="/pages/home.svg" alt="programmer image" />
       </v-col>
     </v-row>
   </v-container>
@@ -118,30 +116,18 @@ export default {
   transition: $transition;
 }
 
-@media (max-width: 1263px) {
+@media (max-width: 960px) {
+  .text-intro,
   img {
-    display: none;
-  }
-  .text-intro {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    margin: 0 auto !important;
   }
 }
 
-@media (max-width: 900px) {
-  .text-intro {
-    .contact-btn {
-      margin-top: 11px;
-    }
-  }
-}
-
-@media (min-width: 900px) {
-  .text-intro {
-    .contact-btn {
-      margin-left: 15px;
+@media (max-width: 424px) {
+  .buttons {
+    a {
+      margin: 5px 0;
     }
   }
 }

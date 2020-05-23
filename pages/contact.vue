@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col sm="12" lg="7">
+      <v-col cols="12" lg="7">
         <div class="alerts">
           <transition name="show">
             <v-alert v-if="isSent" type="success">Email sent.</v-alert>
@@ -55,7 +55,7 @@
           >{{$t('contact.send')}}</button>
         </v-form>
       </v-col>
-      <v-col sm="12" lg="5">
+      <v-col cols="12" lg="5">
         <img src="/pages/contact.svg" alt="contact-image" />
       </v-col>
     </v-row>
