@@ -1,7 +1,6 @@
 const colors = require('vuetify/es5/util/colors').default
 require('dotenv').config()
 
-
 module.exports = {
   mode: 'universal',
   /*
@@ -44,10 +43,10 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: { color: '#29f709' },
-  // loadingIndicator: {
-  //   name: 'circle',
-  //   color: '#29f709'
-  // },
+  loadingIndicator: {
+    name: 'circle',
+    color: '#29f709'
+  },
   /*
    ** Global CSS
    */
@@ -62,25 +61,17 @@ module.exports = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/vuetify'],
+  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/pwa', '@nuxtjs/dotenv'],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/pwa',
     '@nuxtjs/axios',
-    '@nuxtjs/svg',
-    'nuxt-webfontloader',
-    '@nuxtjs/dotenv'
+    'nuxt-webfontloader'
   ],
 
-  //  Pwa
-  pwa: {
-    icon: {
-      iconSrc: './static/mobile-logo.png'
-    }
-  },
+  // Pwa
   manifest: {
     short_name: 'TAJ',
     name: 'Tajeddine Doe',

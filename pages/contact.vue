@@ -1,6 +1,6 @@
 <template>
   <v-container fill-height>
-    <v-row>
+    <v-row class="align-center">
       <v-col cols="12" md="6">
         <div class="alerts">
           <transition name="show">
