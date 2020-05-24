@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col cols="12" lg="7">
+      <v-col cols="12" md="6">
         <div class="alerts">
           <transition name="show">
             <v-alert v-if="isSent" type="success">Email sent.</v-alert>
@@ -55,8 +55,8 @@
           >{{$t('contact.send')}}</button>
         </v-form>
       </v-col>
-      <v-col cols="12" lg="5">
-        <img src="/pages/contact.svg" alt="contact-image" />
+      <v-col cols="12" md="6">
+        <img class="svg" src="/pages/contact.svg" alt="contact-image" />
       </v-col>
     </v-row>
   </v-container>
@@ -138,11 +138,6 @@ export default {
   width: 81%;
 }
 
-img {
-  height: 450px;
-  width: 545px;
-}
-
 .alerts {
   width: 81%;
   transition: 0.3s ease;
@@ -172,26 +167,6 @@ img {
   .alerts,
   img {
     margin: 0 auto !important;
-  }
-
-  img {
-    display: block;
-    height: 490px;
-    width: 490px;
-  }
-}
-
-@media (max-width: 900px) {
-  img {
-    height: 370px;
-    width: 370px;
-  }
-}
-
-@media (max-width: 600px) {
-  img {
-    height: 290px;
-    width: 290px;
   }
 }
 </style>

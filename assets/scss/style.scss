@@ -64,8 +64,15 @@ img {
 
 @media (max-width: 1640px) {
   img {
-    height: 550px;
-    width: 550px;
+    height: 530px;
+    width: 520px;
+  }
+}
+
+@media (max-width: 1090px) {
+  img {
+    width: 450px;
+    height: 450px;
   }
 }
 
@@ -74,11 +81,6 @@ img {
   body * {
     cursor: none !important;
   }
-
-  // a:hover {
-  //   .cursor {
-  //   }
-  // }
 
   .cursor {
     z-index: 99;
@@ -146,13 +148,14 @@ img {
   .v-card {
     margin: 9px 0 !important;
   }
+
+  .svg {
+    display: block;
+  }
 }
 
 @media (max-width: 600px) {
   img {
-    height: 263px;
-    width: 263px;
+    display: none !important;
   }
 }
-
-// todo ADD IMAGE ON ALL SCREEN SIZES

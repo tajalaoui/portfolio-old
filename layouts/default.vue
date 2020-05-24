@@ -180,7 +180,7 @@ export default {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1052px) {
   .v-app-bar {
     .nav-icon {
       display: none;
@@ -188,7 +188,7 @@ export default {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1052px) {
   .v-app-bar {
     .app-bar-links,
     .resume-btn {

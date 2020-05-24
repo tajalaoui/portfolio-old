@@ -48,7 +48,7 @@
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <img class="programmer-image" src="/pages/home.svg" alt="programmer image" />
+        <img class="svg" src="/pages/home.svg" alt="programmer image" />
       </v-col>
     </v-row>
   </v-container>
@@ -119,12 +119,11 @@ export default {
 @media (max-width: 960px) {
   .text-intro,
   img {
-    display: block;
-    margin: 0 auto !important;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 424px) {
+@media (max-width: 427px) {
   .buttons {
     a {
       margin: 5px 0;
