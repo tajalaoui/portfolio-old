@@ -73,7 +73,7 @@ module.exports = {
 
   // Pwa
   manifest: {
-    short_name: 'TAJ',
+    short_name: 'TajEddine',
     name: 'Tajeddine Doe',
     start_url: '/',
     theme_color: '#29f709'
