@@ -7,7 +7,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'TAJ - Full Stack Js',
+    title: '  TajEddine Doe',
     htmlAttrs: {
       lang: 'en'
     },
@@ -29,7 +29,7 @@ module.exports = {
           'javascript, vue, nuxt, full stack javascript, software developer, portfolio, doe'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' }]
   },
 
   // Importing fonts

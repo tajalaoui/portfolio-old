@@ -51,16 +51,16 @@ export default {
   data() {
     return {
       frontEndImages: [
-        { url: '/2.svg', alt: 'Vue Js' },
-        { url: '/3.svg', alt: 'Nuxt Js' },
-        { url: '/4.svg', alt: 'Vuetify' },
-        { url: '/7.svg', alt: 'Html' },
-        { url: '/8.svg', alt: 'Scss' }
+        { url: '/tech-logos/2.svg', alt: 'Vue Js' },
+        { url: '/tech-logos/3.svg', alt: 'Nuxt Js' },
+        { url: '/tech-logos/4.svg', alt: 'Vuetify' },
+        { url: '/tech-logos/7.svg', alt: 'Html' },
+        { url: '/tech-logos/8.svg', alt: 'Scss' }
       ],
       backEndImages: [
-        { url: '/1.svg', alt: 'Node Js' },
-        { url: '/express.svg', alt: 'Express Js' },
-        { url: '/5.svg', alt: 'Mongodb' }
+        { url: '/tech-logos/1.svg', alt: 'Node Js' },
+        { url: '/tech-logos/6.svg', alt: 'Express Js' },
+        { url: '/tech-logos/5.svg', alt: 'Mongodb' }
       ]
     }
   },
