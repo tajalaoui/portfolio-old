@@ -59,7 +59,7 @@ export default {
       ],
       backEndImages: [
         { url: '/1.svg', alt: 'Node Js' },
-        { url: '/6.svg', alt: 'Express Js' },
+        { url: '/express.svg', alt: 'Express Js' },
         { url: '/5.svg', alt: 'Mongodb' }
       ]
     }
