@@ -13,7 +13,7 @@
           <br />
           {{$t("skills.4st-p")}}
         </p>
-        <div>
+        <p>
           {{$t("skills.5st-p")}}
           <a
             href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
@@ -24,7 +24,7 @@
           {{$t("skills.6st-p")}}
           <nuxt-link to="/contact">{{$t("skills.7st-p")}}</nuxt-link>
           <span>{{$t("skills.8st-p")}}</span>
-        </div>
+        </p>
       </v-col>
       <v-col class="d-md-flex justify-center align-center flex-wrap text-center" cols="12" md="6">
         <v-card color="#141414">
@@ -89,7 +89,7 @@ export default {
 img {
   width: 65px;
   height: 65px;
-  margin: 6px;
+  margin: 5px;
 }
 
 a {
