@@ -95,14 +95,13 @@ export default {
       ]
     }
   },
-  // todo remove - 0 after e.pageY && e.pageX.
   beforeMount() {
     const cursor = document.querySelector('.cursor')
 
     document.addEventListener('mousemove', e => {
       cursor.setAttribute(
         'style',
-        'top: ' + (e.pageY - 0) + 'px; left: ' + (e.pageX - 0) + 'px;'
+        'top: ' + (e.pageY - 10) + 'px; left: ' + (e.pageX - 10) + 'px;'
       )
     })
 

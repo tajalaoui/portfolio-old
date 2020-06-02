@@ -84,8 +84,8 @@ img {
 
   .cursor {
     z-index: 99;
-    width: 1.9rem;
-    height: 1.9rem;
+    width: 2rem;
+    height: 2rem;
     border: 3px solid #fafafa;
     background-color: #757575a9;
     border-radius: 50%;
@@ -101,7 +101,7 @@ img {
       transform: scale(1);
     }
     to {
-      transform: scale(0.7);
+      transform: scale(0.8);
     }
   }
 
@@ -110,7 +110,7 @@ img {
       transform: scale(1);
     }
     to {
-      transform: scale(0.4);
+      transform: scale(0.5);
     }
   }
 

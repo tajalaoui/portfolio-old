@@ -1,32 +1,32 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col cols="12" md="6">
+      <v-col md="6">
         <h1>{{$t("skills.heading")}}</h1>
         <p style="paddingTop: 21px">{{$t("skills.1st-p")}}</p>
-        <p>
-          HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, MONGODB,
-          <br />
-          {{$t("skills.2st-p")}}
-          <br />
-          {{$t("skills.3st-p")}}
-          <br />
-          {{$t("skills.4st-p")}}
-        </p>
-        <p>
-          {{$t("skills.5st-p")}}
-          <a
-            href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
-            rel="noopener"
-            role="button"
-            target="_blank"
-          >Linkedin</a>
-          {{$t("skills.6st-p")}}
-          <nuxt-link to="/contact">{{$t("skills.7st-p")}}</nuxt-link>
-          <span>{{$t("skills.8st-p")}}</span>
-        </p>
+        <div>
+          <p>
+            {{$t("skills.2st-p")}}
+            <br />
+            {{$t("skills.3st-p")}}
+            <br />
+            {{$t("skills.4st-p")}}
+          </p>
+          <p>
+            {{$t("skills.5st-p")}}
+            <a
+              href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
+              rel="noopener"
+              role="button"
+              target="_blank"
+            >{{$t('skills.linkedin')}}</a>
+            {{$t("skills.6st-p")}}
+            <nuxt-link to="/contact">{{$t("skills.7st-p")}}</nuxt-link>
+            <span>{{$t("skills.8st-p")}}</span>
+          </p>
+        </div>
       </v-col>
-      <v-col class="d-md-flex justify-center align-center flex-wrap text-center" cols="12" md="6">
+      <v-col class="d-md-flex justify-center align-center flex-wrap text-center" md="6">
         <v-card color="#141414">
           <v-card-text class="card-text text-center">Front End</v-card-text>
           <v-tooltip v-for="(image, index) in frontEndImages" :key="index" top>
