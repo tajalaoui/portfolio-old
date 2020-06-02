@@ -36,13 +36,14 @@
     },
     "skills": {
         "heading": "Compétences Et Expériences",
-        "1st-p": "Je me spécialise à la fois côté client et côté serveur.",
-        "2st-p": "création d'applications Web petites à moyennes",
-        "3st-p": "avec Vue & Nuxt et la conception des matériaux avec Vuetify.",
-        "4st-p": "Visitez mon",
-        "5st-p": "profil pour plus d'informations ou",
-        "6st-p": "Contactez",
-        "7st-p": "moi."
+        "1st-p": "Développeur de logiciels Javascript full stack.",
+        "2st-p": "Création d'applications Web à l'aide de la technologie PWA",
+        "3st-p": "With Vue in the frontend & Node as backend,",
+        "4st-p": "Concevoir avec Vuetify & Vuesax.",
+        "5st-p": "Visitez mon",
+        "6st-p": "profil pour plus d'informations ou",
+        "7st-p": "Contactez",
+        "8st-p": "moi."
     },
     "contact": {
         "name": "Nom",

@@ -1,31 +1,35 @@
 <template>
   <v-container fill-height>
     <v-row>
-      <v-col md6>
+      <v-col cols="12" md="6">
         <h1>{{$t("skills.heading")}}</h1>
         <p style="paddingTop: 21px">{{$t("skills.1st-p")}}</p>
         <p>
-          HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, MONGODB
+          HTML, SCSS, JAVASCRIPT, NODE, EXPRESS, MONGODB,
           <br />
           {{$t("skills.2st-p")}}
           <br />
           {{$t("skills.3st-p")}}
-        </p>
-        <p>
+          <br />
           {{$t("skills.4st-p")}}
+        </p>
+        <div>
+          {{$t("skills.5st-p")}}
           <a
             href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
+            rel="noopener"
+            role="button"
             target="_blank"
           >Linkedin</a>
-          {{$t("skills.5st-p")}}
-          <nuxt-link to="/contact">{{$t("skills.6st-p")}}</nuxt-link>
-          <span>{{$t("skills.7st-p")}}</span>
-        </p>
+          {{$t("skills.6st-p")}}
+          <nuxt-link to="/contact">{{$t("skills.7st-p")}}</nuxt-link>
+          <span>{{$t("skills.8st-p")}}</span>
+        </div>
       </v-col>
-      <v-col class="d-md-flex justify-center align-center flex-wrap text-center" md6 offset-md="1">
+      <v-col class="d-md-flex justify-center align-center flex-wrap text-center" cols="12" md="6">
         <v-card color="#141414">
           <v-card-text class="card-text text-center">Front End</v-card-text>
-          <v-tooltip v-for="(image, index) in frontEndImages" :key="index" v-model="show" top>
+          <v-tooltip v-for="(image, index) in frontEndImages" :key="index" top>
             <template v-slot:activator="{ on }">
               <img :src="image.url" :alt="image.alt" v-on="on" />
             </template>
@@ -34,7 +38,7 @@
         </v-card>
         <v-card color="#141414">
           <v-card-text class="card-text text-center">Back End</v-card-text>
-          <v-tooltip v-for="(image, index) in backEndImages" :key="index" v-model="show" top>
+          <v-tooltip v-for="(image, index) in backEndImages" :key="index" top>
             <template v-slot:activator="{ on }">
               <img :src="image.url" :alt="image.alt" v-on="on" />
             </template>
@@ -51,16 +55,17 @@ export default {
   data() {
     return {
       frontEndImages: [
-        { url: '/tech-logos/2.svg', alt: 'Vue Js' },
-        { url: '/tech-logos/3.svg', alt: 'Nuxt Js' },
-        { url: '/tech-logos/4.svg', alt: 'Vuetify' },
-        { url: '/tech-logos/7.svg', alt: 'Html' },
-        { url: '/tech-logos/8.svg', alt: 'Scss' }
+        { url: '/tech-logos/vue.svg', alt: 'Vue Js' },
+        { url: '/tech-logos/nuxt.svg', alt: 'Nuxt Js' },
+        { url: '/tech-logos/vuetify.svg', alt: 'Vuetify' },
+        { url: '/tech-logos/vuesax.svg', alt: 'Vuesax' },
+        { url: '/tech-logos/html.svg', alt: 'Html' },
+        { url: '/tech-logos/scss.svg', alt: 'Scss' }
       ],
       backEndImages: [
-        { url: '/tech-logos/1.svg', alt: 'Node Js' },
-        { url: '/tech-logos/6.svg', alt: 'Express Js' },
-        { url: '/tech-logos/5.svg', alt: 'Mongodb' }
+        { url: '/tech-logos/node.svg', alt: 'Node Js' },
+        { url: '/tech-logos/express.svg', alt: 'Express Js' },
+        { url: '/tech-logos/mongodb.svg', alt: 'Mongodb' }
       ]
     }
   },

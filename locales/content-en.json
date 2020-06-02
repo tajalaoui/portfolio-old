@@ -36,13 +36,14 @@
     },
     "skills": {
         "heading": "Skills & Experiences",
-        "1st-p": "I specialize in both client side & server side.",
-        "2st-p": "building small to medium web apps",
-        "3st-p": "with Vue & Nuxt and material design with Vuetify.",
-        "4st-p": "Visit my",
-        "5st-p": "profile for more info or",
-        "6st-p": "Contact",
-        "7st-p": "me."
+        "1st-p": "Full stack Javascript software developer.",
+        "2st-p": "Building web apps using pwa technology",
+        "3st-p": "With Vue in the frontend & Node as backend,",
+        "4st-p": "Designing with Vuetify & Vuesax.",
+        "5st-p": "Visit my",
+        "6st-p": "profile for more info or",
+        "7st-p": "Contact",
+        "8st-p": "me."
     },
     "contact": {
         "name": "Name",

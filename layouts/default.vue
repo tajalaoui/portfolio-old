@@ -95,6 +95,7 @@ export default {
       ]
     }
   },
+  // todo remove - 0 after e.pageY && e.pageX.
   beforeMount() {
     const cursor = document.querySelector('.cursor')
 
