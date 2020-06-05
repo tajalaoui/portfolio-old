@@ -42,7 +42,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#29f709' },
+  loading: { color: '#29f709', height: '5px' },
   loadingIndicator: {
     name: 'circle',
     color: '#29f709'
@@ -65,11 +65,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    'nuxt-webfontloader'
-  ],
+  modules: ['@nuxtjs/axios', 'nuxt-webfontloader'],
 
   // Pwa
   manifest: {

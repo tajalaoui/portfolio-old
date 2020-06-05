@@ -1,5 +1,4 @@
 @mixin shadow {
-  -webkit-box-shadow: 3px 5px 21px 5px $secondary-color;
   box-shadow: 3px 5px 21px 5px $secondary-color;
 }
 

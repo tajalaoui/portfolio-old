@@ -1,5 +1,16 @@
 <template>
   <v-app>
+    <!-- Loading -->
+    <div v-if="canLoad" class="psoload">
+      <div class="straight"></div>
+      <div class="curve"></div>
+      <div class="center"></div>
+      <div class="inner"></div>
+    </div>
+    <!-- Loading -->
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <!-- Cursor -->
     <v-app-bar color="#141414" flat app role="toolbar">
       <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase navbar-brand">
@@ -56,7 +67,7 @@
         >{{$t(item.title)}}</nuxt-link>
         <a
           href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
-          class="contact-btn resume-btn text-uppercase mt-3"
+          class="contact-btn resume-btn text-uppercase mt-5"
           target="_blank"
           rel="noopener"
           role="button"
@@ -66,7 +77,6 @@
     <v-content>
       <nuxt />
     </v-content>
-    <div class="cursor"></div>
   </v-app>
 </template>
 
@@ -92,8 +102,12 @@ export default {
         { title: 'English', src: '/languages/en.svg', lang: 'en' },
         { title: 'Francais', src: '/languages/fr.svg', lang: 'fr' },
         { title: 'عربى', src: '/languages/ar.svg', lang: 'ar' }
-      ]
+      ],
+      canLoad: true
     }
+  },
+  mounted() {
+    this.canLoad = false
   },
   beforeMount() {
     const cursor = document.querySelector('.cursor')
@@ -163,6 +177,141 @@ export default {
   .contact-btn:hover {
     @include btnHover();
   }
+}
+
+// Loading Animation
+@keyframes arrow-spin {
+  100% {
+    transform: rotate(179deg);
+  }
+}
+
+@-webkit-keyframes arrow-spin {
+  100% {
+    -webkit-transform: rotate(179deg);
+  }
+}
+
+.psoload,
+.psoload *,
+.psoload *:before,
+.psoload *:after {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s;
+}
+
+.psoload {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 150px;
+  z-index: 5000;
+}
+
+.psoload .straight,
+.psoload .curve {
+  position: absolute;
+  top: 17.5%;
+  left: 17.5%;
+  width: 65%;
+  height: 65%;
+  border-radius: 100%;
+  animation: arrow-spin 0.85s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite;
+  -webkit-animation: arrow-spin 0.85s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite;
+}
+
+.psoload .straight:before,
+.psoload .straight:after {
+  content: '';
+  position: absolute;
+  width: 15%;
+  border-bottom: 3px solid $secondary-color;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.psoload .straight:before {
+  top: 5px;
+  left: 5px;
+}
+
+.psoload .straight:after {
+  bottom: 5px;
+  right: 5px;
+}
+
+.psoload .curve:before,
+.psoload .curve:after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 10px;
+  border: solid 3px transparent;
+  border-top-color: #eee;
+  border-radius: 50%/10px 10px 0 0;
+  z-index: 90001;
+}
+
+.psoload .curve:before {
+  transform: rotate(-63deg) translateX(-27px) translateY(-4px);
+  -webkit-transform: rotate(-63deg) translateX(-27px) translateY(-4px);
+}
+
+.psoload .curve:after {
+  bottom: 5px;
+  right: 5px;
+  transform: rotate(115deg) translateX(-26px) translateY(-12px);
+  -webkit-transform: rotate(115deg) translateX(-26px) translateY(-12px);
+}
+
+.psoload .center {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  border-radius: 100%;
+  border: 3px solid $secondary-color;
+}
+
+.psoload .inner {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  animation: arrow-spin 0.85s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite reverse;
+  -webkit-animation: arrow-spin 0.85s cubic-bezier(0.2, 0.8, 0.9, 0.1) infinite
+    reverse;
+}
+
+.psoload .inner:before,
+.psoload .inner:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom-width: 11px;
+  border-bottom-color: #eee;
+}
+
+.psoload .inner:before {
+  top: 12px;
+  left: 12px;
+  transform: rotate(128deg);
+  -webkit-transform: rotate(128deg);
+}
+
+.psoload .inner:after {
+  bottom: 12px;
+  right: 12px;
+  transform: rotate(-48deg);
+  -webkit-transform: rotate(-48deg);
 }
 
 @media (min-width: 900px) {
