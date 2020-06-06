@@ -1,16 +1,16 @@
 <template>
   <v-app>
     <!-- Loading -->
-    <div v-if="canLoad" class="psoload">
-      <div class="straight"></div>
-      <div class="curve"></div>
-      <div class="center"></div>
-      <div class="inner"></div>
+    <div v-if="canLoad" class="loadingWrapper">
+      <div class="psoload">
+        <div class="straight"></div>
+        <div class="curve"></div>
+        <div class="center"></div>
+        <div class="inner"></div>
+      </div>
     </div>
-    <!-- Loading -->
     <!-- Cursor -->
     <div class="cursor"></div>
-    <!-- Cursor -->
     <v-app-bar color="#141414" flat app role="toolbar">
       <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase navbar-brand">
@@ -179,7 +179,18 @@ export default {
   }
 }
 
-// Loading Animation
+// * Loading Animation
+
+// Loading wrapper
+.loadingWrapper {
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  transition: all 400ms ease-in-out;
+}
+
 @keyframes arrow-spin {
   100% {
     transform: rotate(179deg);
@@ -197,8 +208,7 @@ export default {
 .psoload *:before,
 .psoload *:after {
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s;
+  transition: all 300ms ease;
 }
 
 .psoload {
@@ -250,7 +260,7 @@ export default {
   width: 45px;
   height: 10px;
   border: solid 3px transparent;
-  border-top-color: #eee;
+  border-top-color: $white;
   border-radius: 50%/10px 10px 0 0;
   z-index: 90001;
 }
@@ -297,7 +307,7 @@ export default {
   height: 0;
   border: 6px solid transparent;
   border-bottom-width: 11px;
-  border-bottom-color: #eee;
+  border-bottom-color: $white;
 }
 
 .psoload .inner:before {
