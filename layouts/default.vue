@@ -56,7 +56,7 @@
         </v-list>
       </v-menu>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" temporary dark app>
+    <v-navigation-drawer v-model="drawer" temporary app>
       <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 35px;">
         <nuxt-link
           class="my-3"
@@ -67,10 +67,11 @@
         >{{$t(item.title)}}</nuxt-link>
         <a
           href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
-          class="contact-btn resume-btn text-uppercase mt-5"
+          class="contact-btn resume-btn text-uppercase"
           target="_blank"
           rel="noopener"
           role="button"
+          style="position: absolute; bottom: 9%"
         >{{$t("navbar.resume")}}</a>
       </div>
     </v-navigation-drawer>
