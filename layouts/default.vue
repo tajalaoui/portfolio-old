@@ -12,7 +12,7 @@
     <!-- Cursor -->
     <div class="cursor"></div>
     <v-app-bar color="#141414" flat app role="toolbar">
-      <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer" aria-label="menu button"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase navbar-brand">
         <nuxt-link class="brand-name white--text" to="/">
           <span class="brand-span">Taj</span>
@@ -38,7 +38,13 @@
       >{{$t("navbar.resume")}}</a>
       <v-menu offset-y origin="center center" transition="scale-transition">
         <template v-slot:activator="{ on }">
-          <v-btn class="language-btn mx-3 ml-2" role="button" icon v-on="on">
+          <v-btn
+            class="language-btn mx-3 ml-2"
+            icon
+            v-on="on"
+            role="button"
+            aria-label="change language"
+          >
             <icon :icon="['fas', 'language']" style="fontSize:1.7rem" />
           </v-btn>
         </template>
@@ -49,8 +55,13 @@
             @click="changeLanguage(item.lang)"
           >
             <v-list-item-title>
-              <img class="my-1" :src="item.src" :alt="item.lang" style="height: 55px; width: 55px" />
-              <!-- {{ item.title }} -->
+              <img
+                class="my-1"
+                :src="item.src"
+                role="button"
+                :alt="item.lang"
+                style="height: 55px; width: 55px"
+              />
             </v-list-item-title>
           </v-list-item>
         </v-list>
@@ -71,7 +82,6 @@
           target="_blank"
           rel="noopener"
           role="button"
-          style="position: absolute; bottom: 9%"
         >{{$t("navbar.resume")}}</a>
       </div>
     </v-navigation-drawer>
@@ -189,27 +199,7 @@ export default {
   height: 100vh;
   width: 100vw;
   background: #000;
-  transition: all 400ms ease-in-out;
-}
-
-@keyframes arrow-spin {
-  100% {
-    transform: rotate(179deg);
-  }
-}
-
-@-webkit-keyframes arrow-spin {
-  100% {
-    -webkit-transform: rotate(179deg);
-  }
-}
-
-.psoload,
-.psoload *,
-.psoload *:before,
-.psoload *:after {
-  box-sizing: border-box;
-  transition: all 300ms ease;
+  transition: all 5s ease-in-out;
 }
 
 .psoload {
@@ -220,6 +210,13 @@ export default {
   height: 150px;
   width: 150px;
   z-index: 5000;
+}
+
+.psoload,
+.psoload *,
+.psoload *:before,
+.psoload *:after {
+  box-sizing: border-box;
 }
 
 .psoload .straight,
@@ -325,6 +322,18 @@ export default {
   -webkit-transform: rotate(-48deg);
 }
 
+@keyframes arrow-spin {
+  100% {
+    transform: rotate(179deg);
+  }
+}
+
+@-webkit-keyframes arrow-spin {
+  100% {
+    -webkit-transform: rotate(179deg);
+  }
+}
+
 @media (min-width: 900px) {
   .v-toolbar {
     .navbar-brand {
@@ -357,6 +366,13 @@ export default {
     .brand-name {
       font-size: 1.2rem;
     }
+  }
+}
+
+@media (orientation: portrait) {
+  .resume-btn {
+    position: absolute;
+    bottom: 8%;
   }
 }
 </style>
