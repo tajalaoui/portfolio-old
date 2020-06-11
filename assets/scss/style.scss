@@ -18,6 +18,25 @@ body {
   display: none;
 }
 
+::selection {
+  background: #66bb6a;
+  color: #fafafa;
+}
+
+// Change direct to right to left on arabic language.
+.arLang {
+  direction: rtl;
+  
+  label {
+    text-align: right;
+    direction: rtl;
+  }
+  
+  .buttons {
+    letter-spacing: 0 !important;
+  }
+}
+
 .v-content {
   font-family: 'Montserrat', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   background-color: #141414;

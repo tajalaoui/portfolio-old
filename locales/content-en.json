@@ -51,7 +51,11 @@
         "email": "E-mail",
         "subject": "Subject",
         "message": "Message",
-        "send": "Send"
+        "send": "Send",
+        "alerts": {
+            "sent": "Email sent.",
+            "notSent": "Email not sent."
+        }
     },
     "404": {
         "404-btn": "go to homepage"

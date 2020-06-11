@@ -4,11 +4,11 @@
       <v-col cols="12" md="6">
         <div class="alerts">
           <transition name="show">
-            <v-alert class="green-alert" v-if="isSent" type="success">Email sent.</v-alert>
-            <v-alert class="red-alert" v-if="isError" type="error">Email not sent.</v-alert>
+            <v-alert class="green-alert" v-if="isSent" type="success">{{ $t('contact.alerts.sent')}}</v-alert>
+            <v-alert class="red-alert" v-if="isError" type="error">{{ $t('contact.alerts.notSent')}}</v-alert>
           </transition>
         </div>
-        <v-form ref="form" v-model="valid" @submit.prevent="validate" lazy-validation dark>
+        <v-form ref="form" v-model="valid" @submit.prevent="validate" lazy-validation>
           <v-text-field
             color="rgb(41, 247, 9)"
             type="text"
@@ -141,13 +141,13 @@ export default {
 .alerts {
   width: 81%;
   transition: 0.3s ease;
-  
+
   .green-alert {
     box-shadow: 3px 5px 21px 5px $secondary-color;
   }
 
   .red-alert {
-    box-shadow: 3px 5px 21px 5px #BF360C;
+    box-shadow: 3px 5px 21px 5px #bf360c;
   }
 }
 

@@ -68,7 +68,7 @@
       </v-menu>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary app>
-      <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 35px;">
+      <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 33px;">
         <nuxt-link
           class="my-3"
           v-for="item in menu"
@@ -86,7 +86,7 @@
       </div>
     </v-navigation-drawer>
     <v-content>
-      <nuxt />
+      <nuxt :class="{arLang: this.$i18n.locale == 'ar'}" />
     </v-content>
   </v-app>
 </template>
