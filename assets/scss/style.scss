@@ -26,12 +26,12 @@ body {
 // Change direct to right to left on arabic language.
 .arLang {
   direction: rtl;
-  
+
   label {
     text-align: right;
     direction: rtl;
   }
-  
+
   .buttons {
     letter-spacing: 0 !important;
   }

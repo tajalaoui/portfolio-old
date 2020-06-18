@@ -71,11 +71,12 @@ export default {
   },
   head() {
     return {
+      title: 'Tajeddine - Skills',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Skills Page'
+          content: 'Skills & Technologies i know'
         }
       ]
     }

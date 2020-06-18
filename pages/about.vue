@@ -52,11 +52,12 @@
 export default {
   head() {
     return {
+      title: 'Tajeddine - About',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'About Page'
+          content: 'Basic Informations about me'
         }
       ]
     }

@@ -11,6 +11,7 @@
     </div>
     <!-- Cursor -->
     <div class="cursor"></div>
+    <!-- Navigation -->
     <v-app-bar color="#141414" flat app role="toolbar">
       <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer" aria-label="menu button"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase navbar-brand">
@@ -85,8 +86,8 @@
         >{{$t("navbar.resume")}}</a>
       </div>
     </v-navigation-drawer>
-    <v-content>
-      <nuxt :class="{arLang: this.$i18n.locale == 'ar'}" />
+    <v-content :class="{arLang: this.$i18n.locale == 'ar'}">
+      <nuxt />
     </v-content>
   </v-app>
 </template>
@@ -166,8 +167,9 @@ export default {
   }
 
   .brand-name {
-    letter-spacing: 1px;
+    letter-spacing: 1.3px;
     font-weight: 700;
+    overflow: auto;
     .brand-span {
       color: $secondary-color;
     }

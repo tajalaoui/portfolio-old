@@ -17,11 +17,12 @@ export default {
   components: {
     head() {
       return {
+        title: 'Tajeddine - My Projects',
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: 'My Work'
+            content: 'Projects i created'
           }
         ]
       }

@@ -58,6 +58,7 @@
 export default {
   head() {
     return {
+      title: 'Tajeddine - Home',
       meta: [
         {
           hid: 'description',

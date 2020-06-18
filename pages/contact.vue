@@ -119,11 +119,12 @@ export default {
   },
   head() {
     return {
+      title: 'Tajeddine - Contact',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Contact Me'
+          content: 'Contact Me p'
         }
       ]
     }
