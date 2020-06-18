@@ -58,7 +58,7 @@
 export default {
   head() {
     return {
-      title: 'Tajeddine - Home',
+      title: 'Home',
       meta: [
         {
           hid: 'description',

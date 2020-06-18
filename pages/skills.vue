@@ -71,7 +71,7 @@ export default {
   },
   head() {
     return {
-      title: 'Tajeddine - Skills',
+      title: 'Skills',
       meta: [
         {
           hid: 'description',

@@ -119,7 +119,7 @@ export default {
   },
   head() {
     return {
-      title: 'Tajeddine - Contact',
+      title: 'Contact',
       meta: [
         {
           hid: 'description',

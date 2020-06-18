@@ -86,15 +86,20 @@
         >{{$t("navbar.resume")}}</a>
       </div>
     </v-navigation-drawer>
-    <v-content :class="{arLang: this.$i18n.locale == 'ar'}">
+    <v-main :class="{arLang: this.$i18n.locale == 'ar'}">
       <nuxt />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
 <script>
 export default {
   name: 'nav-bar',
+  head() {
+    return {
+      titleTemplate: 'Tajeddine - %s'
+    }
+  },
   methods: {
     changeLanguage(lang) {
       this.$i18n.locale = lang
