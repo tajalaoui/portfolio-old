@@ -54,6 +54,26 @@ h1 {
   letter-spacing: 1px;
 }
 
+// .text-intro::before {
+//   content: '<js>';
+//   color: #66bb6a;
+//   font-size: 18px;
+//   position: absolute;
+//   margin-top: -2.3%;
+//   left: 3%;
+//   transform: translateX(-50%);
+// }
+
+// .text-intro::after {
+//   content: '</js>';
+//   color: #66bb6a;
+//   font-size: 18px;
+//   position: absolute;
+//   margin-top: 2%;
+//   left: 3%;
+//   transform: translateX(-50%);
+// }
+
 .v-card {
   border: 2px solid $secondary-color !important;
   background-color: #141414 !important;

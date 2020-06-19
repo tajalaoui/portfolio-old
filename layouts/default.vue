@@ -11,10 +11,14 @@
     </div>
     <!-- Cursor -->
     <div class="cursor"></div>
+    <!-- Shapes -->
+    <img class="shapes polygon" src="/polygon.svg" alt="polygon">
+    <img class="shapes square" src="/square.svg" alt="square">
+
     <!-- Navigation -->
     <v-app-bar color="#141414" flat app role="toolbar">
       <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer" aria-label="menu button"></v-app-bar-nav-icon>
-      <v-toolbar-title class="text-uppercase navbar-brand">
+      <v-toolbar-title class="text-uppercase navbar-brand ml-3">
         <nuxt-link class="brand-name white--text" to="/">
           <span class="brand-span">Taj</span>
           <span>Eddine</span>
@@ -40,7 +44,7 @@
       <v-menu offset-y origin="center center" transition="scale-transition">
         <template v-slot:activator="{ on }">
           <v-btn
-            class="language-btn mx-3 ml-2"
+            class="language-btn mx-3"
             icon
             v-on="on"
             role="button"
@@ -86,8 +90,10 @@
         >{{$t("navbar.resume")}}</a>
       </div>
     </v-navigation-drawer>
+    
     <v-main :class="{arLang: this.$i18n.locale == 'ar'}">
       <nuxt />
+      
     </v-main>
   </v-app>
 </template>
@@ -181,6 +187,7 @@ export default {
   }
 
   .language-btn {
+    margin-right: 1.5% !important;
     @include contactBtn();
   }
 
@@ -329,6 +336,26 @@ export default {
   -webkit-transform: rotate(-48deg);
 }
 
+// Shapes
+.polygon,
+.square {
+  position: absolute;
+  height: 135px;
+  width: 135px;
+}
+
+.square {
+  left: -2.5%;
+  top: 5%;
+  transform: rotate(3deg) !important;
+}
+
+.polygon {
+  right: -2.5%;
+  bottom: 5%;
+  transform: rotate(45deg);
+}
+
 @keyframes arrow-spin {
   100% {
     transform: rotate(179deg);
@@ -362,6 +389,21 @@ export default {
       display: none;
     }
   }
+
+  .polygon,
+  .square {
+    animation: shapes 5s infinite ease-out;
+  }
+
+  @keyframes shapes {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @media (max-width: 1052px) {
@@ -373,6 +415,10 @@ export default {
     .brand-name {
       font-size: 1.2rem;
     }
+  }
+
+  .shapes {
+    display: none;
   }
 }
 

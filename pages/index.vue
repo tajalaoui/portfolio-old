@@ -1,5 +1,5 @@
 <template>
-  <v-container fill-height>
+  <v-container  fill-height>
     <v-row class="align-center">
       <v-col cols="12" md="6">
         <div class="text-intro">
@@ -35,7 +35,7 @@
           </div>
           <div class="buttons mt-3">
             <nuxt-link
-              class="text-uppercase check-work-btn"
+              class="text-uppercase check-work-btn mr-3"
               role="button"
               to="/portfolio"
             >{{$t("home.check-work")}}</nuxt-link>
@@ -48,7 +48,7 @@
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <img class="svg" src="/pages/home.svg" alt="programmer image" />
+        <img class="svg" src="/pages/home.svg" alt="programmer image" />  
       </v-col>
     </v-row>
   </v-container>
