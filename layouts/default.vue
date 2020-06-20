@@ -11,10 +11,6 @@
     </div>
     <!-- Cursor -->
     <div class="cursor"></div>
-    <!-- Shapes -->
-    <img class="shapes polygon" src="/polygon.svg" alt="polygon">
-    <img class="shapes square" src="/square.svg" alt="square">
-
     <!-- Navigation -->
     <v-app-bar color="#141414" flat app role="toolbar">
       <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer" aria-label="menu button"></v-app-bar-nav-icon>
@@ -93,7 +89,6 @@
     
     <v-main :class="{arLang: this.$i18n.locale == 'ar'}">
       <nuxt />
-      
     </v-main>
   </v-app>
 </template>
@@ -334,26 +329,6 @@ export default {
   right: 12px;
   transform: rotate(-48deg);
   -webkit-transform: rotate(-48deg);
-}
-
-// Shapes
-.polygon,
-.square {
-  position: absolute;
-  height: 135px;
-  width: 135px;
-}
-
-.square {
-  left: -2.5%;
-  top: 5%;
-  transform: rotate(3deg) !important;
-}
-
-.polygon {
-  right: -2.5%;
-  bottom: 5%;
-  transform: rotate(45deg);
 }
 
 @keyframes arrow-spin {

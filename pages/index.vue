@@ -124,7 +124,7 @@ export default {
   }
 }
 
-@media (max-width: 427px) {
+@media (max-width: 439px) {
   .buttons {
     a {
       margin: 5px 0;
