@@ -26,7 +26,6 @@
       <v-col
         class="d-md-flex justify-center align-center flex-wrap flex-lg-nowrap"
         md6
-        offset-md="1"
       >
         <v-card class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>

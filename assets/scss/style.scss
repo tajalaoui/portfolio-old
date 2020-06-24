@@ -74,6 +74,19 @@ img {
   }
 }
 
+// Contact page.
+@media (max-width: 1270px) {
+  .v-form,
+  .alerts,
+  img {
+    margin: 0 auto !important;
+  }
+
+  .v-card {
+    margin: 9px 0 !important;
+  }
+}
+
 @media (max-width: 1090px) {
   img {
     width: 450px;
@@ -146,10 +159,6 @@ img {
   .buttons,
   .social-icons {
     text-align: center;
-  }
-
-  .v-card {
-    margin: 9px 0 !important;
   }
 
   .svg {

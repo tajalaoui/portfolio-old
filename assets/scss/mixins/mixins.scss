@@ -1,5 +1,5 @@
 @mixin shadow {
-  box-shadow: 2px 4px 15px 4px $shadow-color;
+  box-shadow: 2px 3px 13px 3px $shadow-color;
 }
 
 @mixin btn {
@@ -16,6 +16,7 @@
   border-color: $secondary-color;
   background-color: $secondary-color;
   transition: $transition;
+  
   @include shadow;
 }
 
@@ -34,5 +35,4 @@
   border-color: $secondary-color;
   background-color: #141414;
   transition: $transition;
-  // @include shadow;
 }

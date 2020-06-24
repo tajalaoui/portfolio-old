@@ -14,18 +14,16 @@
 
 <script>
 export default {
-  components: {
-    head() {
-      return {
-        title: 'Projects',
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'Projects i created'
-          }
-        ]
-      }
+  head() {
+    return {
+      title: 'Projects',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Projects i created'
+        }
+      ]
     }
   }
 }
