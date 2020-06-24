@@ -86,8 +86,7 @@
         >{{$t("navbar.resume")}}</a>
       </div>
     </v-navigation-drawer>
-    
-    <v-main :class="{arLang: this.$i18n.locale == 'ar'}">
+    <v-main>
       <nuxt />
     </v-main>
   </v-app>
@@ -98,7 +97,9 @@ export default {
   name: 'nav-bar',
   head() {
     return {
-      titleTemplate: 'Tajeddine - %s'
+      htmlAttrs: {
+        lang: this.$i18n.locale
+      }
     }
   },
   methods: {
@@ -346,7 +347,7 @@ export default {
 @media (min-width: 900px) {
   .v-toolbar {
     .navbar-brand {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
     .app-bar-links > a {
       margin: 0 9px;
@@ -358,7 +359,7 @@ export default {
   }
 }
 
-@media (min-width: 1052px) {
+@media (min-width: 1350px) {
   .v-app-bar {
     .nav-icon {
       display: none;
@@ -381,7 +382,7 @@ export default {
   }
 }
 
-@media (max-width: 1052px) {
+@media (max-width: 1350px) {
   .v-app-bar {
     .app-bar-links,
     .resume-btn {
@@ -397,7 +398,8 @@ export default {
   }
 }
 
-@media (orientation: portrait) {
+@media only screen and (max-width: 1350px),
+  only screen and (orientation: portrait) {
   .resume-btn {
     position: absolute;
     bottom: 8%;

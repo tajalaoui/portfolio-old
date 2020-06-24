@@ -7,10 +7,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: '  TajEddine Doe',
-    htmlAttrs: {
-      lang: 'en'
-    },
+    titleTemplate: '%s - TajEddine',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -17,7 +17,7 @@ export default {
   components: {
     head() {
       return {
-        title: 'My Projects',
+        title: 'Projects',
         meta: [
           {
             hid: 'description',

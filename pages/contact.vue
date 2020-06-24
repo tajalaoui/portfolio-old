@@ -144,11 +144,11 @@ export default {
   transition: 0.3s ease;
 
   .green-alert {
-    box-shadow: 3px 5px 21px 5px $secondary-color;
+    box-shadow: 2px 4px 15px 4px $shadow-color;
   }
 
   .red-alert {
-    box-shadow: 3px 5px 21px 5px #bf360c;
+    box-shadow: 2px 4px 15px 4px #d64215e0;
   }
 }
 

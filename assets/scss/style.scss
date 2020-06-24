@@ -23,20 +23,6 @@ body {
   color: #fafafa;
 }
 
-// Change direct to right to left on arabic language.
-.arLang {
-  direction: rtl;
-
-  label {
-    text-align: right;
-    direction: rtl;
-  }
-
-  .buttons {
-    letter-spacing: 0 !important;
-  }
-}
-
 .v-content {
   font-family: 'Montserrat', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   background-color: #141414;
@@ -53,26 +39,6 @@ h1 {
   font-size: 3.1rem;
   letter-spacing: 1px;
 }
-
-// .text-intro::before {
-//   content: '<js>';
-//   color: #66bb6a;
-//   font-size: 18px;
-//   position: absolute;
-//   margin-top: -2.3%;
-//   left: 3%;
-//   transform: translateX(-50%);
-// }
-
-// .text-intro::after {
-//   content: '</js>';
-//   color: #66bb6a;
-//   font-size: 18px;
-//   position: absolute;
-//   margin-top: 2%;
-//   left: 3%;
-//   transform: translateX(-50%);
-// }
 
 .v-card {
   border: 2px solid $secondary-color !important;
@@ -129,7 +95,6 @@ img {
     background-color: #757575a9;
     border-radius: 50%;
     position: absolute;
-    transition-timing-function: ease-out;
     animation: cursorAnim 0.5s ease-in-out infinite alternate;
     pointer-events: none;
   }
@@ -157,7 +122,7 @@ img {
       transform: scale(1);
     }
     50% {
-      transform: scale(1.9);
+      transform: scale(1.7);
     }
     100% {
       transform: scale(1);
