@@ -25,7 +25,7 @@
               <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
             </a>
             <a
-              href="https://www.instagram.com/_tajdoe/"
+              href="https://www.instagram.com/tajeddinedoe/"
               rel="noopener"
               target="_blank"
               role="button"
