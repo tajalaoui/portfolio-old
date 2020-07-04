@@ -12,7 +12,7 @@
     <!-- Cursor -->
     <div class="cursor"></div>
     <!-- Navigation -->
-    <v-app-bar color="#141414" flat app role="toolbar">
+    <v-app-bar color="transparent" flat app role="toolbar">
       <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer" aria-label="menu button"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase navbar-brand ml-3">
         <nuxt-link class="brand-name white--text" to="/">

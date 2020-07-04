@@ -1,5 +1,4 @@
 const colors = require('vuetify/es5/util/colors').default
-require('dotenv').config()
 
 module.exports = {
   mode: 'universal',
@@ -32,7 +31,7 @@ module.exports = {
   // Importing fonts
   webfontloader: {
     google: {
-      families: ['Montserrat:400, 700']
+      families: ['Montserrat:400, 700', 'Montserrat Alternates: 700', 'Cairo']
     }
   },
 
@@ -54,7 +53,7 @@ module.exports = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/pwa', '@nuxtjs/dotenv'],
+  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/pwa'],
   /*
    ** Nuxt.js modules
    */
@@ -64,8 +63,10 @@ module.exports = {
   manifest: {
     short_name: 'TajEddine',
     name: 'Tajeddine Doe',
+    descreption: 'Software Developer Portfolio',
     start_url: '/',
-    theme_color: '#29f709'
+    theme_color: '#29f709',
+    background_color: '#29f709'
   },
 
   /*
@@ -73,6 +74,10 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+
+  privateRuneTimeConfig: {
+    mail: process.env.MAIL
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

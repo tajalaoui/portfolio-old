@@ -71,7 +71,6 @@
 import axios from 'axios'
 
 export default {
-  name: 'form',
   data: () => ({
     isSent: false,
     isError: false,
