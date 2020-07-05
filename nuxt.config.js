@@ -31,7 +31,7 @@ module.exports = {
   // Importing fonts
   webfontloader: {
     google: {
-      families: ['Montserrat:400, 700', 'Montserrat Alternates: 700', 'Cairo']
+      families: ['Montserrat', 'Montserrat Alternates: 700']
     }
   },
 
@@ -83,7 +83,7 @@ module.exports = {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
-    customVariables: ['~/assets/scss/variables/customVuetify.scss'],
+    customVariables: ['@/assets/scss/variables/customVuetify.scss'],
     theme: {
       dark: true,
       themes: {

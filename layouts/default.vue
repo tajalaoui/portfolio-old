@@ -152,7 +152,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/scss/style';
 
-.v-toolbar,
+.v-app-bar,
 .v-navigation-drawer {
   a {
     color: $white;
@@ -174,6 +174,7 @@ export default {
   }
 
   .brand-name {
+    font-family: 'Montserrat Alternates';
     letter-spacing: 1.3px;
     font-weight: 700;
     overflow: auto;
@@ -345,7 +346,7 @@ export default {
 }
 
 @media (min-width: 900px) {
-  .v-toolbar {
+  .v-app-bar {
     .navbar-brand {
       font-size: 1.5rem;
     }
