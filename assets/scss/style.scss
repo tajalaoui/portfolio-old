@@ -6,7 +6,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Montserrat', sans-serif !important;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -24,17 +23,12 @@ body {
   color: #fafafa;
 }
 
-.v-content {
+.v-main {
   font-family: 'Montserrat', sans-serif !important;
-  background-color: #141414;
+  background-color: #0f0f0f;
 }
 
-a,
-p,
-h5,
-.row,
-.v-form {
-  font-family: 'montserrat';
+a {
   text-decoration: none;
 }
 

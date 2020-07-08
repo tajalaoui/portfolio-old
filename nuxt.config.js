@@ -61,6 +61,9 @@ module.exports = {
 
   // Pwa
   manifest: {
+    icon: {
+      iconSrc: '@/static/icon.png'
+    },
     short_name: 'TajEddine',
     name: 'Tajeddine Doe',
     descreption: 'Software Developer Portfolio',

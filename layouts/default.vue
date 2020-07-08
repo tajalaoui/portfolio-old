@@ -12,7 +12,7 @@
     <!-- Cursor -->
     <div class="cursor"></div>
     <!-- Navigation -->
-    <v-app-bar color="#141414" flat app role="toolbar">
+    <v-app-bar color="#0f0f0f" flat app role="toolbar">
       <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer" aria-label="menu button"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase navbar-brand ml-3">
         <nuxt-link class="brand-name white--text" to="/">
@@ -46,7 +46,7 @@
             role="button"
             aria-label="change language"
           >
-            <icon :icon="['fas', 'language']" style="fontSize:1.7rem" />
+            <icon :icon="['fas', 'language']" style="fontSize:1.6rem" />
           </v-btn>
         </template>
         <v-list>
@@ -61,7 +61,7 @@
                 :src="item.src"
                 role="button"
                 :alt="item.lang"
-                style="height: 55px; width: 55px"
+                style="height: 65px; width: 65px"
               />
             </v-list-item-title>
           </v-list-item>

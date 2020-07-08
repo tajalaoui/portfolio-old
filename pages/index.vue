@@ -33,7 +33,7 @@
               <icon class="nav-social-icons" :icon="['fab', 'instagram']" />
             </a>
           </div>
-          <div class="buttons mt-3">
+          <div class="buttons mt-4">
             <nuxt-link
               class="text-uppercase check-work-btn mr-3"
               role="button"
