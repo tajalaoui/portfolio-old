@@ -175,7 +175,6 @@ export default {
 
   .brand-name {
     font-family: 'Montserrat Alternates';
-    letter-spacing: 1.3px;
     font-weight: 700;
     overflow: auto;
     .brand-span {
@@ -399,8 +398,8 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1350px),
-  only screen and (orientation: portrait) {
+// @media only screen and (max-width: 1350px),
+@media (orientation: portrait) {
   .resume-btn {
     position: absolute;
     bottom: 8%;

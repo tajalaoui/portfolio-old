@@ -68,8 +68,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   data: () => ({
     isSent: false,
@@ -107,8 +105,8 @@ export default {
       }
     },
     submitForm() {
-      axios
-        .post('/server', {
+      $axios
+        .$post('/server', {
           name: this.name,
           email: this.email,
           subject: this.subject,

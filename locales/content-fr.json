@@ -49,7 +49,7 @@
     "contact": {
         "name": "Nom",
         "email": "E-mail",
-        "subject": "Suject",
+        "subject": "Sujet",
         "message": "Message",
         "send": "Envoyer",
         "alerts": {

@@ -16,8 +16,7 @@
 <script>
 export default {
   components: {
-    TheForm: () =>
-      import(/* webpackPrefetch: true */ '@/components/TheForm.vue')
+    TheForm: () => import('@/components/TheForm.vue')
   },
   head() {
     return {
