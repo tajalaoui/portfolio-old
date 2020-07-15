@@ -1,10 +1,8 @@
 <template>
   <v-container fill-height>
     <v-row class="align-center">
-      <v-col cols="12" md="6">
-        <keep-alive>
-          <TheForm />
-        </keep-alive>
+      <v-col cols="12" md="6">   
+        <TheForm />
       </v-col>
       <v-col cols="12" md="6">
         <img class="svg" src="/pages/contact.svg" alt="contact-image" />
@@ -32,7 +30,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-@import '@/assets/scss/style.scss';
-</style>

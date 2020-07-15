@@ -69,7 +69,7 @@
       </v-menu>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary app>
-      <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 33px;">
+      <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 23px">
         <nuxt-link
           class="my-3"
           v-for="item in menu"
@@ -392,17 +392,14 @@ export default {
       font-size: 1.2rem;
     }
   }
-
   .shapes {
     display: none;
   }
 }
-
-// @media only screen and (max-width: 1350px),
-@media (orientation: portrait) {
+@media (max-width: 1350px) and (min-height: 560px) {
   .resume-btn {
     position: absolute;
-    bottom: 8%;
+    bottom: 6%;
   }
 }
 </style>
