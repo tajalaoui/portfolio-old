@@ -89,7 +89,7 @@ h1 {
 
 @media (min-width: 960px) {
   .v-card {
-    height: 185px;
+    min-height: 185px;
     width: 250px;
   }
 }
