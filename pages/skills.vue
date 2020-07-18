@@ -31,7 +31,7 @@
           <v-card-text class="card-text text-center">Front End</v-card-text>
           <v-tooltip v-for="(image, index) in frontEndImages" :key="index" top>
             <template v-slot:activator="{ on }">
-              <img :src="image.url" :alt="image.alt" v-on="on" />
+              <img class="mx-1" :src="image.url" :alt="image.alt" v-on="on" />
             </template>
             <span>{{image.alt}}</span>
           </v-tooltip>
@@ -40,7 +40,7 @@
           <v-card-text class="card-text text-center">Back End</v-card-text>
           <v-tooltip v-for="(image, index) in backEndImages" :key="index" top>
             <template v-slot:activator="{ on }">
-              <img :src="image.url" :alt="image.alt" v-on="on" />
+              <img class="mx-1" :src="image.url" :alt="image.alt" v-on="on" />
             </template>
             <span>{{image.alt}}</span>
           </v-tooltip>

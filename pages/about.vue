@@ -21,7 +21,7 @@
         </p>
       </v-col>
       <v-col
-        class="d-md-flex justify-center align-center flex-wrap flex-lg-nowrap"
+        class="d-md-flex justify-center align-center flex-wrap flex-lg-nowrap align-stretch"
         md="6"
       >
         <v-card class="specialities">
