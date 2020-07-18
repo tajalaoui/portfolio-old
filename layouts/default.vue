@@ -13,8 +13,8 @@
     <div class="cursor"></div>
     <!-- Navigation -->
     <v-app-bar color="#0f0f0f" flat app role="toolbar">
-      <v-app-bar-nav-icon class="nav-icon" @click="drawer = !drawer" aria-label="menu button"></v-app-bar-nav-icon>
-      <v-toolbar-title class="text-uppercase navbar-brand ml-3">
+      <img src="/menu-icon.svg" class="nav-icon" @click="drawer = !drawer" aria-label="menu button" alt="menu-icon">
+      <v-toolbar-title class="text-uppercase navbar-brand ml-5">
         <nuxt-link class="brand-name white--text" to="/">
           <span class="brand-span">Taj</span>
           <span>Eddine</span>
@@ -151,6 +151,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/scss/style';
+
+.nav-icon {
+  color: white !important;
+  width: 27px;
+}
 
 .v-app-bar,
 .v-navigation-drawer {

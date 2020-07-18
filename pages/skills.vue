@@ -1,9 +1,9 @@
 <template>
   <v-container fill-height>
-    <v-row>
+    <v-row class="align-center">
       <v-col md="6">
         <h1>{{$t("skills.heading")}}</h1>
-        <p style="paddingTop: 21px">{{$t("skills.1st-p")}}</p>
+        <p>{{$t("skills.1st-p")}}</p>
         <div>
           <p>
             {{$t("skills.2st-p")}}
@@ -98,14 +98,10 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   * {
     flex-direction: column;
     margin: 0 auto;
-  }
-
-  .col:nth-child(2) {
-    padding-bottom: 21%;
   }
 }
 </style>

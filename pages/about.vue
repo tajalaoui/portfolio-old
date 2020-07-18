@@ -1,31 +1,28 @@
 <template>
   <v-container fill-height>
-    <v-row>
-      <v-col md6>
+    <v-row class="align-center">
+      <v-col cols="12" md="6">
         <h1>{{$t("about.heading")}}</h1>
-        <p style="paddingTop: 21px">
+        <p>
           {{$t("about.1st-p")}}
           <br />
-
           {{$t("about.2st-p")}}
         </p>
         <p>{{$t("about.3st-p")}}</p>
         <p>
           {{$t("about.4st-p")}}
           <br />
-
           {{$t("about.5st-p")}}
         </p>
         <p>
           {{$t("about.6st-p")}}
           <br />
-
           {{$t("about.7st-p")}}
         </p>
       </v-col>
       <v-col
         class="d-md-flex justify-center align-center flex-wrap flex-lg-nowrap"
-        md6
+        cols="12" md="6"
       >
         <v-card class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
@@ -72,7 +69,7 @@ h1 {
 }
 
 .specialities {
-  margin: 0 9px;
+  margin: 0 7px;
   text-align: center;
 
   h3 {
@@ -90,7 +87,14 @@ h1 {
   }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 960px) {
+  .v-card {
+    height: 185px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 953px) {
   * {
     flex-direction: column;
     margin: 0 auto;
