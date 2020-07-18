@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row class="align-center">
-      <v-col cols="12" md="6">
+      <v-col md="6">
         <h1>{{$t("about.heading")}}</h1>
         <p>
           {{$t("about.1st-p")}}
@@ -22,7 +22,7 @@
       </v-col>
       <v-col
         class="d-md-flex justify-center align-center flex-wrap flex-lg-nowrap"
-        cols="12" md="6"
+        md="6"
       >
         <v-card class="specialities">
           <icon class="icon" icon="tachometer-alt"></icon>
