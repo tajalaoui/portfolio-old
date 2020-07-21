@@ -61,7 +61,7 @@
                 :src="item.src"
                 role="button"
                 :alt="item.lang"
-                style="height: 65px; width: 65px"
+                style="height: 61px; width: 61px"
               />
             </v-list-item-title>
           </v-list-item>

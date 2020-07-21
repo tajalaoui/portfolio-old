@@ -13,26 +13,26 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Full Stack Javascript Developer.'
+        content: 'Full Stack Javascript Developer.',
       },
       {
         name: 'author',
-        content: 'Tajeddine'
+        content: 'Tajeddine',
       },
       {
         name: 'keywords',
         content:
-          'javascript, vue, nuxt, full stack javascript, software developer, portfolio, doe'
-      }
+          'javascript, vue, nuxt, full stack javascript, software developer, portfolio, doe',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' }]
+    link: [{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' }],
   },
 
   // Importing fonts
   webfontloader: {
     google: {
-      families: ['Montserrat', 'Montserrat Alternates: 700']
-    }
+      families: ['Montserrat', 'Montserrat Alternates: 700'],
+    },
   },
 
   /*
@@ -44,8 +44,11 @@ module.exports = {
    */
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
-    '@/assets/scss/style.scss'
+    '@/assets/scss/style.scss',
   ],
+
+  // Auto import component
+  components: true,
   /*
    ** Plugins to load before mounting the App
    */
@@ -62,14 +65,14 @@ module.exports = {
   // Pwa
   manifest: {
     icon: {
-      iconSrc: '@/static/icon.png'
+      iconSrc: '@/static/icon.png',
     },
     short_name: 'TajEddine',
     name: 'Tajeddine Doe',
     descreption: 'Software Developer Portfolio',
     start_url: '/',
     theme_color: '#29f709',
-    background_color: '#29f709'
+    background_color: '#29f709',
   },
 
   /*
@@ -79,7 +82,7 @@ module.exports = {
   axios: {},
 
   privateRuneTimeConfig: {
-    mail: process.env.MAIL
+    mail: process.env.MAIL,
   },
   /*
    ** vuetify module configuration
@@ -97,13 +100,13 @@ module.exports = {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
+          success: colors.green.accent3,
+        },
+      },
     },
     defaultAssets: {
-      icons: 'fa'
-    }
+      icons: 'fa',
+    },
   },
   /*
    ** Build configuration
@@ -112,6 +115,6 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }
