@@ -2,38 +2,42 @@
   <v-container fill-height>
     <v-row class="align-center">
       <v-col md="6">
-        <h1>{{$t("skills.heading")}}</h1>
-        <p>{{$t("skills.1st-p")}}</p>
+        <h1>{{ $t('skills.heading') }}</h1>
+        <p>{{ $t('skills.1st-p') }}</p>
         <div>
           <p>
-            {{$t("skills.2st-p")}}
+            {{ $t('skills.2st-p') }}
             <br />
-            {{$t("skills.3st-p")}}
+            {{ $t('skills.3st-p') }}
             <br />
-            {{$t("skills.4st-p")}}
+            {{ $t('skills.4st-p') }}
           </p>
           <p>
-            {{$t("skills.5st-p")}}
+            {{ $t('skills.5st-p') }}
             <a
               href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
               rel="noopener"
               role="button"
               target="_blank"
-            >{{$t('skills.linkedin')}}</a>
-            {{$t("skills.6st-p")}}
-            <nuxt-link to="/contact">{{$t("skills.7st-p")}}</nuxt-link>
-            <span>{{$t("skills.8st-p")}}</span>
+              >{{ $t('skills.linkedin') }}</a
+            >
+            {{ $t('skills.6st-p') }}
+            <nuxt-link to="/contact">{{ $t('skills.7st-p') }}</nuxt-link>
+            <span>{{ $t('skills.8st-p') }}</span>
           </p>
         </div>
       </v-col>
-      <v-col class="d-md-flex justify-center align-center flex-wrap text-center" md="6">
+      <v-col
+        class="d-md-flex justify-center align-center flex-wrap text-center"
+        md="6"
+      >
         <v-card color="#141414">
           <v-card-text class="card-text text-center">Front End</v-card-text>
           <v-tooltip v-for="(image, index) in frontEndImages" :key="index" top>
             <template v-slot:activator="{ on }">
               <img class="mx-1" :src="image.url" :alt="image.alt" v-on="on" />
             </template>
-            <span>{{image.alt}}</span>
+            <span>{{ image.alt }}</span>
           </v-tooltip>
         </v-card>
         <v-card color="#141414">
@@ -42,7 +46,7 @@
             <template v-slot:activator="{ on }">
               <img class="mx-1" :src="image.url" :alt="image.alt" v-on="on" />
             </template>
-            <span>{{image.alt}}</span>
+            <span>{{ image.alt }}</span>
           </v-tooltip>
         </v-card>
       </v-col>
@@ -60,13 +64,13 @@ export default {
         { url: '/tech-logos/vuetify.svg', alt: 'Vuetify' },
         { url: '/tech-logos/vuesax.svg', alt: 'Vuesax' },
         { url: '/tech-logos/html.svg', alt: 'Html' },
-        { url: '/tech-logos/scss.svg', alt: 'Scss' }
+        { url: '/tech-logos/scss.svg', alt: 'Scss' },
       ],
       backEndImages: [
         { url: '/tech-logos/node.svg', alt: 'Node Js' },
         { url: '/tech-logos/express.svg', alt: 'Express Js' },
-        { url: '/tech-logos/mongodb.svg', alt: 'Mongodb' }
-      ]
+        { url: '/tech-logos/mongodb.svg', alt: 'Mongodb' },
+      ],
     }
   },
   head() {
@@ -76,11 +80,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Skills & Technologies i know'
-        }
-      ]
+          content: 'Skills & Technologies i know',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

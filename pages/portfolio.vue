@@ -4,12 +4,15 @@
       <v-col cols="12">
         <v-card v-for="(project, i) in projects" :key="i">
           <div class="d-flex flex-column flex-md-row justify-space-between">
-            <v-avatar height="300" width="515" class="ma-3" tile>
+            <v-avatar height="300" width="500" class="ma-3" tile>
               <!-- <v-img src=""></v-img> -->
               <img :src="project.image" alt="" />
             </v-avatar>
             <div class="align-self-center">
-              <v-card-title v-text="project.title"></v-card-title>
+              <v-card-title
+                class="card-title"
+                v-text="project.title"
+              ></v-card-title>
               <v-card-actions>
                 <div class="buttons">
                   <a
@@ -48,7 +51,8 @@ export default {
     return {
       projects: [
         {
-          title: 'Syndic company based in Morocco, Marrakech',
+          title:
+            'Via Syndic  is a company that manages real estate based in Morocco, Marrakech.',
           image: '/projects/via-syndic.png',
           url: 'http://www.via-syndic.com/',
         },
@@ -61,28 +65,11 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/scss/style.scss';
 
-::-webkit-scrollbar {
-  background: #fafafa;
-  width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $secondary-color;
-  border-radius: 5px;
-}
-
 img {
-  height: 100%;
   width: 100%;
-  background-position: center;
-  object-fit: cover;
-  border-radius: 1px;
+  height: auto;
+  object-fit: contain;
 }
-
-// img:hover {
-//   transform: scale(1.1);
-//   transition: all 0.7s ease-in-out;
-// }
 
 // It takes effect on sm
 .v-avatar {
@@ -90,25 +77,16 @@ img {
   align-self: center !important;
 }
 
-@media (max-width: 551px) {
-  img {
-    height: 81%;
-    width: 81%;
-    object-fit: contain;
-  }
-}
-
-@media (max-width: 451px) {
-  img {
-    height: 55%;
-    width: 55%;
-    object-fit: contain;
-  }
-}
-
 .v-card {
-  margin: 0;
-  padding: 0;
+  .card-title {
+    max-width: 37ch;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}
+
+.v-card:nth-child(even) {
+  border: none !important;
 }
 
 .visit-website-btn {
@@ -117,5 +95,23 @@ img {
 
 .visit-website-btn:hover {
   @include btnHover();
+}
+
+@media (max-width: 600px) {
+  img {
+    height: 95%;
+    width: 95%;
+  }
+
+  .v-avatar {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 461px) {
+  img {
+    height: 85%;
+    width: 85%;
+  }
 }
 </style>

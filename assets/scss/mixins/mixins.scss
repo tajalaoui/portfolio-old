@@ -3,6 +3,7 @@
 }
 
 @mixin btn {
+  font-family: 'Montserrat';
   color: $secondary-color;
   display: inline-block;
   border: 1px solid $secondary-color;
@@ -16,18 +17,18 @@
   border-color: $secondary-color;
   background-color: $secondary-color;
   transition: $transition;
-  
   @include shadow;
 }
 
 @mixin contactBtn {
+  font-family: 'Montserrat';
   color: #141414;
   display: inline-block !important;
   border: 1px solid $secondary-color;
   background-color: $secondary-color;
   border-radius: 3px;
   padding: 9px 13px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 @mixin contactBtnHover {
