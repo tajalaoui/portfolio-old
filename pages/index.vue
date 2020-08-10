@@ -1,16 +1,16 @@
 <template>
-  <v-container  fill-height>
+  <v-container fill-height>
     <v-row class="align-center">
       <v-col cols="12" md="6">
         <div class="text-intro">
-          <h5>{{$t("home.greeting")}}</h5>
+          <h5>{{ $t('home.greeting') }}</h5>
           <h1 class="text-uppercase font-weight-bold">
-            {{$t("home.intro-text.im")}}
-            <span class="brand-span">{{$t("home.intro-text.taj")}}</span>
-            {{$t("home.intro-text.eddine")}}
+            {{ $t('home.intro-text.im') }}
+            <span class="brand-span">{{ $t('home.intro-text.taj') }}</span>
+            {{ $t('home.intro-text.eddine') }}
           </h1>
           <div class="text-intro-skills">
-            <p class="font-weight-light">{{$t("home.job-title")}}</p>
+            <p class="font-weight-light">{{ $t('home.job-title') }}</p>
           </div>
           <div class="social-icons">
             <a
@@ -21,11 +21,16 @@
             >
               <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
             </a>
-            <a href="https://github.com/TajDoe" rel="noopener" target="_blank" role="button">
+            <a
+              href="https://github.com/TajDoe"
+              rel="noopener"
+              target="_blank"
+              role="button"
+            >
               <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
             </a>
             <a
-              href="https://www.instagram.com/tajeddinedoe/"
+              href="https://www.instagram.com/tajeddine_alaoui/"
               rel="noopener"
               target="_blank"
               role="button"
@@ -38,17 +43,19 @@
               class="text-uppercase check-work-btn mr-3"
               role="button"
               to="/portfolio"
-            >{{$t("home.check-work")}}</nuxt-link>
+              >{{ $t('home.check-work') }}</nuxt-link
+            >
             <nuxt-link
               class="text-uppercase contact-btn"
               to="/contact"
               role="button"
-            >{{$t("home.contact-me")}}</nuxt-link>
+              >{{ $t('home.contact-me') }}</nuxt-link
+            >
           </div>
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <img class="svg" src="/pages/home.svg" alt="programmer image" />  
+        <img class="svg" src="/pages/home.svg" alt="programmer image" />
       </v-col>
     </v-row>
   </v-container>
@@ -63,11 +70,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Home Page'
-        }
-      ]
+          content: 'Home Page',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

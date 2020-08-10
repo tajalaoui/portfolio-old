@@ -48,21 +48,21 @@
       <v-textarea
         color="rgb(41, 247, 9)"
         class="mb-3"
-        v-model="message"
+        v-model.trim="message"
         :label="$t('contact.message')"
         :counter="300"
         :rules="messageRules"
         required
       ></v-textarea>
-        <button
-          class="button"
-          :disabled="!valid"
-          color="success"
-          type="submit"
-          role="button"
-        >
-          {{ $t('contact.send') }}
-        </button>
+      <button
+        class="button"
+        :disabled="!valid"
+        color="success"
+        type="submit"
+        role="button"
+      >
+        {{ $t('contact.send') }}
+      </button>
     </v-form>
   </div>
 </template>
@@ -78,21 +78,22 @@ export default {
     subject: '',
     message: '',
     nameRules: [
-      v => !!v || 'Name is required',
-      v => (v && v.length <= 10) || 'Name must be less than 10 characters'
+      (v) => !!v || 'Name is required',
+      (v) => (v && v.length <= 10) || 'Name must be less than 10 characters',
     ],
     emailRules: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+      (v) => !!v || 'E-mail is required',
+      (v) => /.+@.+\..+/.test(v) || 'E-mail must be valid',
     ],
     subjectRules: [
-      v => !!v || 'Subject is required',
-      v => (v && v.length <= 25) || 'Subject must be less than 25 characters'
+      (v) => !!v || 'Subject is required',
+      (v) => (v && v.length <= 25) || 'Subject must be less than 25 characters',
     ],
     messageRules: [
-      v => !!v || 'Message is required',
-      v => (v && v.length <= 300) || 'Subject must be less than 300 characters'
-    ]
+      (v) => !!v || 'Message is required',
+      (v) =>
+        (v && v.length <= 300) || 'Subject must be less than 300 characters',
+    ],
   }),
   methods: {
     validate() {
@@ -110,16 +111,16 @@ export default {
           name: this.name,
           email: this.email,
           subject: this.subject,
-          message: this.message
+          message: this.message,
         })
-        .then(response => {
+        .then((response) => {
           console.log(response)
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error)
         })
-    }
-  }
+    },
+  },
 }
 </script>
 

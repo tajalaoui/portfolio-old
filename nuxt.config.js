@@ -60,7 +60,22 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', 'nuxt-webfontloader'],
+  modules: [
+    '@nuxtjs/axios',
+    'nuxt-webfontloader',
+    [
+      'nuxt-social-meta',
+      {
+        title: 'Tajeddine',
+        description: 'Software Developer Portfolio',
+        url: 'https://devtaj.com',
+        img: '/social-picture.png',
+        locale: 'en-US',
+        // twitter: '@twitterHandle',
+        themeColor: '#29f709',
+      },
+    ],
+  ],
 
   // Pwa
   manifest: {
@@ -68,7 +83,7 @@ module.exports = {
       iconSrc: '@/static/icon.png',
     },
     short_name: 'TajEddine',
-    name: 'Tajeddine Doe',
+    name: 'Tajeddine',
     descreption: 'Software Developer Portfolio',
     start_url: '/',
     theme_color: '#29f709',
