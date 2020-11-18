@@ -12,12 +12,7 @@
       </transition>
     </div>
 
-    <v-form
-      ref="form"
-      v-model="valid"
-      @submit.prevent="validate"
-      lazy-validation
-    >
+    <v-form ref="form" v-model="valid" @submit.prevent="validate">
       <v-text-field
         color="rgb(41, 247, 9)"
         type="text"

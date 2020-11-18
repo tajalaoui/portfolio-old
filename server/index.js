@@ -28,15 +28,14 @@ async function start() {
 
   // * SETING UP.
   const smtpAuth = {
-    host: "smtp.mailgun.org",
+    host: 'smtp.mailgun.org',
     port: 587,
     secure: false, // upgrade later with STARTTLS
     auth: {
-      user: "tajeddine@mg.devtaj.com",
-      pass: "325d99c2be255190ef32526985c0d0e6-074fa10c-5a05494e"
-    }
+      user: 'tajeddine@mg.devtaj.com',
+      pass: '325d99c2be255190ef32526985c0d0e6-074fa10c-5a05494e',
+    },
   }
-    
 
   // * SENDING MAIL.
   app.post('/server', (req, res) => {
@@ -58,7 +57,7 @@ async function start() {
       from: process.env.MAIL,
       to: process.env.MAIL,
       subject: req.body.subject,
-      html: output
+      html: output,
     }
 
     // send mail with defined transport object
@@ -78,7 +77,7 @@ async function start() {
   app.listen(port, host)
   consola.ready({
     message: `Server listening on http://${host}:${port}`,
-    badge: true
+    badge: true,
   })
 }
 start()

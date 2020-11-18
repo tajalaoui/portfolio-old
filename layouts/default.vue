@@ -13,7 +13,13 @@
     <div class="cursor"></div>
     <!-- Navigation -->
     <v-app-bar color="#0f0f0f" flat app role="toolbar">
-      <img src="/menu-icon.svg" class="nav-icon" @click="drawer = !drawer" aria-label="menu button" alt="menu-icon">
+      <img
+        src="/menu-icon.svg"
+        class="nav-icon"
+        @click="drawer = !drawer"
+        aria-label="menu button"
+        alt="menu-icon"
+      />
       <v-toolbar-title class="text-uppercase navbar-brand ml-5">
         <nuxt-link class="brand-name white--text" to="/">
           <span class="brand-span">Taj</span>
@@ -28,7 +34,8 @@
           :key="item.title"
           :to="item.to"
           flat
-        >{{$t(item.title)}}</nuxt-link>
+          >{{ $t(item.title) }}</nuxt-link
+        >
       </div>
       <a
         href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
@@ -36,7 +43,8 @@
         target="_blank"
         rel="noopener"
         role="button"
-      >{{$t("navbar.resume")}}</a>
+        >{{ $t('navbar.resume') }}</a
+      >
       <v-menu offset-y origin="center center" transition="scale-transition">
         <template v-slot:activator="{ on }">
           <v-btn
@@ -46,7 +54,7 @@
             role="button"
             aria-label="change language"
           >
-            <icon :icon="['fas', 'language']" style="fontSize:1.6rem" />
+            <icon :icon="['fas', 'language']" style="fontSize: 1.6rem;" />
           </v-btn>
         </template>
         <v-list>
@@ -61,7 +69,7 @@
                 :src="item.src"
                 role="button"
                 :alt="item.lang"
-                style="height: 61px; width: 61px"
+                style="height: 61px; width: 61px;"
               />
             </v-list-item-title>
           </v-list-item>
@@ -69,21 +77,26 @@
       </v-menu>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary app>
-      <div class="app-bar-links d-flex flex-column align-center" style="marginTop: 23px">
+      <div
+        class="app-bar-links d-flex flex-column align-center"
+        style="marginTop: 23px;"
+      >
         <nuxt-link
           class="my-3"
           v-for="item in menu"
           :key="item.title"
           :to="item.to"
           role="button"
-        >{{$t(item.title)}}</nuxt-link>
+          >{{ $t(item.title) }}</nuxt-link
+        >
         <a
           href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
           class="contact-btn resume-btn text-uppercase"
           target="_blank"
           rel="noopener"
           role="button"
-        >{{$t("navbar.resume")}}</a>
+          >{{ $t('navbar.resume') }}</a
+        >
       </div>
     </v-navigation-drawer>
     <v-main>
@@ -98,14 +111,14 @@ export default {
   head() {
     return {
       htmlAttrs: {
-        lang: this.$i18n.locale
-      }
+        lang: this.$i18n.locale,
+      },
     }
   },
   methods: {
     changeLanguage(lang) {
       this.$i18n.locale = lang
-    }
+    },
   },
   data() {
     return {
@@ -115,14 +128,14 @@ export default {
         { to: '/about', title: 'navbar.about' },
         { to: '/skills', title: 'navbar.skills' },
         { to: '/portfolio', title: 'navbar.work' },
-        { to: '/contact', title: 'navbar.contact' }
+        { to: '/contact', title: 'navbar.contact' },
       ],
       languages: [
         { title: 'English', src: '/languages/en.svg', lang: 'en' },
         { title: 'Francais', src: '/languages/fr.svg', lang: 'fr' },
-        { title: 'عربى', src: '/languages/ar.svg', lang: 'ar' }
+        { title: 'عربى', src: '/languages/ar.svg', lang: 'ar' },
       ],
-      canLoad: true
+      canLoad: true,
     }
   },
   mounted() {
@@ -131,7 +144,7 @@ export default {
   beforeMount() {
     const cursor = document.querySelector('.cursor')
 
-    document.addEventListener('mousemove', e => {
+    document.addEventListener('mousemove', (e) => {
       cursor.setAttribute(
         'style',
         'top: ' + (e.pageY - 10) + 'px; left: ' + (e.pageX - 10) + 'px;'
@@ -145,7 +158,7 @@ export default {
         cursor.classList.remove('expand')
       }, 300)
     })
-  }
+  },
 }
 </script>
 
@@ -401,10 +414,17 @@ export default {
     display: none;
   }
 }
+
 @media (max-width: 1350px) and (min-height: 560px) {
   .resume-btn {
     position: absolute;
     bottom: 6%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cursor {
+    display: none;
   }
 }
 </style>
