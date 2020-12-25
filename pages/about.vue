@@ -49,7 +49,11 @@
 export default {
   head() {
     return {
+<<<<<<< HEAD
       title: 'About.js',
+=======
+      title: 'About',
+>>>>>>> dec49bd39beff7965c1528da03881df30a262596
       meta: [
         {
           hid: 'description',
