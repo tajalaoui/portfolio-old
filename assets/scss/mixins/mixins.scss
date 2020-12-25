@@ -1,0 +1,40 @@
+@mixin shadow {
+  box-shadow: 2px 3px 11px 3px $shadow-color;
+}
+
+@mixin btn {
+  font-family: 'Montserrat';
+  color: $secondary-color;
+  display: inline-block;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  padding: 9px 13px;
+  letter-spacing: 3px;
+}
+
+@mixin btnHover {
+  color: #141414;
+  border-color: $secondary-color;
+  background-color: $secondary-color;
+  transition: $transition;
+  @include shadow;
+}
+
+@mixin contactBtn {
+  font-family: 'Montserrat';
+  color: #141414;
+  display: inline-block !important;
+  border: 1px solid $secondary-color;
+  background-color: $secondary-color;
+  border-radius: 3px;
+  padding: 9px 13px;
+  letter-spacing: 3px;
+  @include shadow;
+}
+
+@mixin contactBtnHover {
+  color: $secondary-color;
+  border-color: $secondary-color;
+  background-color: #141414;
+  transition: $transition;
+}

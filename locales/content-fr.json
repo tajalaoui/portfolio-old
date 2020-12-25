@@ -1,0 +1,63 @@
+{
+    "navbar": {
+        "home": "Accueil",
+        "about": "À propos de moi",
+        "skills": "Compétences",
+        "work": "Mon Travail",
+        "contact": "Contact",
+        "resume": "c v"
+    },
+    "home": {
+        "greeting": "Salut",
+        "intro-text": {
+            "im": "je suis",
+            "taj": "taj",
+            "eddine": "eddine"
+        },
+        "job-title": "un développeur sur lequel vous pouvez compter",
+        "check-work": "vérifier mon travail",
+        "contact-me": "contactez moi"
+    },
+    "about": {
+        "heading": "À Propos De Moi",
+        "1st-p": "Connecté professionnellement aux technologies de l'information",
+        "2st-p": "pendant de nombreuses années.",
+        "3st-p": "Programmeur autodidacte, Freelancer passionné.",
+        "4st-p": "Mes passions font le suivi des nouvelles technologiques,",
+        "5st-p": "Rester en forme et jouer à des jeux vidéo.",
+        "6st-p": "Au plaisir de créer des produits incroyables",
+        "7st-p": "Pour mes clients.",
+        "fast-title": "Agilité",
+        "fast-text": "Temps de chargement rapides et interaction sans décalage, Ma priorité absolue",
+        "ease-title": "facilité d'utilisation",
+        "ease-text": "Forte préférence pour une UX / UI intuitive et facile à utiliser",
+        "res-title": "Responsive",
+        "res-text": "Mes mises en page fonctionneront sur n'importe quel appareil, petit ou grand"
+    },
+    "skills": {
+        "heading": "Compétences Et Expériences",
+        "1st-p": "Développeur de logiciels Javascript full stack.",
+        "2st-p": "Création d'applications Web à l'aide de la technologie PWA",
+        "3st-p": "Avec Vue dans le frontend et Node comme backend,",
+        "4st-p": "Concevoir avec Vuetify & Vuesax.",
+        "5st-p": "Visitez mon",
+        "6st-p": "profil pour plus d'informations ou",
+        "7st-p": "Contactez",
+        "8st-p": "moi.",
+        "linkedin": "Linkedin"
+    },
+    "contact": {
+        "name": "Nom",
+        "email": "E-mail",
+        "subject": "Sujet",
+        "message": "Message",
+        "send": "Envoyer",
+        "alerts": {
+            "sent": "Email envoyé",
+            "notSent": "Courriel non envoyé"
+        }
+    },
+    "404": {
+        "404-btn": "aller à la page d'accueil"
+    }
+}

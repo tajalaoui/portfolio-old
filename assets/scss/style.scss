@@ -1,0 +1,172 @@
+@import 'variables/variables';
+@import 'mixins/mixins';
+
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: #66bb6aef;
+  color: #fafafa;
+}
+
+.v-main {
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #0f0f0f;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Montserrat Alternates';
+  color: $secondary-color;
+  font-weight: 700;
+  font-size: 3.1rem;
+}
+
+.v-card {
+  border: 2px solid $secondary-color !important;
+  background-color: #0f0f0f !important;
+  padding: 7px;
+  margin: 13px;
+  .card-text {
+    color: rgb(41, 247, 9);
+  }
+}
+
+// ROUTING ANIMATION.
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform: translateX(3em);
+}
+
+img {
+  height: 740px;
+  width: 740px;
+}
+
+@media (max-width: 1640px) {
+  img {
+    height: 530px;
+    width: 520px;
+  }
+}
+
+// Contact page.
+@media (max-width: 1270px) {
+  .v-form,
+  .alerts,
+  img {
+    margin: 0 auto !important;
+  }
+
+  .v-card {
+    margin: 9px 0 !important;
+  }
+}
+
+@media (max-width: 1090px) {
+  img {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 900px) {
+  // * Cursor.
+  body * {
+    cursor: none !important;
+  }
+
+  .cursor {
+    z-index: 99;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #fafafa;
+    background-color: #757575a9;
+    border-radius: 50%;
+    position: absolute;
+    animation: cursorAnim 0.5s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+
+  @keyframes cursorAnim {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.8);
+    }
+  }
+
+  @keyframes cursorAnim2 {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.5);
+    }
+  }
+
+  @keyframes cursorAnim3 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .expand {
+    animation: cursorAnim3 0.3s forwards;
+    border: 3px solid $secondary-color;
+  }
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  p,
+  h1,
+  h5,
+  .buttons,
+  .social-icons {
+    text-align: center;
+  }
+
+  .svg {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .svg {
+    display: none !important;
+  }
+}
