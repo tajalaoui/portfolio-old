@@ -66,8 +66,8 @@ module.exports = {
       'nuxt-social-meta',
       {
         title: 'Tajeddine',
-        description: 'Software Developer Portfolio',
-        url: 'https://devtaj.com',
+        description: 'Full Stack Developer',
+        url: 'https://tajeddine.dev',
         img: '/social-picture.png',
         locale: 'en-US',
         // twitter: '@twitterHandle',
@@ -81,9 +81,9 @@ module.exports = {
     icon: {
       iconSrc: '@/static/icon.png',
     },
-    short_name: 'TajEddine',
-    name: 'Tajeddine',
-    descreption: 'Software Developer Portfolio',
+    short_name: 'Taj.js',
+    name: 'Tajeddine.js',
+    descreption: 'Full Stack Developer',
     start_url: '/',
     theme_color: '#29f709',
     background_color: '#29f709',
