@@ -3,7 +3,7 @@
     <!-- Loading -->
     <LazyAppLoading :canLoad="canLoad" />
     <!-- Cursor -->
-    <LazyAppCursor />
+    <AppCursor />
     <!-- Navigation -->
     <v-app-bar color="#0f0f0f" flat app role="toolbar">
       <img
