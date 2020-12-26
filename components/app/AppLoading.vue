@@ -1,5 +1,5 @@
 <template>
-  <div v-if="canLoad" class="loadingWrapper">
+  <div v-if="pageInProgress" class="loadingWrapper">
     <div class="psoload">
       <div class="straight"></div>
       <div class="curve"></div>
@@ -12,7 +12,7 @@
 <script>
 export default {
   props: {
-    canLoad: Boolean,
+    pageInProgress: Boolean,
   },
 }
 </script>

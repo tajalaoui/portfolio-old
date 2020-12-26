@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <!-- Loading -->
-    <LazyAppLoading :canLoad="canLoad" />
+    <AppLoading v-show="pageInProgress" :pageInProgress="pageInProgress" />
     <!-- Cursor -->
-    <AppCursor />
+    <LazyAppCursor />
     <!-- Navigation -->
     <v-app-bar color="#0f0f0f" flat app role="toolbar">
       <img
@@ -103,7 +103,7 @@
 <script>
 export default {
   mounted() {
-    this.canLoad = false
+    this.pageInProgress = false
   },
   head() {
     return {
@@ -132,7 +132,7 @@ export default {
         { title: 'Francais', src: '/flags/fr.svg', lang: 'fr' },
         { title: 'عربى', src: '/flags/ar.svg', lang: 'ar' },
       ],
-      canLoad: true,
+      pageInProgress: true,
     }
   },
 }
