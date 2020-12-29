@@ -7,7 +7,9 @@
     </v-row>
     <v-row>
       <v-col class="d-flex justify-center align-center">
-        <nuxt-link class="text-uppercase check-work-btn" to="/">{{$t("404.404-btn")}}</nuxt-link>
+        <nuxt-link class="text-uppercase check-work-btn" to="/">{{
+          $t('404.404-btn')
+        }}</nuxt-link>
       </v-col>
     </v-row>
   </v-container>
@@ -18,8 +20,6 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/style.scss';
-
 .check-work-btn {
   position: absolute;
   bottom: 13vh;
@@ -36,4 +36,3 @@ export default {}
   }
 }
 </style>
-

@@ -41,10 +41,11 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    '@/assets/scss/style.scss',
-  ],
+  css: ['@/assets/style.scss'],
+
+  styleResources: {
+    scss: ['@/assets/style.scss'],
+  },
 
   // Auto import component
   components: true,
@@ -63,6 +64,7 @@ module.exports = {
     '@nuxtjs/axios',
     'nuxt-webfontloader',
     '@nuxtjs/device',
+    '@nuxtjs/style-resources',
     [
       'nuxt-social-meta',
       {
@@ -104,7 +106,7 @@ module.exports = {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
-    customVariables: ['@/assets/scss/variables/customVuetify.scss'],
+    customVariables: ['@/assets/variables/customVuetify.scss'],
     theme: {
       dark: true,
       themes: {

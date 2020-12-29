@@ -63,8 +63,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/style.scss';
-
 h1 {
   color: $secondary-color;
 }

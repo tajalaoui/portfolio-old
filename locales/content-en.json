@@ -1,12 +1,4 @@
 {
-    "navbar": {
-        "home": "Home",
-        "about": "About",
-        "skills": "Skills",
-        "work": "My Work",
-        "contact": "Contact",
-        "resume": "Resume"
-    },
     "home": {
         "greeting": "Hi There",
         "intro-text": {

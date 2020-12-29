@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row dense style="margin-top: 5%;">
+    <v-row dense style="margin-top: 5%">
       <v-col cols="12">
         <v-card v-for="(project, i) in projects" :key="i">
           <div class="d-flex flex-column flex-md-row justify-space-between">
@@ -63,8 +63,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/style.scss';
-
 img {
   width: 100%;
   height: auto;

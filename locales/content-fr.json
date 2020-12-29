@@ -1,12 +1,4 @@
 {
-    "navbar": {
-        "home": "Accueil",
-        "about": "À propos de moi",
-        "skills": "Compétences",
-        "work": "Mon Travail",
-        "contact": "Contact",
-        "resume": "c v"
-    },
     "home": {
         "greeting": "Salut",
         "intro-text": {

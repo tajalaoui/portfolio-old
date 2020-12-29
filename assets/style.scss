@@ -39,6 +39,10 @@ h1 {
   font-size: 3.1rem;
 }
 
+.v-btn--active {
+  color: rgb(77, 243, 52) !important;
+}
+
 .v-card {
   border: 2px solid $secondary-color !important;
   background-color: #0f0f0f !important;

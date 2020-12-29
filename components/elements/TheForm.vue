@@ -120,7 +120,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/style.scss';
 
 .v-form {
   width: 81%;

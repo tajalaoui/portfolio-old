@@ -89,8 +89,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/style.scss';
-
 img {
   width: 65px;
   height: 65px;

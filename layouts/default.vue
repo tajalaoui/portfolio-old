@@ -3,11 +3,17 @@
     <!-- Loading -->
     <AppLoading v-show="pageInProgress" :pageInProgress="pageInProgress" />
     <!-- Cursor -->
-    <LazyAppCursor />
+    <LazyAppCursor v-if="$device.isDesktop" />
     <!-- Navigation -->
-    <LazyTheNavDrawer v-if="$device.isDesktop" :drawer="drawer" />
+    <LazyTheNavDrawer v-if="$device.isDesktop" :links="links" />
+    <LazyTheNavDrawerMobile
+      v-if="!$device.isDesktop"
+      :links="links"
+      :drawer="drawer"
+    />
     <v-app-bar color="#0f0f0f" flat app role="toolbar">
       <img
+        v-if="!$device.isDesktop"
         src="/menu-icon.svg"
         class="nav-icon"
         @click="drawer = !drawer"
@@ -24,14 +30,6 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <a
-        href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
-        class="contact-btn resume-btn text-uppercase mr-2"
-        target="_blank"
-        rel="noopener"
-        role="button"
-        >{{ $t('navbar.resume') }}</a
-      >
       <v-menu offset-y origin="center center" transition="scale-transition">
         <template v-slot:activator="{ on }">
           <v-btn
@@ -63,29 +61,7 @@
         </v-list>
       </v-menu>
     </v-app-bar>
-    <!-- <v-navigation-drawer v-model="drawer" temporary app>
-      <div
-        class="app-bar-links d-flex flex-column align-center"
-        style="margintop: 23px"
-      >
-        <nuxt-link
-          class="my-3"
-          v-for="item in menu"
-          :key="item.title"
-          :to="item.to"
-          role="button"
-          >{{ $t(item.title) }}</nuxt-link
-        >
-        <a
-          href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
-          class="contact-btn resume-btn text-uppercase"
-          target="_blank"
-          rel="noopener"
-          role="button"
-          >{{ $t('navbar.resume') }}</a
-        >
-      </div>
-    </v-navigation-drawer> -->
+
     <v-main>
       <nuxt />
     </v-main>
@@ -112,12 +88,12 @@ export default {
   data() {
     return {
       drawer: false,
-      menu: [
-        { to: '/', title: 'navbar.home' },
-        { to: '/about', title: 'navbar.about' },
-        { to: '/skills', title: 'navbar.skills' },
-        { to: '/portfolio', title: 'navbar.work' },
-        { to: '/contact', title: 'navbar.contact' },
+      links: [
+        { to: '/', icon: 'home' },
+        { to: '/about', icon: 'user-secret' },
+        { to: '/skills', icon: 'code' },
+        { to: '/portfolio', icon: 'eye' },
+        { to: '/contact', icon: 'envelope' },
       ],
       languages: [
         { title: 'English', src: '/flags/en.svg', lang: 'en' },
@@ -131,8 +107,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/style';
-
 .nav-icon {
   color: white !important;
   width: 27px;
@@ -140,25 +114,6 @@ export default {
 
 .v-app-bar,
 .v-navigation-drawer {
-  a {
-    color: $white;
-  }
-
-  .app-bar-links > a {
-    font-size: 1.5rem;
-  }
-
-  .app-bar-links {
-    font-family: 'montserrat';
-    letter-spacing: 2px;
-
-    a:hover,
-    .nuxt-link-exact-active {
-      color: $secondary-color;
-      transition: $transition;
-    }
-  }
-
   .brand-name {
     font-family: 'Montserrat Alternates';
     font-weight: 700;
@@ -198,51 +153,6 @@ export default {
     .app-bar-links {
       margin-right: 3%;
     }
-  }
-}
-
-@media (min-width: 1350px) {
-  .v-app-bar {
-    .nav-icon {
-      display: none;
-    }
-  }
-
-  .polygon,
-  .square {
-    animation: shapes 5s infinite ease-out;
-  }
-
-  @keyframes shapes {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
-  }
-}
-
-@media (max-width: 1350px) {
-  .v-app-bar {
-    .app-bar-links,
-    .resume-btn {
-      display: none;
-    }
-    .brand-name {
-      font-size: 1.2rem;
-    }
-  }
-  .shapes {
-    display: none;
-  }
-}
-
-@media (max-width: 1350px) and (min-height: 560px) {
-  .resume-btn {
-    position: absolute;
-    bottom: 6%;
   }
 }
 </style>

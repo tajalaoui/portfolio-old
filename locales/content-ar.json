@@ -1,12 +1,4 @@
 {
-    "navbar": {
-        "home": "الصفحة الرئيسية",
-        "about": "عني",
-        "skills": "مهاراتي",
-        "work": "عملي",
-        "contact": "اتصل بي",
-        "resume": "السيرة الذاتية"
-    },
     "home": {
         "greeting": "مرحبا",
         "intro-text": {
