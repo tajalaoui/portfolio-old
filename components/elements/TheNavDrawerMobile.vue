@@ -1,27 +1,5 @@
 <template>
-  <v-navigation-drawer width="55" v-model="drawer" temporary app>
-    <!-- <div
-      v-if="!$device.isDesktop"
-      class="app-bar-links d-flex flex-column align-center"
-      style="margintop: 23px"
-    >
-      <nuxt-link
-        class="my-3"
-        v-for="link in links"
-        :key="link.title"
-        :to="link.to"
-        role="button"
-        >{{ $t(link.title) }}</nuxt-link
-      >
-      <a
-        href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
-        class="contact-btn resume-btn text-uppercase"
-        target="_blank"
-        rel="noopener"
-        role="button"
-        >{{ $t('navbar.resume') }}</a
-      >
-    </div> -->
+  <v-navigation-drawer width="55" v-model="localDrawer" temporary app>
     <v-list nav>
       <v-list-item-content style="height: 100%" class="my-auto">
         <v-list-item-title v-for="link in links" :key="link.to">
@@ -41,6 +19,16 @@ export default {
   props: {
     links: Array,
     drawer: Boolean,
+  },
+  data: () => ({
+    localDrawer: false,
+  }),
+  watch: {
+    drawer(newValue) {
+      if (newValue != this.localDrawer) {
+        this.localDrawer = newValue
+      }
+    },
   },
 }
 </script>
