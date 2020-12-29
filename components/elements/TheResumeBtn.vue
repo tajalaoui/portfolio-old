@@ -1,5 +1,5 @@
 <template>
-  <v-list-item link style="position: absolute; bottom: 3%; width: 95%">
+  <v-list-item link style="position: absolute; bottom: 3%">
     <a
       class="btn"
       href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
