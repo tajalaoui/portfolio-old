@@ -62,6 +62,7 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     'nuxt-webfontloader',
+    '@nuxtjs/device',
     [
       'nuxt-social-meta',
       {

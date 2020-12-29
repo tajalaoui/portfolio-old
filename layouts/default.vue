@@ -5,6 +5,7 @@
     <!-- Cursor -->
     <LazyAppCursor />
     <!-- Navigation -->
+    <LazyTheNavDrawer v-if="$device.isDesktop" :drawer="drawer" />
     <v-app-bar color="#0f0f0f" flat app role="toolbar">
       <img
         src="/menu-icon.svg"
@@ -22,16 +23,7 @@
         <!-- <img class="brand-name white--text" to="/" src="/logo.svg" alt="" style="height:25px; width:34px" /> -->
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <div class="app-bar-links hidden-sm-and-down">
-        <nuxt-link
-          class="mx-3"
-          v-for="item in menu"
-          :key="item.title"
-          :to="item.to"
-          flat
-          >{{ $t(item.title) }}</nuxt-link
-        >
-      </div>
+
       <a
         href="https://docs.google.com/document/d/1uz4ZX1Fkf8KURLk343MWUQvjpl_AOJTCdzfsAPTIDoY/edit"
         class="contact-btn resume-btn text-uppercase mr-2"
@@ -71,7 +63,7 @@
         </v-list>
       </v-menu>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" temporary app>
+    <!-- <v-navigation-drawer v-model="drawer" temporary app>
       <div
         class="app-bar-links d-flex flex-column align-center"
         style="margintop: 23px"
@@ -93,7 +85,7 @@
           >{{ $t('navbar.resume') }}</a
         >
       </div>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-main>
       <nuxt />
     </v-main>

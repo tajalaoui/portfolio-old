@@ -22,7 +22,7 @@
               <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
             </a>
             <a
-              href="https://github.com/tajeddine-alaoui"
+              href="https://github.com/tajeddine-js"
               rel="noopener"
               target="_blank"
               role="button"
