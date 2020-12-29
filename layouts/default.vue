@@ -5,8 +5,8 @@
     <!-- Cursor -->
     <LazyAppCursor v-if="$device.isDesktop" />
     <!-- Navigation -->
-    <LazyTheNavDrawer v-if="$device.isDesktop" :links="links" />
-    <LazyTheNavDrawerMobile
+    <TheNavDrawer v-if="$device.isDesktop" :links="links" />
+    <TheNavDrawerMobile
       v-if="!$device.isDesktop"
       :links="links"
       :drawer="drawer"
