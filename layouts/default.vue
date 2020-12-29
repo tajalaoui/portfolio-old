@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <!-- TODO  Remove fibers from package.json or make a new project and copy paste these files to it  -->
     <!-- Loading -->
     <AppLoading v-show="pageInProgress" :pageInProgress="pageInProgress" />
     <!-- Cursor -->
