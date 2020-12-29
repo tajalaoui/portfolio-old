@@ -15,7 +15,7 @@
           <p>
             {{ $t('skills.5st-p') }}
             <a
-              href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
+              href="https://www.linkedin.com/in/tajeddine-zemzmi-alaoui-29b889167/"
               rel="noopener"
               role="button"
               target="_blank"
