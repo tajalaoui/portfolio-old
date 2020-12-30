@@ -29,6 +29,7 @@
         </nuxt-link>
         <!-- <img class="brand-name white--text" to="/" src="/logo.svg" alt="" style="height:25px; width:34px" /> -->
       </v-toolbar-title>
+
       <v-spacer></v-spacer>
 
       <v-menu offset-y origin="center center" transition="scale-transition">
