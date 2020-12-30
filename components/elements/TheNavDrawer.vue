@@ -17,7 +17,7 @@
 <script>
 export default {
   props: {
-    links: Array,
+    links,
   },
 }
 </script>
