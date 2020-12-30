@@ -23,13 +23,13 @@ export default {
   data: () => ({
     localDrawer: false,
   }),
-  // watch: {
-  //   drawer(newValue) {
-  //     if (newValue != this.localDrawer) {
-  //       this.localDrawer = newValue
-  //     }
-  //   },
-  // },
+  watch: {
+    drawer(newValue) {
+      if (newValue != this.localDrawer) {
+        this.localDrawer = newValue
+      }
+    },
+  },
 }
 </script>
 
