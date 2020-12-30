@@ -17,7 +17,7 @@
 <script>
 export default {
   props: {
-    // links: Object,
+    links: Object,
     drawer: Boolean,
   },
   data: () => ({

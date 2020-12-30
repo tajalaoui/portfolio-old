@@ -16,9 +16,9 @@
 
 <script>
 export default {
-  // props: {
-  //   links: Object,
-  // },
+  props: {
+    links: Object,
+  },
   links: [
     { to: '/', icon: 'home' },
     { to: '/about', icon: 'user-secret' },

@@ -6,10 +6,10 @@
     <!-- Cursor -->
     <LazyAppCursor v-if="$device.isDesktop" />
     <!-- Navigation -->
-    <TheNavDrawer v-if="$device.isDesktop"  />
+    <TheNavDrawer v-if="$device.isDesktop" :links="links" />
     <TheNavDrawerMobile
       v-if="!$device.isDesktop"
-      
+      :links="links"
       :drawer="drawer"
     />
     <v-app-bar color="#0f0f0f" flat app role="toolbar">
