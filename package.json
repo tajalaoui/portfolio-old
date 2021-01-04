@@ -19,7 +19,6 @@
     "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/style-resources": "^1.0.0",
-    "body-parser": "^1.19.0",
     "core-js": "^3.8.1",
     "nuxt": "^2.13.0",
     "nuxt-social-meta": "^0.0.5",

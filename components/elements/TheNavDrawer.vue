@@ -17,15 +17,15 @@
 <script>
 export default {
   props: {
-    links: Object,
+    links: Array,
   },
-  links: [
-    { to: '/', icon: 'home' },
-    { to: '/about', icon: 'user-secret' },
-    { to: '/skills', icon: 'code' },
-    { to: '/portfolio', icon: 'eye' },
-    { to: '/contact', icon: 'envelope' },
-  ],
+  // links: [
+  //   { to: '/', icon: 'home' },
+  //   { to: '/about', icon: 'user-secret' },
+  //   { to: '/skills', icon: 'code' },
+  //   { to: '/portfolio', icon: 'eye' },
+  //   { to: '/contact', icon: 'envelope' },
+  // ],
 }
 </script>
 

@@ -2,7 +2,7 @@ const colors = require('vuetify/es5/util/colors').default
 
 module.exports = {
   // ! Remove it later
-  ssr: false,
+  // ssr: false,
   /*
    ** Headers of the page
    */
@@ -86,7 +86,7 @@ module.exports = {
     icon: {
       iconSrc: '@/static/icon.png',
     },
-    short_name: 'Taj.js',
+    short_name: 'Tajeddine.js',
     name: 'Tajeddine.js',
     descreption: 'Full Stack Developer',
     start_url: '/',
