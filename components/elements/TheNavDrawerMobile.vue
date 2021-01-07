@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer width="55" v-model="localDrawer" temporary app>
+  <v-navigation-drawer width="55" v-model="localDrawer" app>
     <v-list nav>
       <v-list-item-content style="height: 100%" class="my-auto">
         <v-list-item-title v-for="link in links" :key="link.to">

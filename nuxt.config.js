@@ -1,11 +1,11 @@
 const colors = require('vuetify/es5/util/colors').default
 
 module.exports = {
-  // ! Remove it later
-  // ssr: false,
   /*
    ** Headers of the page
    */
+  // ! Remove later
+  target: 'static',
   head: {
     // titleTemplate: '%s .js',
     meta: [
@@ -58,7 +58,7 @@ module.exports = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/pwa', 'nuxt-purgecss'],
   /*
    ** Nuxt.js modules
    */
@@ -67,6 +67,7 @@ module.exports = {
     'nuxt-webfontloader',
     '@nuxtjs/device',
     '@nuxtjs/style-resources',
+
     [
       'nuxt-social-meta',
       {
@@ -134,6 +135,10 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
+    extend(config, ctx) {
+      if (ctx.isDev) {
+        config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map'
+      }
+    },
   },
 }

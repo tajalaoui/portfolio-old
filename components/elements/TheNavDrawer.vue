@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer width="51" app permanent stateless>
+  <v-navigation-drawer color="transparent" width="51" app permanent stateless>
     <v-list nav>
       <v-list-item-content style="height: 100%" class="my-auto">
         <v-list-item-title v-for="link in links" :key="link.to">

@@ -13,6 +13,7 @@
       :drawer="drawer"
     />
     <v-app-bar color="#0f0f0f" flat app role="toolbar">
+      <!-- <v-container> -->
       <img
         v-if="!$device.isDesktop"
         src="/menu-icon.svg"
@@ -62,6 +63,7 @@
           </v-list-item>
         </v-list>
       </v-menu>
+      <!-- </v-container> -->
     </v-app-bar>
 
     <v-main>
