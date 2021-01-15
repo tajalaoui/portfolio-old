@@ -7,6 +7,8 @@ module.exports = {
   // ! Remove later
   target: 'static',
   head: {
+    // TODO Try this
+    // title: 'Software Developer',
     // titleTemplate: '%s .js',
     meta: [
       { charset: 'utf-8' },
