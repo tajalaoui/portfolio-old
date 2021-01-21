@@ -96,7 +96,7 @@ export default {
         { to: '/', icon: 'home' },
         { to: '/about', icon: 'user-secret' },
         { to: '/skills', icon: 'code' },
-        { to: '/portfolio', icon: 'eye' },
+        // { to: '/portfolio', icon: 'eye' },
         { to: '/contact', icon: 'envelope' },
       ],
       languages: [
@@ -119,7 +119,7 @@ export default {
 .v-app-bar,
 .v-navigation-drawer {
   .brand-name {
-    font-family: 'Montserrat Alternates';
+    font-family: 'Audiowide';
     font-weight: 700;
     overflow: auto;
     .brand-span {

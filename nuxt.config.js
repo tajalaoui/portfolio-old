@@ -34,7 +34,7 @@ module.exports = {
   // Importing fonts
   webfontloader: {
     google: {
-      families: ['Montserrat', 'Montserrat Alternates: 700'],
+      families: ['Montserrat', 'Audiowide'],
     },
   },
 

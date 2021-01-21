@@ -39,12 +39,12 @@
             </a>
           </div>
           <div class="buttons mt-4">
-            <nuxt-link
+            <!-- <nuxt-link
               class="text-uppercase check-work-btn mr-3"
               role="button"
               to="/portfolio"
               >{{ $t('home.check-work') }}</nuxt-link
-            >
+            > -->
             <nuxt-link
               class="text-uppercase contact-btn"
               to="/contact"
