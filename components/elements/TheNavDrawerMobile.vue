@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer width="55" v-model="localDrawer" app>
+  <v-navigation-drawer color="black" width="55" v-model="localDrawer" app>
     <v-list nav>
       <v-list-item-content style="height: 100%" class="my-auto">
         <v-list-item-title v-for="link in links" :key="link.to">
@@ -7,6 +7,18 @@
             <icon :icon="link.icon" />
           </v-btn>
         </v-list-item-title>
+        <!-- Blog btn -->
+        <v-btn
+          class="btn my-1"
+          active-class="btn"
+          href="https://tajeddine.hashnode.dev/"
+          rel="noopener"
+          target="_blank"
+          role="button"
+          icon
+        >
+          <icon :icon="['fas', 'blog']" />
+        </v-btn>
       </v-list-item-content>
 
       <LazyTheResumeBtn />

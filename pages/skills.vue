@@ -62,7 +62,6 @@ export default {
         { url: '/tech-logos/vue.svg', alt: 'Vue Js' },
         { url: '/tech-logos/nuxt.svg', alt: 'Nuxt Js' },
         { url: '/tech-logos/vuetify.svg', alt: 'Vuetify' },
-        { url: '/tech-logos/vuesax.svg', alt: 'Vuesax' },
         { url: '/tech-logos/html.svg', alt: 'Html' },
         { url: '/tech-logos/scss.svg', alt: 'Scss' },
       ],
