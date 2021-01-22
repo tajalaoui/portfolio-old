@@ -97,7 +97,7 @@ export default {
         { to: '/about', icon: 'user-secret' },
         { to: '/skills', icon: 'code' },
         // { to: '/portfolio', icon: 'eye' },
-        { to: '/contact', icon: 'envelope' },
+        // { to: '/contact', icon: 'envelope' },
       ],
       languages: [
         { title: 'English', src: '/flags/en.svg', lang: 'en' },

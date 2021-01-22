@@ -6,6 +6,7 @@ module.exports = {
    */
   // ! Remove later
   target: 'static',
+  ssr: false,
   head: {
     // TODO Try this
     // title: 'Software Developer',

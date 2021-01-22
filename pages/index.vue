@@ -45,12 +45,12 @@
               to="/portfolio"
               >{{ $t('home.check-work') }}</nuxt-link
             > -->
-            <nuxt-link
+            <!-- <nuxt-link
               class="text-uppercase contact-btn"
               to="/contact"
               role="button"
               >{{ $t('home.contact-me') }}</nuxt-link
-            >
+            > -->
           </div>
         </div>
       </v-col>
