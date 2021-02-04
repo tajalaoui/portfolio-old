@@ -14,12 +14,20 @@
           </div>
           <div class="social-icons">
             <a
+              href="https://www.facebook.com/Tajeddinejs-321912109247911"
+              rel="noopener"
+              target="_blank"
+              role="button"
+            >
+              <icon class="nav-social-icons" :icon="['fab', 'facebook']" />
+            </a>
+            <a
               href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
               rel="noopener"
               role="button"
               target="_blank"
             >
-              <icon class="nav-social-icons" :icon="['fab', 'linkedin']" />
+              <icon class="nav-social-icons mx-3" :icon="['fab', 'linkedin']" />
             </a>
             <a
               href="https://github.com/tajeddine-js"
@@ -27,15 +35,7 @@
               target="_blank"
               role="button"
             >
-              <icon class="nav-social-icons mx-3" :icon="['fab', 'github']" />
-            </a>
-            <a
-              href="https://tajeddine.medium.com/"
-              rel="noopener"
-              target="_blank"
-              role="button"
-            >
-              <icon class="nav-social-icons" :icon="['fab', 'medium']" />
+              <icon class="nav-social-icons" :icon="['fab', 'github']" />
             </a>
           </div>
           <div class="buttons mt-4">
