@@ -29,6 +29,7 @@ module.exports = {
           'web developer, javascript, vue, nuxt, full stack javascript, software developer, portfolio',
       },
     ],
+
     link: [{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' }],
   },
 

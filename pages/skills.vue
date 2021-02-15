@@ -72,6 +72,7 @@ export default {
       ],
     }
   },
+
   head() {
     return {
       title: 'Skills.js',
@@ -79,7 +80,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Skills & Technologies i know',
+          content: 'Skills & Technologies',
         },
       ],
     }
