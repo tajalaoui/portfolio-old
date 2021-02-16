@@ -36,8 +36,9 @@
       <v-menu offset-y origin="center center" transition="scale-transition">
         <template v-slot:activator="{ on }">
           <v-btn
-            class="language-btn mx-3"
+            class="language-btn mr-3"
             icon
+            large
             v-on="on"
             role="button"
             aria-label="change language"
@@ -128,13 +129,14 @@ export default {
   }
 
   .language-btn {
-    margin-right: 1.5% !important;
-    @include contactBtn();
+    // margin-right: 1.5% !important;
+    // @include contactBtn();
+    font-size: 2rem;
   }
 
-  .language-btn:hover {
-    @include contactBtnHover();
-  }
+  // .language-btn:hover {
+  //   @include contactBtnHover();
+  // }
 
   .contact-btn {
     @include btn();
