@@ -2,7 +2,7 @@
   <v-app>
     <!-- TODO  Remove fibers from package.json or make a new project and copy paste these files to it  -->
     <!-- Loading -->
-    <AppLoading v-show="pageInProgress" :pageInProgress="pageInProgress" />
+    <!-- <AppLoading v-show="pageInProgress" :pageInProgress="pageInProgress" /> -->
     <!-- Cursor -->
     <!-- <LazyAppCursor v-if="$device.isDesktop" /> -->
     <!-- Navigation -->
@@ -75,7 +75,7 @@
 <script>
 export default {
   mounted() {
-    this.pageInProgress = false
+    this.pageInProgress = true
   },
   head() {
     return {
