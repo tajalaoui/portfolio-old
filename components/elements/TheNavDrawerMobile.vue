@@ -21,7 +21,7 @@
         </v-btn>
       </v-list-item-content>
 
-      <LazyTheResumeBtn />
+      <LazyTheResumeBtn class="mb-2" />
     </v-list>
   </v-navigation-drawer>
 </template>

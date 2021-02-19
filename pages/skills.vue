@@ -12,19 +12,6 @@
             <br />
             {{ $t('skills.4st-p') }}
           </p>
-          <p>
-            {{ $t('skills.5st-p') }}
-            <a
-              href="https://www.linkedin.com/in/tajeddine-zemzmi-alaoui-29b889167/"
-              rel="noopener"
-              role="button"
-              target="_blank"
-              >{{ $t('skills.linkedin') }}</a
-            >
-            {{ $t('skills.6st-p') }}
-            <nuxt-link to="/contact">{{ $t('skills.7st-p') }}</nuxt-link>
-            <span>{{ $t('skills.8st-p') }}</span>
-          </p>
         </div>
       </v-col>
       <v-col
@@ -61,7 +48,7 @@ export default {
       frontEndImages: [
         { url: '/tech-logos/vue.svg', alt: 'Vue Js' },
         { url: '/tech-logos/nuxt.svg', alt: 'Nuxt Js' },
-        { url: '/tech-logos/vuetify.svg', alt: 'Vuetify' },
+        { url: '/tech-logos/angular.svg', alt: 'Angular' },
         { url: '/tech-logos/html.svg', alt: 'Html' },
         { url: '/tech-logos/scss.svg', alt: 'Scss' },
       ],

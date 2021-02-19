@@ -15,7 +15,7 @@
         "1st-p": "Connecté professionnellement aux technologies de l'information",
         "2st-p": "pendant de nombreuses années.",
         "3st-p": "Programmeur autodidacte, Freelancer passionné.",
-        "4st-p": "Mes passions font le suivi des nouvelles technologiques,",
+        "4st-p": "Mes passions sont la cuisine, regarder des films,",
         "5st-p": "Rester en forme et jouer à des jeux vidéo.",
         "6st-p": "Au plaisir de créer des produits incroyables",
         "7st-p": "Pour mes clients.",
@@ -28,15 +28,10 @@
     },
     "skills": {
         "heading": "Compétences Et Expériences",
-        "1st-p": "Développeur de logiciels Javascript full stack.",
+        "1st-p": "Développeur de logiciels Javascript/Typescript full stack.",
         "2st-p": "Création d'applications Web à l'aide de la technologie PWA",
-        "3st-p": "Avec Vue dans le frontend et Node comme backend,",
-        "4st-p": "Concevoir avec Vuetify & Vuesax.",
-        "5st-p": "Visitez mon",
-        "6st-p": "profil pour plus d'informations ou",
-        "7st-p": "Contactez",
-        "8st-p": "moi.",
-        "linkedin": "Linkedin"
+        "3st-p": "Avec Vue/Angular dans le frontend et Node comme backend,",
+        "4st-p": "Concevoir avec Material design guidlines."
     },
     "contact": {
         "name": "Nom",

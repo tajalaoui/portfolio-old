@@ -36,7 +36,7 @@
       <v-menu offset-y origin="center center" transition="scale-transition">
         <template v-slot:activator="{ on }">
           <v-btn
-            class="language-btn mr-3"
+            class="language-btn mr-2"
             icon
             large
             v-on="on"
@@ -133,32 +133,11 @@ export default {
     // @include contactBtn();
     font-size: 2rem;
   }
-
-  // .language-btn:hover {
-  //   @include contactBtnHover();
-  // }
-
-  .contact-btn {
-    @include btn();
-  }
-
-  .contact-btn:hover {
-    @include btnHover();
-  }
 }
 
-@media (min-width: 900px) {
-  .v-app-bar {
-    .navbar-brand {
-      font-size: 1.5rem;
-    }
-    .app-bar-links > a {
-      margin: 0 9px;
-    }
-
-    .app-bar-links {
-      margin-right: 3%;
-    }
+@media (max-width: 900px) {
+  .language-btn {
+    margin: 0 !important;
   }
 }
 </style>
