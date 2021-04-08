@@ -22,7 +22,7 @@
               <icon class="nav-social-icons" :icon="['fab', 'facebook']" />
             </a>
             <a
-              href="https://www.linkedin.com/in/tajeddine-alaoui-29b889167/"
+              href="https://www.linkedin.com/in/tajeddine-alaoui/"
               rel="noopener"
               role="button"
               target="_blank"
