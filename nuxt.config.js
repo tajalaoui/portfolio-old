@@ -59,7 +59,7 @@ module.exports = {
   },
 
   // Auto import component
-  components: true,
+  // components: true,
   /*
    ** Plugins to load before mounting the App
    */

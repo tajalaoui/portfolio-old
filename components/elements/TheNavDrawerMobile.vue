@@ -21,13 +21,16 @@
         </v-btn>
       </v-list-item-content>
 
-      <LazyTheResumeBtn />
+      <TheResumeBtn />
     </v-list>
   </v-navigation-drawer>
 </template>
 
 <script>
+import TheResumeBtn from '@/components/elements/TheResumeBtn'
+
 export default {
+  components: TheResumeBtn,
   props: {
     links: Array,
     drawer: Boolean,
