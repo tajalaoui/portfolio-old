@@ -39,7 +39,8 @@ module.exports = {
       families: ['Montserrat', 'Audiowide'],
     },
   },
-
+  components: true,
+  global: true,
   /*
    ** Customize the progress-bar color
    */

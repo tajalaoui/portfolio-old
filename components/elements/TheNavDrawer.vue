@@ -25,7 +25,6 @@
     </v-list>
   </v-navigation-drawer>
 </template>
-
 <script>
 import TheResumeBtn from '@/components/elements/TheResumeBtn'
 
