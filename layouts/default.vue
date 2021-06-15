@@ -4,10 +4,10 @@
     <!-- Loading -->
     <!-- <AppLoading v-show="pageInProgress" :pageInProgress="pageInProgress" /> -->
     <!-- Cursor -->
-    <!-- <LazyAppCursor v-if="$device.isDesktop" /> -->
+    <LazyAppCursor v-if="$device.isDesktop" />
     <!-- Navigation -->
-    <TheNavDrawer v-if="$device.isDesktop" :links="links" />
-    <TheNavDrawerMobile
+    <LazyElementsTheNavDrawer v-if="$device.isDesktop" :links="links" />
+    <LazyElementsTheNavDrawerMobile
       v-if="!$device.isDesktop"
       :links="links"
       :drawer="drawer"
@@ -74,14 +74,14 @@
 </template>
 
 <script>
-import TheNavDrawer from '@/components/elements/TheNavDrawer'
-import TheNavDrawerMobile from '@/components/elements/TheNavDrawerMobile'
+// import TheNavDrawer from '@/components/elements/TheNavDrawer'
+// import TheNavDrawerMobile from '@/components/elements/TheNavDrawerMobile'
 
 export default {
-  components: {
-    TheNavDrawer,
-    TheNavDrawerMobile,
-  },
+  // components: {
+  //   TheNavDrawer,
+  //   TheNavDrawerMobile,
+  // },
   mounted() {
     this.pageInProgress = true
   },

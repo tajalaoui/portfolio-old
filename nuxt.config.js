@@ -5,8 +5,8 @@ module.exports = {
    ** Headers of the page
    */
   // ! Remove later
-  target: 'static',
-  ssr: false,
+  // target: 'static',
+  // ssr: false,
   head: {
     // TODO Try this
     // title: 'Software Developer',
