@@ -74,14 +74,7 @@
 </template>
 
 <script>
-// import TheNavDrawer from '@/components/elements/TheNavDrawer'
-// import TheNavDrawerMobile from '@/components/elements/TheNavDrawerMobile'
-
 export default {
-  // components: {
-  //   TheNavDrawer,
-  //   TheNavDrawerMobile,
-  // },
   mounted() {
     this.pageInProgress = true
   },
