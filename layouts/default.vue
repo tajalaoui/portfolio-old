@@ -4,6 +4,7 @@
     <!-- Loading -->
     <!-- <AppLoading v-show="pageInProgress" :pageInProgress="pageInProgress" /> -->
     <!-- Cursor -->
+    
     <LazyAppCursor v-if="$device.isDesktop" />
     <!-- Navigation -->
     <LazyElementsTheNavDrawer v-if="$device.isDesktop" :links="links" />
