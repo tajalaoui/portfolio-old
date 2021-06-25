@@ -28,9 +28,9 @@
     },
     "skills": {
         "heading": "Compétences Et Expériences",
-        "1st-p": "Développeur de logiciels Javascript/Typescript full stack.",
+        "1st-p": "Développeur de logiciels Javascript/Typescript.",
         "2st-p": "Création d'applications Web à l'aide de la technologie PWA",
-        "3st-p": "Avec Vue/Angular dans le frontend et Node comme backend,",
+        "3st-p": "Avec Vue dans le frontend et Node comme backend,",
         "4st-p": "Concevoir avec Material design guidlines."
     },
     "contact": {
