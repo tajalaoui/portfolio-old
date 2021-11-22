@@ -28,9 +28,9 @@ export default {
 <style lang="scss">
 @media (min-width: 900px) {
   // * Cursor.
-  body * {
-    cursor: none !important;
-  }
+  // body * {
+  //   cursor: none !important;
+  // }
 
   .cursor {
     z-index: 99;
