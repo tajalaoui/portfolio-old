@@ -8,7 +8,7 @@
           </v-btn>
         </v-list-item-title>
         <!-- Blog btn -->
-        <v-btn
+        <!-- <v-btn
           class="btn my-1"
           active-class="btn"
           href="https://tajeddine.hashnode.dev/"
@@ -18,7 +18,7 @@
           icon
         >
           <icon :icon="['fas', 'blog']" />
-        </v-btn>
+        </v-btn> -->
       </v-list-item-content>
 
       <LazyElementsTheResumeBtn />
