@@ -3,24 +3,16 @@
     <v-row class="align-center">
       <v-col cols="12" md="6">
         <div class="text-intro">
-          <h5>{{ $t('home.greeting') }}</h5>
+          <h5>{{ $t("home.greeting") }}</h5>
           <h1 class="text-uppercase font-weight-bold">
-            {{ $t('home.intro-text.im') }}
-            <span class="brand-span">{{ $t('home.intro-text.taj') }}</span>
-            {{ $t('home.intro-text.eddine') }}
+            {{ $t("home.intro-text.im") }}
+            <span class="brand-span">{{ $t("home.intro-text.taj") }}</span>
+            {{ $t("home.intro-text.eddine") }}
           </h1>
           <div class="text-intro-skills">
-            <p class="font-weight-light">{{ $t('home.job-title') }}</p>
+            <p class="font-weight-light">{{ $t("home.job-title") }}</p>
           </div>
           <div class="social-icons">
-            <a
-              href="https://www.facebook.com/Tajeddinejs-321912109247911"
-              rel="noopener"
-              target="_blank"
-              role="button"
-            >
-              <icon class="nav-social-icons" :icon="['fab', 'facebook']" />
-            </a>
             <a
               href="https://www.linkedin.com/in/tajeddine-zemzmi-alaoui/"
               rel="noopener"
@@ -29,12 +21,7 @@
             >
               <icon class="nav-social-icons mx-3" :icon="['fab', 'linkedin']" />
             </a>
-            <a
-              href="https://github.com/tajeddine-js"
-              rel="noopener"
-              target="_blank"
-              role="button"
-            >
+            <a href="https://github.com/tajalaoui" rel="noopener" target="_blank" role="button">
               <icon class="nav-social-icons" :icon="['fab', 'github']" />
             </a>
           </div>
@@ -65,12 +52,12 @@
 export default {
   head() {
     return {
-      title: 'Home.js',
+      title: "Home.js",
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: 'Home Page',
+          hid: "description",
+          name: "description",
+          content: "Home Page",
         },
       ],
     }
