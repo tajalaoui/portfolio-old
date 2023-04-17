@@ -2,7 +2,7 @@
   <v-list-item link style="position: absolute; bottom: 3%">
     <a
       class="btn"
-      href="https://docs.google.com/document/d/17MydZdiKNkYPQgdG37UrPRaUKMBFYbBRXHa8LHxvgOc/edit?usp=sharing"
+      href="https://docs.google.com/document/d/1xOS7mFSJcpK6Ua_9AibEu8Uf6psafGFBQRLT38KmNuQ/edit?usp=sharing"
       target="_blank"
       rel="noopener"
       role="button"
